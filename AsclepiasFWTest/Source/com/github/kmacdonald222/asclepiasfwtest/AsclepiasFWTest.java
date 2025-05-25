@@ -11,6 +11,9 @@ import com.github.kmacdonald222.asclepiasfw.application.Configuration;
 import com.github.kmacdonald222.asclepiasfw.application.Application;
 import com.github.kmacdonald222.asclepiasfw.logging.LogPriority;
 import com.github.kmacdonald222.asclepiasfw.logging.LogSource;
+import com.github.kmacdonald222.asclepiasfw.data.Dimensions2D;
+import com.github.kmacdonald222.asclepiasfw.data.Vector2D;
+import com.github.kmacdonald222.asclepiasfw.data.ColorRGBA;
 
 // Main class of the AsclepiasFWTest program
 public class AsclepiasFWTest {
@@ -24,29 +27,36 @@ public class AsclepiasFWTest {
 	public static void main(String[] arguments) {
 		// Create the Asclepias Framework application's configuration
 		Configuration configuration = new Configuration();
-		configuration.log.outputFileNames.clear();
-		configuration.log.outputFileNames.add("AsclepiasFW 1.log");
 		// Initialize the application
 		if (!Application.Initialize(configuration)) {
 			return;
 		}
-		// Test the functions of the application
+		// Test the Dimensions2D class
+		Dimensions2D d = new Dimensions2D(200, 300);
 		Application.Log.write(LogSource.Application, LogPriority.Info,
-				"Test 1 ", 5, 'x');
-		Application.Log.setConsoleEnabled(false);
+				"d = ", d, ", area(d) = ", d.area());
+		// Test the Vector2D class
+		Vector2D v1 = new Vector2D();
+		v1.x = 4.0f;
+		v1.y = 3.0f;
+		Vector2D v2 = new Vector2D();
+		v2.x = 1.5f;
+		v2.y = 3.5f;
 		Application.Log.write(LogSource.Application, LogPriority.Info,
-				"Test 2");
-		Application.Log.setConsoleEnabled(true);
+				"v1 = ", v1, ", v2 = ", v2, ", mag(v1) = ", v1.magnitude(),
+				", norm(v1) = ", v1.normalize(),  ", v1 * v2 = ",
+				v1.multiply(v2), ", sum(v1) = ", v1.sum(), ", v1 dot v2 = ",
+				v1.dot(v2), ", 3 * v1 = ", v1.scale(3.0f), ", v1 + v2 = ",
+				v1.add(v2), ", v1 - v2 = ", v1.subtract(v2));
+		// Test the ColorRGBA class
+		ColorRGBA c = new ColorRGBA();
+		c.r = 255;
+		c.g = 128;
+		c.b = 23;
+		c.a = 15;
 		Application.Log.write(LogSource.Application, LogPriority.Info,
-				"Test 3");
-		Application.Log.addOutputFileName("AsclepiasFW 2.log");
-		Application.Log.write(LogSource.Application, LogPriority.Info,
-				"Test 4");
-		System.out.println("Output file names: "
-				+ Application.Log.getOutputFileNames().toString());
-		Application.Log.removeOutputFileName("AsclepiasFW 1.log");
-		Application.Log.write(LogSource.Application, LogPriority.Info,
-				"Test 5");
+				"c = ", c, ", int(c) = ", c.toInteger(), " = ",
+				Integer.toBinaryString(c.toInteger()));
 		// Free the application's memory
 		Application.Destroy();
 	}
