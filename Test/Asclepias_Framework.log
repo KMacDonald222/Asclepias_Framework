@@ -1,0 +1,6 @@
+2025.07.01@00:00:57:022 - [App] [Info] Test 1: Output
+2025.07.01@00:00:57:035 - [App] [Info] Test 2: Console enabledness = true
+2025.07.01@00:00:57:035 - [App] [Info] Test 3: Console enabledness = false
+2025.07.01@00:00:57:035 - [App] [Info] Test 4: Console enabledness = true
+2025.07.01@00:00:57:035 - [App] [Info] Test 5: Output file names = [Asclepias_Framework.log]
+2025.07.01@00:00:57:036 - [App] [Info] Test 6: Output file names = [Asclepias_Framework_1.log, Asclepias_Framework.log]
