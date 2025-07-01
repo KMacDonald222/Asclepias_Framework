@@ -6,7 +6,7 @@
  * 				applications
  */
 
-package com.github.kmacdonald222.asclepias_framework.app;
+package com.github.kmacdonald222.asclepiasfw.app;
 
 import java.util.ArrayList;
 import java.util.Arrays;

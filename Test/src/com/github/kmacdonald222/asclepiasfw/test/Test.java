@@ -1,9 +1,9 @@
-package com.github.kmacdonald222.asclepias_framework.test;
+package com.github.kmacdonald222.asclepiasfw.test;
 
-import com.github.kmacdonald222.asclepias_framework.app.App;
-import com.github.kmacdonald222.asclepias_framework.app.AppConfig;
-import com.github.kmacdonald222.asclepias_framework.logging.LogPriority;
-import com.github.kmacdonald222.asclepias_framework.logging.LogSource;
+import com.github.kmacdonald222.asclepiasfw.app.App;
+import com.github.kmacdonald222.asclepiasfw.app.AppConfig;
+import com.github.kmacdonald222.asclepiasfw.logging.LogPriority;
+import com.github.kmacdonald222.asclepiasfw.logging.LogSource;
 
 public class Test {
 	

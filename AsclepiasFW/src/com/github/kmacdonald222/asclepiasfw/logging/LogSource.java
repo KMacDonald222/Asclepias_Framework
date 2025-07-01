@@ -5,7 +5,7 @@
  * Purpose:		Defines source flags for logging system output
  */
 
-package com.github.kmacdonald222.asclepias_framework.logging;
+package com.github.kmacdonald222.asclepiasfw.logging;
 
 // Class defining source flags for logging system output
 public class LogSource {

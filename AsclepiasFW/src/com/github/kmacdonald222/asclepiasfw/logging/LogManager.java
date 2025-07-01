@@ -6,7 +6,7 @@
  * 				Framework applications
  */
 
-package com.github.kmacdonald222.asclepias_framework.logging;
+package com.github.kmacdonald222.asclepiasfw.logging;
 
 import java.io.File;
 import java.io.FileWriter;

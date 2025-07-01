@@ -5,9 +5,9 @@
  * Purpose:		Defines the main application class of the Asclepias Framework
  */
 
-package com.github.kmacdonald222.asclepias_framework.app;
+package com.github.kmacdonald222.asclepiasfw.app;
 
-import com.github.kmacdonald222.asclepias_framework.logging.LogManager;
+import com.github.kmacdonald222.asclepiasfw.logging.LogManager;
 
 // The main application class of the Asclepias Framework
 public class App {
