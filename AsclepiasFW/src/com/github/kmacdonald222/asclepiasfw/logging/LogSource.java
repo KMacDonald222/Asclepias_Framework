@@ -30,6 +30,7 @@ public class LogSource {
 	 * Convert this source flag to a string
 	 * @return String - The name of this source flag
 	 */
+	@Override
 	public String toString() {
 		return name;
 	}

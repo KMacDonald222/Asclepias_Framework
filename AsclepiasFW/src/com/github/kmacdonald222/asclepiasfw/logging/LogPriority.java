@@ -32,6 +32,7 @@ public class LogPriority {
 	 * Convert this priority flag to a string
 	 * @return String - The name of this priority flag
 	 */
+	@Override
 	public String toString() {
 		return name;
 	}
