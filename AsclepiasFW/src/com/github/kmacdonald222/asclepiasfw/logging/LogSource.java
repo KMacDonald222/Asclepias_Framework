@@ -14,6 +14,8 @@ public class LogSource {
 	public static LogSource App = new LogSource("App");
 	// Logging system source log flag
 	public static LogSource Log = new LogSource("Log");
+	// Window management system source log flag
+	public static LogSource Window = new LogSource("Window");
 	
 	// The name of this source flag
 	private String name = "";

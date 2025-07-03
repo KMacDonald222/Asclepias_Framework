@@ -26,8 +26,7 @@ public class LogManager {
 	// Whether the logging system will print output to the console
 	private boolean consoleOutputEnabled = false;
 	// The set of files the logging system will print output to
-	private Map<String, FileWriter> outputFileWriters
-			= new HashMap<String, FileWriter>();
+	private Map<String, FileWriter> outputFileWriters = null;
 	
 	/*
 	 * Initialize the logging system
@@ -43,6 +42,7 @@ public class LogManager {
 			return false;
 		}
 		setConsoleOutputEnabled(consoleOutputEnabled);
+		outputFileWriters = new HashMap<String, FileWriter>();
 		for (int i = 0; i < outputFileNames.size(); i++) {
 			if (!addOutputFileName(outputFileNames.get(i))) {
 				return false;
@@ -89,13 +89,18 @@ public class LogManager {
 			return false;
 		}
 		boolean success = true;
-		setConsoleOutputEnabled(false);
-		List<String> outputFileNames = getOutputFileNames();
-		for (int i = 0; i < outputFileNames.size(); i++) {
-			if (!removeOutputFileName(outputFileNames.get(i))) {
+		consoleOutputEnabled = false;
+		for (Map.Entry<String, FileWriter> entry
+				: outputFileWriters.entrySet()) {
+			try {
+				entry.getValue().close();
+			} catch (IOException e) {
 				success = false;
 			}
+			entry.setValue(null);
 		}
+		outputFileWriters.clear();
+		outputFileWriters = null;
 		initialized = false;
 		return success;
 	}

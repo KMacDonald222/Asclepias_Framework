@@ -1,13 +1,37 @@
-2025.07.01@19:02:59:780 - [App] [Info] v1 = <3.0,5.0>, v2 = <7.0,11.0>
-2025.07.01@19:02:59:794 - [App] [Info] v1 + v2 = <10.0,16.0>
-2025.07.01@19:02:59:795 - [App] [Info] v1 - v2 = <-4.0,-6.0>
-2025.07.01@19:02:59:795 - [App] [Info] 3 * v1 = <9.0,15.0>
-2025.07.01@19:02:59:795 - [App] [Info] sum(v1) = 8.0
-2025.07.01@19:02:59:795 - [App] [Info] v1 * v2 = <21.0,55.0>
-2025.07.01@19:02:59:795 - [App] [Info] v1 dot v2 = 76.0
-2025.07.01@19:02:59:795 - [App] [Info] magnitude(v1) = 5.830951894845301
-2025.07.01@19:02:59:795 - [App] [Info] distance(v1, v2) = 7.211102550927978
-2025.07.01@19:02:59:796 - [App] [Info] normalize(v1) = <0.5144957554275265,0.8574929257125441>
-2025.07.01@19:02:59:796 - [App] [Info] angle(v1, v2) = 0.026309717252929132
-2025.07.01@19:02:59:796 - [App] [Info] rotate(v1, pi/4) = <-1.4142135623730945,5.65685424949238>
-2025.07.01@19:02:59:797 - [App] [Info] rotate(v1, pi/4, v2) = <8.414213562373094,3.9289321881345245>
+2025.07.03@12:45:27:027 - [App] [Info] Initialized logging system
+2025.07.03@12:45:27:165 - [Window] [Info] Opened new window
+2025.07.03@12:45:27:165 - [Window] [Info] Setting window title "Asclepias Framework"
+2025.07.03@12:45:27:168 - [Window] [Info] Setting window dimensions <800.0,600.0>
+2025.07.03@12:45:27:171 - [Window] [Info] Setting monitor index 0
+2025.07.03@12:45:27:171 - [Window] [Info] Set initial window attributes
+2025.07.03@12:45:27:172 - [App] [Info] Initialized window management system
+2025.07.03@12:45:27:172 - [App] [Info] Initialized Asclepias Framework application
+2025.07.03@12:45:29:172 - [App] [Info] Window title: "Asclepias Framework"
+2025.07.03@12:45:31:173 - [Window] [Info] Setting window title "Test"
+2025.07.03@12:45:33:174 - [App] [Info] Window dimensions: <800.0,600.0>
+2025.07.03@12:45:35:175 - [Window] [Info] Setting window dimensions <500.0,400.0>
+2025.07.03@12:45:37:179 - [App] [Info] Window fullscreen mode: false
+2025.07.03@12:45:39:180 - [Window] [Info] Setting window to fullscreen mode
+2025.07.03@12:45:39:180 - [Window] [Info] Setting window dimensions <1920.0,1080.0>
+2025.07.03@12:45:41:193 - [App] [Info] Window fullscreen mode: true
+2025.07.03@12:45:43:194 - [Window] [Info] Setting window to windowed mode
+2025.07.03@12:45:43:196 - [Window] [Info] Setting window dimensions <500.0,400.0>
+2025.07.03@12:45:45:199 - [App] [Info] Window monitor count: 2
+2025.07.03@12:45:47:200 - [App] [Info] Window monitor name: ":0.0"
+2025.07.03@12:45:49:201 - [App] [Info] Monitor 1 name: ":0.1"
+2025.07.03@12:45:51:201 - [App] [Info] Window monitor position: <1920.0,0.0>
+2025.07.03@12:45:53:202 - [App] [Info] Monitor 1 position: <0.0,0.0>
+2025.07.03@12:45:55:203 - [App] [Info] Window monitor dimensions: <1920.0,1080.0>
+2025.07.03@12:45:57:204 - [App] [Info] Monitor 1 dimensions: <1920.0,1080.0>
+2025.07.03@12:45:59:205 - [App] [Info] Window monitor index: 0
+2025.07.03@12:46:01:205 - [Window] [Info] Setting monitor index 1
+2025.07.03@12:46:03:206 - [Window] [Info] Setting window to fullscreen mode
+2025.07.03@12:46:03:207 - [Window] [Info] Setting window dimensions <1920.0,1080.0>
+2025.07.03@12:46:05:214 - [Window] [Info] Setting window dimensions <300.0,200.0>
+2025.07.03@12:46:05:215 - [Window] [Warning] Window is in fullscreen mode
+2025.07.03@12:46:07:215 - [Window] [Info] Setting window to windowed mode
+2025.07.03@12:46:07:217 - [Window] [Info] Setting window dimensions <300.0,200.0>
+2025.07.03@12:46:09:220 - [App] [Info] Destroying Asclepias Framework application
+2025.07.03@12:46:09:220 - [App] [Info] Destroying window management system
+2025.07.03@12:46:09:220 - [Window] [Info] Freeing window memory
+2025.07.03@12:46:09:224 - [App] [Info] Destroying logging system

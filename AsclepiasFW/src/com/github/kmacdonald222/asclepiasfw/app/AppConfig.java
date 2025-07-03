@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import com.github.kmacdonald222.asclepiasfw.data.Vec2D;
+
 // Wrapper class for all application configuration structures
 public class AppConfig {
 	
@@ -25,8 +27,23 @@ public class AppConfig {
 				Arrays.asList("Asclepias_Framework.log"));
 		
 	}
+	// Window management system configuration structure
+	public class Window {
+		
+		// The initial title for the window
+		public String title = "Asclepias Framework";
+		// The initial dimensions for the window
+		public Vec2D dimensions = new Vec2D(800.0d, 600.0d);
+		// Whether the window should initially appear in fullscreen mode
+		public boolean fullscreen = false;
+		// The index of the monitor the window should initially appear on
+		public int monitorIndex = 0;
+		
+	}
 	
 	// Instance of the logging system configuration structure
 	public Log log = new Log();
+	// Instance of the window management system configuration structure
+	public Window window = new Window();
 	
 }
