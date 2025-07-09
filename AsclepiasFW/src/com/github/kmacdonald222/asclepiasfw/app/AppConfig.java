@@ -45,5 +45,16 @@ public class AppConfig {
 	public Log log = new Log();
 	// Instance of the window management system configuration structure
 	public Window window = new Window();
+	// The initial scene for the application
+	public AppScene initialScene = null;
+	
+	/*
+	 * Construct a default application configuration structure with an initial
+	 * scene
+	 * @param Scene initialScene - The initial scene for the application
+	 */
+	public AppConfig(AppScene initialScene) {
+		this.initialScene = initialScene;
+	}
 	
 }

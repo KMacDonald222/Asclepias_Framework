@@ -12,10 +12,14 @@ public class LogSource {
 	
 	// Application source log flag
 	public static LogSource App = new LogSource("App");
+	// Current scene source log flag
+	public static LogSource Scene = new LogSource("Scene");
 	// Logging system source log flag
 	public static LogSource Log = new LogSource("Log");
 	// Window management system source log flag
 	public static LogSource Window = new LogSource("Window");
+	// Keyboard management system source log flag
+	public static LogSource Keyboard = new LogSource("Keyboard");
 	
 	// The name of this source flag
 	private String name = "";

@@ -12,6 +12,8 @@ import java.awt.Dimension;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Rectangle;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -30,6 +32,8 @@ public class WindowManager {
 	private JFrame windowHandle = null;
 	// Java Swing handle for the content pane of the application's window
 	private JPanel windowPanel = null;
+	// Whether the window's close button has been clicked
+	private boolean windowClosing = false;
 	// The current title of the window
 	private String title = "";
 	// The current dimensions of the window
@@ -57,12 +61,20 @@ public class WindowManager {
 			return false;
 		}
 		windowHandle = new JFrame();
-		windowHandle.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		windowHandle.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+		windowHandle.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				App.Log.write(LogSource.Window, LogPriority.Info, "Window ",
+						"requested to close");
+				windowClosing = true;
+			}
+		});
 		windowHandle.setResizable(false);
 		windowPanel = new JPanel();
 		windowHandle.setContentPane(windowPanel);
 		windowHandle.setVisible(true);
 		App.Log.write(LogSource.Window, LogPriority.Info, "Opened new window");
+		windowClosing = false;
 		setTitle(title);
 		setDimensions(dimensions);
 		setFullscreen(fullscreen);
@@ -91,11 +103,13 @@ public class WindowManager {
 		windowPanel = null;
 		windowHandle.dispose();
 		windowHandle = null;
+		windowClosing = false;
 		title = "";
 		dimensions = null;
 		windowedDimensions = null;
 		fullscreen = false;
 		monitorIndex = 0;
+		initialized = false;
 		return success;
 	}
 	/*
@@ -109,6 +123,20 @@ public class WindowManager {
 				(int)(mp.y + ((md.y - dimensions.y) / 2.0d)));
 	}
 	
+	/*
+	 * Test whether the window's close button has been clicked
+	 * @return boolean - Whether the window's close button has been clicked
+	 */
+	public boolean isWindowClosing() {
+		return windowClosing;
+	}
+	/*
+	 * Get the Java handle (JFrame) for the window
+	 * @return JFrame - The window handle
+	 */
+	public JFrame getWindowHandle() {
+		return windowHandle;
+	}
 	/*
 	 * Get the current title of the window
 	 * @return String - The current title of the window
