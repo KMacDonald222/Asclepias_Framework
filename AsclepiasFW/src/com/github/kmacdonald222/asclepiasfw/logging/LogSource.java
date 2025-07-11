@@ -18,8 +18,10 @@ public class LogSource {
 	public static LogSource Log = new LogSource("Log");
 	// Window management system source log flag
 	public static LogSource Window = new LogSource("Window");
-	// Keyboard management system source log flag
+	// Keyboard input management system source log flag
 	public static LogSource Keyboard = new LogSource("Keyboard");
+	// Mouse input management system source log flag
+	public static LogSource Mouse = new LogSource("Mouse");
 	
 	// The name of this source flag
 	private String name = "";

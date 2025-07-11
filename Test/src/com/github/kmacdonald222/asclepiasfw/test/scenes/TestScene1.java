@@ -2,7 +2,9 @@ package com.github.kmacdonald222.asclepiasfw.test.scenes;
 
 import com.github.kmacdonald222.asclepiasfw.app.App;
 import com.github.kmacdonald222.asclepiasfw.app.AppScene;
+import com.github.kmacdonald222.asclepiasfw.data.Vec2D;
 import com.github.kmacdonald222.asclepiasfw.input.KeyboardKey;
+import com.github.kmacdonald222.asclepiasfw.input.MouseButton;
 import com.github.kmacdonald222.asclepiasfw.logging.LogPriority;
 import com.github.kmacdonald222.asclepiasfw.logging.LogSource;
 
@@ -29,17 +31,27 @@ public class TestScene1 extends AppScene {
 						"test scene 2");
 			}
 		}
-		if (App.Keyboard.isKeyDown(KeyboardKey.A)) {
-			App.Log.write(LogSource.Scene, LogPriority.Info, "A key is down");
+		if (App.Mouse.isButtonPressed(MouseButton.LEFT)) {
+			App.Log.write(LogSource.Scene, LogPriority.Info, "Left mouse ",
+					"button pressed");
 		}
-		if (App.Keyboard.wasKeyDown(KeyboardKey.A)) {
-			App.Log.write(LogSource.Scene, LogPriority.Info, "A key was down");
+		if (App.Mouse.isButtonReleased(MouseButton.RIGHT)) {
+			App.Log.write(LogSource.Scene, LogPriority.Info, "Right mouse ",
+					"button released");
 		}
-		if (App.Keyboard.isKeyPressed(KeyboardKey.B)) {
-			App.Log.write(LogSource.Scene, LogPriority.Info, "B key pressed");
+		if (App.Mouse.isScrollWheelMoved()) {
+			App.Log.write(LogSource.Scene, LogPriority.Info, "Mouse scrool ",
+					"wheel moved ", App.Mouse.getScrollDistance());
 		}
-		if (App.Keyboard.isKeyReleased(KeyboardKey.C)) {
-			App.Log.write(LogSource.Scene, LogPriority.Info, "C key released");
+		if (App.Mouse.isCursorMoved()
+				&& App.Keyboard.isKeyDown(KeyboardKey.M)) {
+			Vec2D cpos = App.Mouse.getCursorPosition();
+			Vec2D ppos = App.Mouse.getPreviousCursorPosition();
+			App.Log.write(LogSource.Scene, LogPriority.Info, "Mouse cursor ",
+					"moved ", ppos, " -> ", cpos);
+		}
+		if (App.Keyboard.isKeyPressed(KeyboardKey.F)) {
+			App.Window.setFullscreen(!App.Window.isFullscreen());
 		}
 		return true;
 	}

@@ -9,9 +9,10 @@
 package com.github.kmacdonald222.asclepiasfw.app;
 
 import com.github.kmacdonald222.asclepiasfw.input.KeyboardListener;
+import com.github.kmacdonald222.asclepiasfw.input.MouseListener;
 
 //An abstract scene for the Asclepias Framework application
-public abstract class AppScene implements KeyboardListener {
+public abstract class AppScene implements KeyboardListener, MouseListener {
 	
 	// Whether this scene has been initialized
 	private boolean initialized = false;

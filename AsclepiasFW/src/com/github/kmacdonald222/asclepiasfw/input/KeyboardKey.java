@@ -2,18 +2,14 @@
  * File:		KeyboardKey.java
  * Author:		Keegan MacDonald (KMacDonald222)
  * Created:		2025.07.08
- * Purpose:		Enumerates all key codes and string representations for the
- * 				keyboard input management system
+ * Purpose:		Enumerates all keyboard key codes and string representations for
+ * 				the keyboard input management system
  */
 package com.github.kmacdonald222.asclepiasfw.input;
 
 import java.awt.event.KeyEvent;
 
-import com.github.kmacdonald222.asclepiasfw.app.App;
-import com.github.kmacdonald222.asclepiasfw.logging.LogPriority;
-import com.github.kmacdonald222.asclepiasfw.logging.LogSource;
-
-// Enumeration of all keys on the US-English keyboard
+// Enumeration of all keys on a US-English keyboard
 public enum KeyboardKey {
 	
 	// Enumerate all keyboard keys with ID numbers and string names
@@ -153,14 +149,12 @@ public enum KeyboardKey {
 	 * @param int keyCode - The Java key ID code of the key to find
 	 * @return KeyboardKey - The keyboard key with the given ID code or UNKNOWN
 	 */
-	public static KeyboardKey fromInt(int keyCode) {
+	public static KeyboardKey fromKeyCode(int keyCode) {
 		for (int i = 0; i < values().length; i++) {
 			if (values()[i].keyCode == keyCode) {
 				return values()[i];
 			}
 		}
-		App.Log.write(LogSource.Keyboard, LogPriority.Warning, "Unknown ",
-				"keyboard event with key code ", keyCode);
 		return UNKNOWN;
 	}
 	

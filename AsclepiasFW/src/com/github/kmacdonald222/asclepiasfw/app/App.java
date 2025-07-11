@@ -12,6 +12,7 @@ import java.util.List;
 
 import com.github.kmacdonald222.asclepiasfw.graphics.WindowManager;
 import com.github.kmacdonald222.asclepiasfw.input.KeyboardManager;
+import com.github.kmacdonald222.asclepiasfw.input.MouseManager;
 import com.github.kmacdonald222.asclepiasfw.logging.LogManager;
 import com.github.kmacdonald222.asclepiasfw.logging.LogSource;
 import com.github.kmacdonald222.asclepiasfw.logging.LogPriority;
@@ -25,6 +26,8 @@ public class App {
 	public static WindowManager Window = null;
 	// Instance of the keyboard input management system
 	public static KeyboardManager Keyboard = null;
+	// Instance of the mouse input management system
+	public static MouseManager Mouse = null;
 	// The current scene of the application
 	private static AppScene CurrentScene = null;
 	// List of all previous scenes in the application
@@ -66,7 +69,14 @@ public class App {
 		}
 		Log.write(LogSource.App, LogPriority.Info, "Initialized keyboard ",
 				"input management system");
-		Initialized = true;
+		Mouse = new MouseManager();
+		if (!Mouse.initialize()) {
+			Log.write(LogSource.App, LogPriority.Error, "Failed to initialize ",
+					"mouse input management system");
+			return false;
+		}
+		Log.write(LogSource.App, LogPriority.Info, "Initialized mouse input ",
+				"management system");
 		Log.write(LogSource.App, LogPriority.Info, "Setting initial scene");
 		Scenes = new ArrayList<AppScene>();
 		if (!SetCurrentScene(config.initialScene)) {
@@ -76,6 +86,7 @@ public class App {
 		}
 		Log.write(LogSource.App, LogPriority.Info, "Initialized Asclepias ",
 				"Framework application");
+		Initialized = true;
 		return Initialized;
 	}
 	/*
@@ -95,6 +106,7 @@ public class App {
 				break;
 			}
 			Keyboard.update();
+			Mouse.update();
 			try {
 				Thread.sleep(1);
 			} catch (InterruptedException e) {
@@ -123,6 +135,14 @@ public class App {
 		}
 		Scenes.clear();
 		Scenes = null;
+		Log.write(LogSource.App, LogPriority.Info, "Destroying mouse ",
+				"input management system");
+		if (!Mouse.destroy()) {
+			Log.write(LogSource.App, LogPriority.Info, "Failed to destroy ",
+					"mouse input management system");
+			success = false;
+		}
+		Mouse = null;
 		Log.write(LogSource.App, LogPriority.Info, "Destroying keyboard ",
 				"input management system");
 		if (!Keyboard.destroy()) {
@@ -169,6 +189,10 @@ public class App {
 				Log.write(LogSource.App, LogPriority.Warning, "Failed to ",
 						"remove current scene from keyboard input listeners");
 			}
+			if (!Mouse.removeListener(CurrentScene)) {
+				Log.write(LogSource.App, LogPriority.Warning, "Failed to ",
+						"remove current scene from mouse input listeners");
+			}
 		}
 		if (nextScene == null) {
 			Log.write(LogSource.App, LogPriority.Warning, "No new scene ",
@@ -190,6 +214,10 @@ public class App {
 		if (!Keyboard.addListener(nextScene)) {
 			Log.write(LogSource.App, LogPriority.Warning, "Failed to add new ",
 					"scene to keyboard input listeners");
+		}
+		if (!Mouse.addListener(nextScene)) {
+			Log.write(LogSource.App, LogPriority.Warning, "Failed to add new ",
+					"scene to mouse input listeners");
 		}
 		nextScene.enter(CurrentScene);
 		CurrentScene = nextScene;

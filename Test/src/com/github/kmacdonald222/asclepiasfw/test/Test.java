@@ -16,12 +16,13 @@ public class Test {
 		Scene2 = new TestScene2();
 		AppConfig config = new AppConfig(Scene1);
 		if (!App.Initialize(config)) {
-			return;
+			System.exit(1);
 		}
 		App.Run();
 		if (!App.Destroy()) {
-			return;
+			System.exit(1);
 		}
+		System.exit(0);
 	}
 	
 }

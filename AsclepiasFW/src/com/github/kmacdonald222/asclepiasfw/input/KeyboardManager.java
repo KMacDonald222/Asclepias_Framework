@@ -24,29 +24,22 @@ public class KeyboardManager implements KeyListener {
 	
 	// Wrapper for the current and previous logic update's state of a key on the
 	// keyboard
-	public class KeyState {
+	private class KeyState {
 		
 		// Whether the key is currently down
-		public boolean isDown = false;
+		public boolean state = false;
 		// Whether the key was down before the last logic update
-		public boolean wasDown = false;
+		public boolean previousState = false;
 		
 		/*
-		 * Construct a blank key state
-		 */
-		public KeyState() {
-			isDown = false;
-			wasDown = false;
-		}
-		/*
 		 * Construct a key state with pre-defined states
-		 * @param boolean isDown - Whether the key is currently down
-		 * @param boolean wasDown - Whether the key was down before the last
-		 * logic update
+		 * @param boolean state - Whether the key is currently down
+		 * @param boolean previousState - Whether the key was down before the
+		 * last logic update
 		 */
-		public KeyState(boolean isDown, boolean wasDown) {
-			this.isDown = isDown;
-			this.wasDown = wasDown;
+		public KeyState(boolean state, boolean previousState) {
+			this.state = state;
+			this.previousState = previousState;
 		}
 		
 	}
@@ -81,7 +74,7 @@ public class KeyboardManager implements KeyListener {
 	 */
 	public void update() {
 		for (Map.Entry<Integer, KeyState> keyState : keyStates.entrySet()) {
-			keyState.getValue().wasDown = keyState.getValue().isDown;
+			keyState.getValue().previousState = keyState.getValue().state;
 		}
 	}
 	/*
@@ -90,15 +83,18 @@ public class KeyboardManager implements KeyListener {
 	 */
 	@Override
 	public void keyPressed(KeyEvent event) {
+		KeyboardKey key = KeyboardKey.fromKeyCode(event.getKeyCode());
+		if (key == KeyboardKey.UNKNOWN) {
+			return;
+		}
 		if (keyStates.containsKey(event.getKeyCode())) {
-			keyStates.get(event.getKeyCode()).isDown = true;
+			keyStates.get(event.getKeyCode()).state = true;
 		} else {
 			keyStates.put(event.getKeyCode(), new KeyState(true, false));
 		}
-		if (!wasKeyDown(KeyboardKey.fromInt(event.getKeyCode()))) {
+		if (!wasKeyDown(key)) {
 			for (KeyboardListener listener : listeners) {
-				listener.keyboardKeyPressed(
-						KeyboardKey.fromInt(event.getKeyCode()));
+				listener.keyboardKeyPressed(key);
 			}
 		}
 	}
@@ -108,15 +104,18 @@ public class KeyboardManager implements KeyListener {
 	 */
 	@Override
 	public void keyReleased(KeyEvent event) {
+		KeyboardKey key = KeyboardKey.fromKeyCode(event.getKeyCode());
+		if (key == KeyboardKey.UNKNOWN) {
+			return;
+		}
 		if (keyStates.containsKey(event.getKeyCode())) {
-			keyStates.get(event.getKeyCode()).isDown = false;
+			keyStates.get(event.getKeyCode()).state = false;
 		} else {
 			keyStates.put(event.getKeyCode(), new KeyState(false, true));
 		}
-		if (!isKeyDown(KeyboardKey.fromInt(event.getKeyCode()))) {
+		if (!isKeyDown(key)) {
 			for (KeyboardListener listener : listeners) {
-				listener.keyboardKeyReleased(
-						KeyboardKey.fromInt(event.getKeyCode()));
+				listener.keyboardKeyReleased(key);
 			}
 		}
 	}
@@ -143,11 +142,11 @@ public class KeyboardManager implements KeyListener {
 		App.Log.write(LogSource.Keyboard, LogPriority.Info, "Destroying ",
 				"keyboard input manager");
 		boolean success = true;
+		App.Window.getWindowHandle().removeKeyListener(this);
 		keyStates.clear();
 		keyStates = null;
 		listeners.clear();
 		listeners = null;
-		App.Window.getWindowHandle().removeKeyListener(this);
 		initialized = false;
 		return success;
 	}
@@ -161,7 +160,7 @@ public class KeyboardManager implements KeyListener {
 		if (!keyStates.containsKey(key.getKeyCode())) {
 			return false;
 		}
-		return keyStates.get(key.getKeyCode()).isDown;
+		return keyStates.get(key.getKeyCode()).state;
 	}
 	/*
 	 * Test if a key was down on the keyboard before the last logic update
@@ -172,7 +171,7 @@ public class KeyboardManager implements KeyListener {
 		if (!keyStates.containsKey(key.getKeyCode())) {
 			return false;
 		}
-		return keyStates.get(key.getKeyCode()).wasDown;
+		return keyStates.get(key.getKeyCode()).previousState;
 	}
 	/*
 	 * Test if a key was just pressed on the keyboard

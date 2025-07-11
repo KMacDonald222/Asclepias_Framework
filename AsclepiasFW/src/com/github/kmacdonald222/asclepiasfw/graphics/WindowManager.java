@@ -31,7 +31,7 @@ public class WindowManager {
 	// Java Swing handle for the application's window
 	private JFrame windowHandle = null;
 	// Java Swing handle for the content pane of the application's window
-	private JPanel windowPanel = null;
+	private JPanel contentPanel = null;
 	// Whether the window's close button has been clicked
 	private boolean windowClosing = false;
 	// The current title of the window
@@ -70,8 +70,8 @@ public class WindowManager {
 			}
 		});
 		windowHandle.setResizable(false);
-		windowPanel = new JPanel();
-		windowHandle.setContentPane(windowPanel);
+		contentPanel = new JPanel();
+		windowHandle.setContentPane(contentPanel);
 		windowHandle.setVisible(true);
 		App.Log.write(LogSource.Window, LogPriority.Info, "Opened new window");
 		windowClosing = false;
@@ -100,7 +100,7 @@ public class WindowManager {
 		boolean success = true;
 		App.Log.write(LogSource.Window, LogPriority.Info, "Freeing window ",
 				"memory");
-		windowPanel = null;
+		contentPanel = null;
 		windowHandle.dispose();
 		windowHandle = null;
 		windowClosing = false;
@@ -174,7 +174,7 @@ public class WindowManager {
 			windowedDimensions = dimensions;
 			return;
 		}
-		windowPanel.setPreferredSize(new Dimension(
+		contentPanel.setPreferredSize(new Dimension(
 				(int)dimensions.x, (int)dimensions.y));
 		windowHandle.setVisible(false);
 		windowHandle.pack();

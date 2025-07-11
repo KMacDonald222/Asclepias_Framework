@@ -1,224 +1,648 @@
-2025.07.09@14:00:32:494 - [App] [Info] Initialized logging system
-2025.07.09@14:00:32:647 - [Window] [Info] Opened new window
-2025.07.09@14:00:32:647 - [Window] [Info] Setting window title "Asclepias Framework"
-2025.07.09@14:00:32:651 - [Window] [Info] Setting window dimensions <800.0,600.0>
-2025.07.09@14:00:32:655 - [Window] [Info] Setting monitor index 0
-2025.07.09@14:00:32:657 - [Window] [Info] Set initial window attributes
-2025.07.09@14:00:32:657 - [App] [Info] Initialized window management system
-2025.07.09@14:00:32:659 - [Keyboard] [Info] Initializing keyboard input manager
-2025.07.09@14:00:32:659 - [App] [Info] Initialized keyboard input management system
-2025.07.09@14:00:32:660 - [App] [Info] Setting initial scene
-2025.07.09@14:00:32:660 - [App] [Info] Setting new scene
-2025.07.09@14:00:32:660 - [App] [Info] Initializing new scene
-2025.07.09@14:00:32:660 - [Scene] [Info] Initializing test scene 1
-2025.07.09@14:00:32:660 - [App] [Info] Entering new scene
-2025.07.09@14:00:32:660 - [Keyboard] [Info] Adding keyboard input listener
-2025.07.09@14:00:32:660 - [Scene] [Info] Entering test scene 1
-2025.07.09@14:00:32:661 - [App] [Info] Initialized Asclepias Framework application
-2025.07.09@14:00:32:661 - [App] [Info] Running main loop
-2025.07.09@14:00:38:622 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:623 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:623 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:625 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:625 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:626 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:626 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:628 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:628 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:629 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:629 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:631 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:631 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:632 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:632 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:633 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:634 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:635 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:635 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:636 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:637 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:638 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:638 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:639 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:640 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:641 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:641 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:642 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:642 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:643 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:643 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:645 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:645 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:646 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:646 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:647 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:647 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:648 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:648 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:650 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:650 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:651 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:651 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:652 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:652 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:653 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:653 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:654 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:655 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:656 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:656 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:657 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:657 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:658 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:658 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:659 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:659 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:661 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:661 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:662 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:662 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:663 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:663 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:664 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:665 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:666 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:666 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:667 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:667 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:668 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:668 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:670 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:670 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:671 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:671 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:672 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:672 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:673 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:673 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:674 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:674 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:676 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:676 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:677 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:677 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:678 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:678 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:679 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:679 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:680 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:681 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:682 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:682 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:683 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:683 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:684 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:684 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:685 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:686 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:687 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:687 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:688 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:688 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:689 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:689 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:690 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:690 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:692 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:692 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:693 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:693 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:694 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:694 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:695 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:696 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:697 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:697 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:698 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:698 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:699 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:699 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:701 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:701 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:702 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:702 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:703 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:703 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:704 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:704 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:705 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:705 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:706 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:706 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:708 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:708 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:709 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:709 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:710 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:710 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:711 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:712 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:713 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:713 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:714 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:714 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:715 - [Scene] [Info] A key is down
-2025.07.09@14:00:38:715 - [Scene] [Info] A key was down
-2025.07.09@14:00:38:716 - [Scene] [Info] A key was down
-2025.07.09@14:00:42:141 - [Scene] [Info] B key pressed
-2025.07.09@14:00:43:142 - [Scene] [Info] B key pressed
-2025.07.09@14:00:44:748 - [Scene] [Info] C key released
-2025.07.09@14:00:45:749 - [Scene] [Info] C key released
-2025.07.09@14:00:47:331 - [App] [Info] Setting new scene
-2025.07.09@14:00:47:331 - [App] [Info] Leaving current scene
-2025.07.09@14:00:47:332 - [Scene] [Info] Leaving test scene 1
-2025.07.09@14:00:47:332 - [Keyboard] [Info] Removing keyboard input listener
-2025.07.09@14:00:47:332 - [App] [Info] Initializing new scene
-2025.07.09@14:00:47:332 - [Scene] [Info] Initializing test scene 2
-2025.07.09@14:00:47:332 - [App] [Info] Entering new scene
-2025.07.09@14:00:47:332 - [Keyboard] [Info] Adding keyboard input listener
-2025.07.09@14:00:47:332 - [Scene] [Info] Entering test scene 2
-2025.07.09@14:00:47:418 - [Scene] [Info] Keyboard key 2 released
-2025.07.09@14:01:14:975 - [Scene] [Info] Keyboard key Space pressed
-2025.07.09@14:01:14:975 - [Scene] [Info] Character ' '
-2025.07.09@14:01:15:104 - [Scene] [Info] Keyboard key Space released
-2025.07.09@14:01:21:162 - [Scene] [Info] Keyboard key T pressed
-2025.07.09@14:01:21:163 - [Scene] [Info] Character 't'
-2025.07.09@14:01:21:266 - [Scene] [Info] Keyboard key T released
-2025.07.09@14:01:21:717 - [Scene] [Info] Keyboard key E pressed
-2025.07.09@14:01:21:717 - [Scene] [Info] Character 'e'
-2025.07.09@14:01:21:817 - [Scene] [Info] Keyboard key E released
-2025.07.09@14:01:22:267 - [Scene] [Info] Keyboard key S pressed
-2025.07.09@14:01:22:268 - [Scene] [Info] Character 's'
-2025.07.09@14:01:22:369 - [Scene] [Info] Keyboard key S released
-2025.07.09@14:01:22:830 - [Scene] [Info] Keyboard key T pressed
-2025.07.09@14:01:22:830 - [Scene] [Info] Character 't'
-2025.07.09@14:01:22:943 - [Scene] [Info] Keyboard key T released
-2025.07.09@14:01:24:353 - [Scene] [Info] Keyboard key Space pressed
-2025.07.09@14:01:24:353 - [Scene] [Info] Character ' '
-2025.07.09@14:01:24:482 - [Scene] [Info] Keyboard key Space released
-2025.07.09@14:01:30:092 - [Scene] [Info] Keyboard key 1 pressed
-2025.07.09@14:01:30:092 - [App] [Info] Setting new scene
-2025.07.09@14:01:30:092 - [App] [Info] Leaving current scene
-2025.07.09@14:01:30:092 - [Scene] [Info] Character '1'
-2025.07.09@14:01:30:092 - [Scene] [Info] Leaving test scene 2
-2025.07.09@14:01:30:093 - [Keyboard] [Info] Removing keyboard input listener
-2025.07.09@14:01:30:093 - [App] [Info] Entering new scene
-2025.07.09@14:01:30:093 - [Keyboard] [Info] Adding keyboard input listener
-2025.07.09@14:01:30:093 - [Scene] [Info] Entering test scene 1
-2025.07.09@14:01:34:903 - [Window] [Info] Window requested to close
-2025.07.09@14:01:34:903 - [App] [Info] Finished main loop
-2025.07.09@14:01:34:903 - [App] [Info] Destroying Asclepias Framework application
-2025.07.09@14:01:34:903 - [App] [Info] Clearing current scene
-2025.07.09@14:01:34:904 - [App] [Info] Setting new scene
-2025.07.09@14:01:34:904 - [App] [Info] Leaving current scene
-2025.07.09@14:01:34:904 - [Scene] [Info] Leaving test scene 1
-2025.07.09@14:01:34:904 - [Keyboard] [Info] Removing keyboard input listener
-2025.07.09@14:01:34:904 - [App] [Warning] No new scene passed to app
-2025.07.09@14:01:34:904 - [App] [Info] Destroying all previous scenes
-2025.07.09@14:01:34:904 - [Scene] [Info] Destroying test scene 1
-2025.07.09@14:01:34:904 - [Scene] [Info] Destroying test scene 2
-2025.07.09@14:01:34:904 - [App] [Info] Destroying keyboard input management system
-2025.07.09@14:01:34:904 - [Keyboard] [Info] Destroying keyboard input manager
-2025.07.09@14:01:34:905 - [App] [Info] Destroying window management system
-2025.07.09@14:01:34:905 - [Window] [Info] Freeing window memory
-2025.07.09@14:01:34:911 - [App] [Info] Destroying logging system
+2025.07.11@18:01:46:691 - [App] [Info] Initialized logging system
+2025.07.11@18:01:46:871 - [Window] [Info] Opened new window
+2025.07.11@18:01:46:871 - [Window] [Info] Setting window title "Asclepias Framework"
+2025.07.11@18:01:46:875 - [Window] [Info] Setting window dimensions <800.0,600.0>
+2025.07.11@18:01:46:884 - [Window] [Info] Setting monitor index 0
+2025.07.11@18:01:46:885 - [Window] [Info] Set initial window attributes
+2025.07.11@18:01:46:885 - [App] [Info] Initialized window management system
+2025.07.11@18:01:46:886 - [Keyboard] [Info] Initializing keyboard input manager
+2025.07.11@18:01:46:886 - [App] [Info] Initialized keyboard input management system
+2025.07.11@18:01:46:887 - [Mouse] [Info] Initializing mouse input manager
+2025.07.11@18:01:46:888 - [App] [Info] Initialized mouse input management system
+2025.07.11@18:01:46:888 - [App] [Info] Setting initial scene
+2025.07.11@18:01:46:888 - [App] [Info] Setting new scene
+2025.07.11@18:01:46:888 - [App] [Info] Initializing new scene
+2025.07.11@18:01:46:889 - [Scene] [Info] Initializing test scene 1
+2025.07.11@18:01:46:889 - [App] [Info] Entering new scene
+2025.07.11@18:01:46:889 - [Keyboard] [Info] Adding keyboard input listener
+2025.07.11@18:01:46:889 - [Mouse] [Info] Adding mouse input listener
+2025.07.11@18:01:46:889 - [Scene] [Info] Entering test scene 1
+2025.07.11@18:01:46:889 - [App] [Info] Initialized Asclepias Framework application
+2025.07.11@18:01:46:889 - [App] [Info] Running main loop
+2025.07.11@18:01:49:225 - [Scene] [Info] Left mouse button pressed
+2025.07.11@18:01:50:168 - [Scene] [Info] Left mouse button pressed
+2025.07.11@18:01:51:192 - [Scene] [Info] Right mouse button released
+2025.07.11@18:01:52:000 - [Scene] [Info] Right mouse button released
+2025.07.11@18:01:54:185 - [Scene] [Info] Mouse cursor moved <356.0,440.0> -> <357.0,441.0>
+2025.07.11@18:01:54:192 - [Scene] [Info] Mouse cursor moved <357.0,441.0> -> <359.0,442.0>
+2025.07.11@18:01:54:200 - [Scene] [Info] Mouse cursor moved <359.0,442.0> -> <360.0,443.0>
+2025.07.11@18:01:54:207 - [Scene] [Info] Mouse cursor moved <360.0,443.0> -> <362.0,445.0>
+2025.07.11@18:01:54:215 - [Scene] [Info] Mouse cursor moved <362.0,445.0> -> <364.0,446.0>
+2025.07.11@18:01:54:223 - [Scene] [Info] Mouse cursor moved <364.0,446.0> -> <365.0,447.0>
+2025.07.11@18:01:54:232 - [Scene] [Info] Mouse cursor moved <365.0,447.0> -> <366.0,448.0>
+2025.07.11@18:01:54:240 - [Scene] [Info] Mouse cursor moved <366.0,448.0> -> <370.0,450.0>
+2025.07.11@18:01:54:248 - [Scene] [Info] Mouse cursor moved <370.0,450.0> -> <371.0,451.0>
+2025.07.11@18:01:54:256 - [Scene] [Info] Mouse cursor moved <371.0,451.0> -> <374.0,452.0>
+2025.07.11@18:01:54:272 - [Scene] [Info] Mouse cursor moved <374.0,452.0> -> <376.0,453.0>
+2025.07.11@18:01:54:279 - [Scene] [Info] Mouse cursor moved <376.0,453.0> -> <378.0,453.0>
+2025.07.11@18:01:54:287 - [Scene] [Info] Mouse cursor moved <378.0,453.0> -> <379.0,453.0>
+2025.07.11@18:01:54:295 - [Scene] [Info] Mouse cursor moved <379.0,453.0> -> <381.0,453.0>
+2025.07.11@18:01:54:304 - [Scene] [Info] Mouse cursor moved <381.0,453.0> -> <382.0,454.0>
+2025.07.11@18:01:54:312 - [Scene] [Info] Mouse cursor moved <382.0,454.0> -> <383.0,455.0>
+2025.07.11@18:01:54:320 - [Scene] [Info] Mouse cursor moved <383.0,455.0> -> <384.0,455.0>
+2025.07.11@18:01:54:328 - [Scene] [Info] Mouse cursor moved <384.0,455.0> -> <386.0,455.0>
+2025.07.11@18:01:54:336 - [Scene] [Info] Mouse cursor moved <386.0,455.0> -> <388.0,455.0>
+2025.07.11@18:01:54:343 - [Scene] [Info] Mouse cursor moved <388.0,455.0> -> <390.0,455.0>
+2025.07.11@18:01:54:351 - [Scene] [Info] Mouse cursor moved <390.0,455.0> -> <391.0,455.0>
+2025.07.11@18:01:54:359 - [Scene] [Info] Mouse cursor moved <391.0,455.0> -> <394.0,456.0>
+2025.07.11@18:01:54:371 - [Scene] [Info] Mouse cursor moved <394.0,456.0> -> <396.0,456.0>
+2025.07.11@18:01:54:376 - [Scene] [Info] Mouse cursor moved <396.0,456.0> -> <400.0,456.0>
+2025.07.11@18:01:54:384 - [Scene] [Info] Mouse cursor moved <400.0,456.0> -> <403.0,457.0>
+2025.07.11@18:01:54:392 - [Scene] [Info] Mouse cursor moved <403.0,457.0> -> <405.0,457.0>
+2025.07.11@18:01:54:400 - [Scene] [Info] Mouse cursor moved <405.0,457.0> -> <409.0,457.0>
+2025.07.11@18:01:54:408 - [Scene] [Info] Mouse cursor moved <409.0,457.0> -> <411.0,458.0>
+2025.07.11@18:01:54:415 - [Scene] [Info] Mouse cursor moved <411.0,458.0> -> <414.0,458.0>
+2025.07.11@18:01:54:423 - [Scene] [Info] Mouse cursor moved <414.0,458.0> -> <418.0,458.0>
+2025.07.11@18:01:54:432 - [Scene] [Info] Mouse cursor moved <418.0,458.0> -> <423.0,461.0>
+2025.07.11@18:01:54:440 - [Scene] [Info] Mouse cursor moved <423.0,461.0> -> <426.0,461.0>
+2025.07.11@18:01:54:448 - [Scene] [Info] Mouse cursor moved <426.0,461.0> -> <431.0,462.0>
+2025.07.11@18:01:54:456 - [Scene] [Info] Mouse cursor moved <431.0,462.0> -> <433.0,462.0>
+2025.07.11@18:01:54:464 - [Scene] [Info] Mouse cursor moved <433.0,462.0> -> <436.0,463.0>
+2025.07.11@18:01:54:471 - [Scene] [Info] Mouse cursor moved <436.0,463.0> -> <438.0,464.0>
+2025.07.11@18:01:54:480 - [Scene] [Info] Mouse cursor moved <438.0,464.0> -> <441.0,464.0>
+2025.07.11@18:01:54:488 - [Scene] [Info] Mouse cursor moved <441.0,464.0> -> <445.0,466.0>
+2025.07.11@18:01:54:495 - [Scene] [Info] Mouse cursor moved <445.0,466.0> -> <448.0,467.0>
+2025.07.11@18:01:54:503 - [Scene] [Info] Mouse cursor moved <448.0,467.0> -> <451.0,468.0>
+2025.07.11@18:01:54:512 - [Scene] [Info] Mouse cursor moved <451.0,468.0> -> <455.0,469.0>
+2025.07.11@18:01:54:520 - [Scene] [Info] Mouse cursor moved <455.0,469.0> -> <460.0,471.0>
+2025.07.11@18:01:54:528 - [Scene] [Info] Mouse cursor moved <460.0,471.0> -> <465.0,472.0>
+2025.07.11@18:01:54:535 - [Scene] [Info] Mouse cursor moved <465.0,472.0> -> <469.0,473.0>
+2025.07.11@18:01:54:543 - [Scene] [Info] Mouse cursor moved <469.0,473.0> -> <474.0,473.0>
+2025.07.11@18:01:54:552 - [Scene] [Info] Mouse cursor moved <474.0,473.0> -> <478.0,475.0>
+2025.07.11@18:01:54:560 - [Scene] [Info] Mouse cursor moved <478.0,475.0> -> <481.0,477.0>
+2025.07.11@18:01:54:568 - [Scene] [Info] Mouse cursor moved <481.0,477.0> -> <486.0,478.0>
+2025.07.11@18:01:54:575 - [Scene] [Info] Mouse cursor moved <486.0,478.0> -> <490.0,479.0>
+2025.07.11@18:01:54:584 - [Scene] [Info] Mouse cursor moved <490.0,479.0> -> <493.0,481.0>
+2025.07.11@18:01:54:592 - [Scene] [Info] Mouse cursor moved <493.0,481.0> -> <497.0,483.0>
+2025.07.11@18:01:54:600 - [Scene] [Info] Mouse cursor moved <497.0,483.0> -> <502.0,484.0>
+2025.07.11@18:01:54:608 - [Scene] [Info] Mouse cursor moved <502.0,484.0> -> <507.0,486.0>
+2025.07.11@18:01:54:616 - [Scene] [Info] Mouse cursor moved <507.0,486.0> -> <513.0,488.0>
+2025.07.11@18:01:54:623 - [Scene] [Info] Mouse cursor moved <513.0,488.0> -> <520.0,491.0>
+2025.07.11@18:01:54:632 - [Scene] [Info] Mouse cursor moved <520.0,491.0> -> <528.0,492.0>
+2025.07.11@18:01:54:639 - [Scene] [Info] Mouse cursor moved <528.0,492.0> -> <535.0,495.0>
+2025.07.11@18:01:54:648 - [Scene] [Info] Mouse cursor moved <535.0,495.0> -> <541.0,497.0>
+2025.07.11@18:01:54:656 - [Scene] [Info] Mouse cursor moved <541.0,497.0> -> <547.0,497.0>
+2025.07.11@18:01:54:663 - [Scene] [Info] Mouse cursor moved <547.0,497.0> -> <554.0,501.0>
+2025.07.11@18:01:54:672 - [Scene] [Info] Mouse cursor moved <554.0,501.0> -> <559.0,502.0>
+2025.07.11@18:01:54:680 - [Scene] [Info] Mouse cursor moved <559.0,502.0> -> <564.0,505.0>
+2025.07.11@18:01:54:688 - [Scene] [Info] Mouse cursor moved <564.0,505.0> -> <567.0,507.0>
+2025.07.11@18:01:54:696 - [Scene] [Info] Mouse cursor moved <567.0,507.0> -> <570.0,508.0>
+2025.07.11@18:01:54:703 - [Scene] [Info] Mouse cursor moved <570.0,508.0> -> <572.0,509.0>
+2025.07.11@18:01:54:711 - [Scene] [Info] Mouse cursor moved <572.0,509.0> -> <575.0,510.0>
+2025.07.11@18:01:54:719 - [Scene] [Info] Mouse cursor moved <575.0,510.0> -> <579.0,512.0>
+2025.07.11@18:01:54:727 - [Scene] [Info] Mouse cursor moved <579.0,512.0> -> <583.0,513.0>
+2025.07.11@18:01:54:736 - [Scene] [Info] Mouse cursor moved <583.0,513.0> -> <588.0,514.0>
+2025.07.11@18:01:54:744 - [Scene] [Info] Mouse cursor moved <588.0,514.0> -> <593.0,516.0>
+2025.07.11@18:01:54:751 - [Scene] [Info] Mouse cursor moved <593.0,516.0> -> <598.0,518.0>
+2025.07.11@18:01:54:759 - [Scene] [Info] Mouse cursor moved <598.0,518.0> -> <600.0,519.0>
+2025.07.11@18:01:54:767 - [Scene] [Info] Mouse cursor moved <600.0,519.0> -> <603.0,520.0>
+2025.07.11@18:01:54:776 - [Scene] [Info] Mouse cursor moved <603.0,520.0> -> <604.0,521.0>
+2025.07.11@18:01:54:784 - [Scene] [Info] Mouse cursor moved <604.0,521.0> -> <609.0,523.0>
+2025.07.11@18:01:54:792 - [Scene] [Info] Mouse cursor moved <609.0,523.0> -> <610.0,524.0>
+2025.07.11@18:01:54:800 - [Scene] [Info] Mouse cursor moved <610.0,524.0> -> <612.0,525.0>
+2025.07.11@18:01:54:807 - [Scene] [Info] Mouse cursor moved <612.0,525.0> -> <614.0,526.0>
+2025.07.11@18:01:54:815 - [Scene] [Info] Mouse cursor moved <614.0,526.0> -> <616.0,528.0>
+2025.07.11@18:01:54:823 - [Scene] [Info] Mouse cursor moved <616.0,528.0> -> <619.0,529.0>
+2025.07.11@18:01:54:832 - [Scene] [Info] Mouse cursor moved <619.0,529.0> -> <621.0,530.0>
+2025.07.11@18:01:54:840 - [Scene] [Info] Mouse cursor moved <621.0,530.0> -> <623.0,530.0>
+2025.07.11@18:01:54:847 - [Scene] [Info] Mouse cursor moved <623.0,530.0> -> <625.0,530.0>
+2025.07.11@18:01:54:855 - [Scene] [Info] Mouse cursor moved <625.0,530.0> -> <629.0,531.0>
+2025.07.11@18:01:54:863 - [Scene] [Info] Mouse cursor moved <629.0,531.0> -> <635.0,535.0>
+2025.07.11@18:01:54:871 - [Scene] [Info] Mouse cursor moved <635.0,535.0> -> <639.0,536.0>
+2025.07.11@18:01:54:879 - [Scene] [Info] Mouse cursor moved <639.0,536.0> -> <643.0,538.0>
+2025.07.11@18:01:54:888 - [Scene] [Info] Mouse cursor moved <643.0,538.0> -> <647.0,540.0>
+2025.07.11@18:01:54:896 - [Scene] [Info] Mouse cursor moved <647.0,540.0> -> <650.0,542.0>
+2025.07.11@18:01:54:904 - [Scene] [Info] Mouse cursor moved <650.0,542.0> -> <652.0,544.0>
+2025.07.11@18:01:54:911 - [Scene] [Info] Mouse cursor moved <652.0,544.0> -> <655.0,546.0>
+2025.07.11@18:01:54:920 - [Scene] [Info] Mouse cursor moved <655.0,546.0> -> <657.0,547.0>
+2025.07.11@18:01:54:928 - [Scene] [Info] Mouse cursor moved <657.0,547.0> -> <660.0,548.0>
+2025.07.11@18:01:54:935 - [Scene] [Info] Mouse cursor moved <660.0,548.0> -> <663.0,551.0>
+2025.07.11@18:01:54:943 - [Scene] [Info] Mouse cursor moved <663.0,551.0> -> <668.0,552.0>
+2025.07.11@18:01:54:952 - [Scene] [Info] Mouse cursor moved <668.0,552.0> -> <669.0,553.0>
+2025.07.11@18:01:54:960 - [Scene] [Info] Mouse cursor moved <669.0,553.0> -> <673.0,554.0>
+2025.07.11@18:01:54:968 - [Scene] [Info] Mouse cursor moved <673.0,554.0> -> <676.0,556.0>
+2025.07.11@18:01:54:976 - [Scene] [Info] Mouse cursor moved <676.0,556.0> -> <678.0,557.0>
+2025.07.11@18:01:54:983 - [Scene] [Info] Mouse cursor moved <678.0,557.0> -> <682.0,558.0>
+2025.07.11@18:01:54:991 - [Scene] [Info] Mouse cursor moved <682.0,558.0> -> <687.0,560.0>
+2025.07.11@18:01:54:999 - [Scene] [Info] Mouse cursor moved <687.0,560.0> -> <689.0,563.0>
+2025.07.11@18:01:55:008 - [Scene] [Info] Mouse cursor moved <689.0,563.0> -> <692.0,564.0>
+2025.07.11@18:01:55:016 - [Scene] [Info] Mouse cursor moved <692.0,564.0> -> <694.0,566.0>
+2025.07.11@18:01:55:023 - [Scene] [Info] Mouse cursor moved <694.0,566.0> -> <697.0,567.0>
+2025.07.11@18:01:55:031 - [Scene] [Info] Mouse cursor moved <697.0,567.0> -> <700.0,569.0>
+2025.07.11@18:01:55:040 - [Scene] [Info] Mouse cursor moved <700.0,569.0> -> <706.0,571.0>
+2025.07.11@18:01:55:047 - [Scene] [Info] Mouse cursor moved <706.0,571.0> -> <709.0,571.0>
+2025.07.11@18:01:55:055 - [Scene] [Info] Mouse cursor moved <709.0,571.0> -> <713.0,572.0>
+2025.07.11@18:01:55:064 - [Scene] [Info] Mouse cursor moved <713.0,572.0> -> <718.0,573.0>
+2025.07.11@18:01:55:072 - [Scene] [Info] Mouse cursor moved <718.0,573.0> -> <722.0,574.0>
+2025.07.11@18:01:55:079 - [Scene] [Info] Mouse cursor moved <722.0,574.0> -> <727.0,577.0>
+2025.07.11@18:01:55:088 - [Scene] [Info] Mouse cursor moved <727.0,577.0> -> <732.0,578.0>
+2025.07.11@18:01:55:096 - [Scene] [Info] Mouse cursor moved <732.0,578.0> -> <734.0,579.0>
+2025.07.11@18:01:55:104 - [Scene] [Info] Mouse cursor moved <734.0,579.0> -> <739.0,579.0>
+2025.07.11@18:01:55:111 - [Scene] [Info] Mouse cursor moved <739.0,579.0> -> <742.0,580.0>
+2025.07.11@18:01:55:119 - [Scene] [Info] Mouse cursor moved <742.0,580.0> -> <748.0,580.0>
+2025.07.11@18:01:55:127 - [Scene] [Info] Mouse cursor moved <748.0,580.0> -> <752.0,582.0>
+2025.07.11@18:01:55:136 - [Scene] [Info] Mouse cursor moved <752.0,582.0> -> <754.0,582.0>
+2025.07.11@18:01:55:144 - [Scene] [Info] Mouse cursor moved <754.0,582.0> -> <756.0,583.0>
+2025.07.11@18:01:55:152 - [Scene] [Info] Mouse cursor moved <756.0,583.0> -> <758.0,583.0>
+2025.07.11@18:01:55:159 - [Scene] [Info] Mouse cursor moved <758.0,583.0> -> <760.0,583.0>
+2025.07.11@18:01:55:167 - [Scene] [Info] Mouse cursor moved <760.0,583.0> -> <761.0,584.0>
+2025.07.11@18:01:55:175 - [Scene] [Info] Mouse cursor moved <761.0,584.0> -> <762.0,585.0>
+2025.07.11@18:01:55:184 - [Scene] [Info] Mouse cursor moved <762.0,585.0> -> <764.0,587.0>
+2025.07.11@18:01:55:192 - [Scene] [Info] Mouse cursor moved <764.0,587.0> -> <766.0,587.0>
+2025.07.11@18:01:55:200 - [Scene] [Info] Mouse cursor moved <766.0,587.0> -> <770.0,588.0>
+2025.07.11@18:01:55:207 - [Scene] [Info] Mouse cursor moved <770.0,588.0> -> <773.0,589.0>
+2025.07.11@18:01:55:215 - [Scene] [Info] Mouse cursor moved <773.0,589.0> -> <775.0,589.0>
+2025.07.11@18:01:55:223 - [Scene] [Info] Mouse cursor moved <775.0,589.0> -> <778.0,590.0>
+2025.07.11@18:01:55:232 - [Scene] [Info] Mouse cursor moved <778.0,590.0> -> <780.0,591.0>
+2025.07.11@18:01:55:240 - [Scene] [Info] Mouse cursor moved <780.0,591.0> -> <781.0,592.0>
+2025.07.11@18:01:55:279 - [Scene] [Info] Mouse cursor moved <781.0,592.0> -> <783.0,592.0>
+2025.07.11@18:01:55:304 - [Scene] [Info] Mouse cursor moved <783.0,592.0> -> <784.0,593.0>
+2025.07.11@18:01:55:344 - [Scene] [Info] Mouse cursor moved <784.0,593.0> -> <785.0,593.0>
+2025.07.11@18:01:55:560 - [Scene] [Info] Mouse cursor moved <785.0,593.0> -> <787.0,593.0>
+2025.07.11@18:01:55:568 - [Scene] [Info] Mouse cursor moved <787.0,593.0> -> <788.0,594.0>
+2025.07.11@18:01:55:664 - [Scene] [Info] Mouse cursor moved <788.0,594.0> -> <789.0,594.0>
+2025.07.11@18:01:55:696 - [Scene] [Info] Mouse cursor moved <789.0,594.0> -> <791.0,594.0>
+2025.07.11@18:01:55:704 - [Scene] [Info] Mouse cursor moved <791.0,594.0> -> <792.0,595.0>
+2025.07.11@18:01:55:727 - [Scene] [Info] Mouse cursor moved <792.0,595.0> -> <793.0,595.0>
+2025.07.11@18:01:57:141 - [Window] [Info] Setting window to fullscreen mode
+2025.07.11@18:01:57:141 - [Window] [Info] Setting window dimensions <1920.0,1080.0>
+2025.07.11@18:01:58:273 - [Scene] [Info] Mouse cursor moved <793.0,595.0> -> <1287.0,903.0>
+2025.07.11@18:01:58:280 - [Scene] [Info] Mouse cursor moved <1287.0,903.0> -> <1284.0,902.0>
+2025.07.11@18:01:58:288 - [Scene] [Info] Mouse cursor moved <1284.0,902.0> -> <1278.0,899.0>
+2025.07.11@18:01:58:295 - [Scene] [Info] Mouse cursor moved <1278.0,899.0> -> <1271.0,893.0>
+2025.07.11@18:01:58:303 - [Scene] [Info] Mouse cursor moved <1271.0,893.0> -> <1266.0,890.0>
+2025.07.11@18:01:58:312 - [Scene] [Info] Mouse cursor moved <1266.0,890.0> -> <1260.0,887.0>
+2025.07.11@18:01:58:320 - [Scene] [Info] Mouse cursor moved <1260.0,887.0> -> <1255.0,883.0>
+2025.07.11@18:01:58:327 - [Scene] [Info] Mouse cursor moved <1255.0,883.0> -> <1248.0,877.0>
+2025.07.11@18:01:58:335 - [Scene] [Info] Mouse cursor moved <1248.0,877.0> -> <1243.0,873.0>
+2025.07.11@18:01:58:343 - [Scene] [Info] Mouse cursor moved <1243.0,873.0> -> <1238.0,871.0>
+2025.07.11@18:01:58:351 - [Scene] [Info] Mouse cursor moved <1238.0,871.0> -> <1233.0,867.0>
+2025.07.11@18:01:58:360 - [Scene] [Info] Mouse cursor moved <1233.0,867.0> -> <1228.0,865.0>
+2025.07.11@18:01:58:368 - [Scene] [Info] Mouse cursor moved <1228.0,865.0> -> <1223.0,861.0>
+2025.07.11@18:01:58:376 - [Scene] [Info] Mouse cursor moved <1223.0,861.0> -> <1217.0,857.0>
+2025.07.11@18:01:58:384 - [Scene] [Info] Mouse cursor moved <1217.0,857.0> -> <1211.0,853.0>
+2025.07.11@18:01:58:391 - [Scene] [Info] Mouse cursor moved <1211.0,853.0> -> <1199.0,847.0>
+2025.07.11@18:01:58:399 - [Scene] [Info] Mouse cursor moved <1199.0,847.0> -> <1191.0,843.0>
+2025.07.11@18:01:58:407 - [Scene] [Info] Mouse cursor moved <1191.0,843.0> -> <1181.0,836.0>
+2025.07.11@18:01:58:415 - [Scene] [Info] Mouse cursor moved <1181.0,836.0> -> <1169.0,830.0>
+2025.07.11@18:01:58:424 - [Scene] [Info] Mouse cursor moved <1169.0,830.0> -> <1157.0,823.0>
+2025.07.11@18:01:58:432 - [Scene] [Info] Mouse cursor moved <1157.0,823.0> -> <1143.0,814.0>
+2025.07.11@18:01:58:440 - [Scene] [Info] Mouse cursor moved <1143.0,814.0> -> <1128.0,803.0>
+2025.07.11@18:01:58:448 - [Scene] [Info] Mouse cursor moved <1128.0,803.0> -> <1110.0,791.0>
+2025.07.11@18:01:58:455 - [Scene] [Info] Mouse cursor moved <1110.0,791.0> -> <1094.0,779.0>
+2025.07.11@18:01:58:463 - [Scene] [Info] Mouse cursor moved <1094.0,779.0> -> <1075.0,767.0>
+2025.07.11@18:01:58:471 - [Scene] [Info] Mouse cursor moved <1075.0,767.0> -> <1057.0,753.0>
+2025.07.11@18:01:58:480 - [Scene] [Info] Mouse cursor moved <1057.0,753.0> -> <1037.0,739.0>
+2025.07.11@18:01:58:487 - [Scene] [Info] Mouse cursor moved <1037.0,739.0> -> <1019.0,727.0>
+2025.07.11@18:01:58:496 - [Scene] [Info] Mouse cursor moved <1019.0,727.0> -> <1003.0,711.0>
+2025.07.11@18:01:58:504 - [Scene] [Info] Mouse cursor moved <1003.0,711.0> -> <985.0,699.0>
+2025.07.11@18:01:58:512 - [Scene] [Info] Mouse cursor moved <985.0,699.0> -> <965.0,685.0>
+2025.07.11@18:01:58:520 - [Scene] [Info] Mouse cursor moved <965.0,685.0> -> <947.0,671.0>
+2025.07.11@18:01:58:528 - [Scene] [Info] Mouse cursor moved <947.0,671.0> -> <923.0,655.0>
+2025.07.11@18:01:58:535 - [Scene] [Info] Mouse cursor moved <923.0,655.0> -> <905.0,641.0>
+2025.07.11@18:01:58:543 - [Scene] [Info] Mouse cursor moved <905.0,641.0> -> <879.0,623.0>
+2025.07.11@18:01:58:551 - [Scene] [Info] Mouse cursor moved <879.0,623.0> -> <857.0,609.0>
+2025.07.11@18:01:58:559 - [Scene] [Info] Mouse cursor moved <857.0,609.0> -> <835.0,595.0>
+2025.07.11@18:01:58:567 - [Scene] [Info] Mouse cursor moved <835.0,595.0> -> <817.0,583.0>
+2025.07.11@18:01:58:575 - [Scene] [Info] Mouse cursor moved <817.0,583.0> -> <795.0,569.0>
+2025.07.11@18:01:58:583 - [Scene] [Info] Mouse cursor moved <795.0,569.0> -> <777.0,555.0>
+2025.07.11@18:01:58:591 - [Scene] [Info] Mouse cursor moved <777.0,555.0> -> <757.0,541.0>
+2025.07.11@18:01:58:599 - [Scene] [Info] Mouse cursor moved <757.0,541.0> -> <739.0,529.0>
+2025.07.11@18:01:58:608 - [Scene] [Info] Mouse cursor moved <739.0,529.0> -> <721.0,515.0>
+2025.07.11@18:01:58:616 - [Scene] [Info] Mouse cursor moved <721.0,515.0> -> <705.0,503.0>
+2025.07.11@18:01:58:624 - [Scene] [Info] Mouse cursor moved <705.0,503.0> -> <687.0,491.0>
+2025.07.11@18:01:58:632 - [Scene] [Info] Mouse cursor moved <687.0,491.0> -> <669.0,479.0>
+2025.07.11@18:01:58:640 - [Scene] [Info] Mouse cursor moved <669.0,479.0> -> <653.0,465.0>
+2025.07.11@18:01:58:648 - [Scene] [Info] Mouse cursor moved <653.0,465.0> -> <635.0,455.0>
+2025.07.11@18:01:58:655 - [Scene] [Info] Mouse cursor moved <635.0,455.0> -> <621.0,442.0>
+2025.07.11@18:01:58:663 - [Scene] [Info] Mouse cursor moved <621.0,442.0> -> <601.0,426.0>
+2025.07.11@18:01:58:671 - [Scene] [Info] Mouse cursor moved <601.0,426.0> -> <587.0,412.0>
+2025.07.11@18:01:58:680 - [Scene] [Info] Mouse cursor moved <587.0,412.0> -> <568.0,396.0>
+2025.07.11@18:01:58:687 - [Scene] [Info] Mouse cursor moved <568.0,396.0> -> <552.0,382.0>
+2025.07.11@18:01:58:695 - [Scene] [Info] Mouse cursor moved <552.0,382.0> -> <534.0,368.0>
+2025.07.11@18:01:58:704 - [Scene] [Info] Mouse cursor moved <534.0,368.0> -> <518.0,352.0>
+2025.07.11@18:01:58:712 - [Scene] [Info] Mouse cursor moved <518.0,352.0> -> <500.0,334.0>
+2025.07.11@18:01:58:719 - [Scene] [Info] Mouse cursor moved <500.0,334.0> -> <482.0,322.0>
+2025.07.11@18:01:58:727 - [Scene] [Info] Mouse cursor moved <482.0,322.0> -> <462.0,306.0>
+2025.07.11@18:01:58:736 - [Scene] [Info] Mouse cursor moved <462.0,306.0> -> <444.0,292.0>
+2025.07.11@18:01:58:744 - [Scene] [Info] Mouse cursor moved <444.0,292.0> -> <426.0,278.0>
+2025.07.11@18:01:58:752 - [Scene] [Info] Mouse cursor moved <426.0,278.0> -> <408.0,262.0>
+2025.07.11@18:01:58:760 - [Scene] [Info] Mouse cursor moved <408.0,262.0> -> <392.0,246.0>
+2025.07.11@18:01:58:768 - [Scene] [Info] Mouse cursor moved <392.0,246.0> -> <376.0,230.0>
+2025.07.11@18:01:58:776 - [Scene] [Info] Mouse cursor moved <376.0,230.0> -> <360.0,214.0>
+2025.07.11@18:01:58:784 - [Scene] [Info] Mouse cursor moved <360.0,214.0> -> <346.0,196.0>
+2025.07.11@18:01:58:791 - [Scene] [Info] Mouse cursor moved <346.0,196.0> -> <334.0,182.0>
+2025.07.11@18:01:58:799 - [Scene] [Info] Mouse cursor moved <334.0,182.0> -> <318.0,167.0>
+2025.07.11@18:01:58:807 - [Scene] [Info] Mouse cursor moved <318.0,167.0> -> <304.0,147.0>
+2025.07.11@18:01:58:815 - [Scene] [Info] Mouse cursor moved <304.0,147.0> -> <290.0,133.0>
+2025.07.11@18:01:58:823 - [Scene] [Info] Mouse cursor moved <290.0,133.0> -> <277.0,122.0>
+2025.07.11@18:01:58:832 - [Scene] [Info] Mouse cursor moved <277.0,122.0> -> <262.0,108.0>
+2025.07.11@18:01:58:839 - [Scene] [Info] Mouse cursor moved <262.0,108.0> -> <246.0,94.0>
+2025.07.11@18:01:58:847 - [Scene] [Info] Mouse cursor moved <246.0,94.0> -> <230.0,78.0>
+2025.07.11@18:01:58:855 - [Scene] [Info] Mouse cursor moved <230.0,78.0> -> <216.0,64.0>
+2025.07.11@18:01:58:863 - [Scene] [Info] Mouse cursor moved <216.0,64.0> -> <200.0,48.0>
+2025.07.11@18:01:58:872 - [Scene] [Info] Mouse cursor moved <200.0,48.0> -> <186.0,37.0>
+2025.07.11@18:01:58:879 - [Scene] [Info] Mouse cursor moved <186.0,37.0> -> <171.0,25.0>
+2025.07.11@18:01:58:887 - [Scene] [Info] Mouse cursor moved <171.0,25.0> -> <156.0,14.0>
+2025.07.11@18:01:58:896 - [Scene] [Info] Mouse cursor moved <156.0,14.0> -> <143.0,2.0>
+2025.07.11@18:01:58:903 - [Scene] [Info] Mouse cursor moved <143.0,2.0> -> <127.0,1.0>
+2025.07.11@18:01:58:911 - [Scene] [Info] Mouse cursor moved <127.0,1.0> -> <114.0,1.0>
+2025.07.11@18:01:58:920 - [Scene] [Info] Mouse cursor moved <114.0,1.0> -> <99.0,1.0>
+2025.07.11@18:01:58:928 - [Scene] [Info] Mouse cursor moved <99.0,1.0> -> <85.0,1.0>
+2025.07.11@18:01:58:935 - [Scene] [Info] Mouse cursor moved <85.0,1.0> -> <75.0,1.0>
+2025.07.11@18:01:58:944 - [Scene] [Info] Mouse cursor moved <75.0,1.0> -> <60.0,1.0>
+2025.07.11@18:01:58:952 - [Scene] [Info] Mouse cursor moved <60.0,1.0> -> <48.0,1.0>
+2025.07.11@18:01:58:960 - [Scene] [Info] Mouse cursor moved <48.0,1.0> -> <35.0,1.0>
+2025.07.11@18:01:58:967 - [Scene] [Info] Mouse cursor moved <35.0,1.0> -> <20.0,1.0>
+2025.07.11@18:01:58:975 - [Scene] [Info] Mouse cursor moved <20.0,1.0> -> <0.0,1.0>
+2025.07.11@18:02:00:058 - [Window] [Info] Setting window to windowed mode
+2025.07.11@18:02:00:059 - [Window] [Info] Setting window dimensions <800.0,600.0>
+2025.07.11@18:02:02:617 - [App] [Info] Setting new scene
+2025.07.11@18:02:02:617 - [App] [Info] Leaving current scene
+2025.07.11@18:02:02:617 - [Scene] [Info] Leaving test scene 1
+2025.07.11@18:02:02:617 - [Keyboard] [Info] Removing keyboard input listener
+2025.07.11@18:02:02:617 - [Mouse] [Info] Removing mouse input listener
+2025.07.11@18:02:02:617 - [App] [Info] Initializing new scene
+2025.07.11@18:02:02:617 - [Scene] [Info] Initializing test scene 2
+2025.07.11@18:02:02:617 - [App] [Info] Entering new scene
+2025.07.11@18:02:02:617 - [Keyboard] [Info] Adding keyboard input listener
+2025.07.11@18:02:02:617 - [Mouse] [Info] Adding mouse input listener
+2025.07.11@18:02:02:617 - [Scene] [Info] Entering test scene 2
+2025.07.11@18:02:03:327 - [Scene] [Info] Mouse button 1 pressed
+2025.07.11@18:02:03:439 - [Scene] [Info] Mouse button 1 released
+2025.07.11@18:02:04:064 - [Scene] [Info] Mouse button 2 pressed
+2025.07.11@18:02:04:208 - [Scene] [Info] Mouse button 2 released
+2025.07.11@18:02:04:640 - [Scene] [Info] Mouse button 3 pressed
+2025.07.11@18:02:04:783 - [Scene] [Info] Mouse button 3 released
+2025.07.11@18:02:05:152 - [Scene] [Info] Mouse scroll wheel moved -1.0
+2025.07.11@18:02:05:408 - [Scene] [Info] Mouse scroll wheel moved -1.0
+2025.07.11@18:02:05:600 - [Scene] [Info] Mouse scroll wheel moved -1.0
+2025.07.11@18:02:05:751 - [Scene] [Info] Mouse scroll wheel moved -1.0
+2025.07.11@18:02:06:295 - [Scene] [Info] Mouse scroll wheel moved 1.0
+2025.07.11@18:02:06:399 - [Scene] [Info] Mouse scroll wheel moved 1.0
+2025.07.11@18:02:06:575 - [Scene] [Info] Mouse scroll wheel moved 1.0
+2025.07.11@18:02:06:711 - [Scene] [Info] Mouse scroll wheel moved 1.0
+2025.07.11@18:02:06:856 - [Scene] [Info] Mouse scroll wheel moved 1.0
+2025.07.11@18:02:07:834 - [App] [Info] Setting new scene
+2025.07.11@18:02:07:834 - [App] [Info] Leaving current scene
+2025.07.11@18:02:07:834 - [Scene] [Info] Leaving test scene 2
+2025.07.11@18:02:07:834 - [Keyboard] [Info] Removing keyboard input listener
+2025.07.11@18:02:07:834 - [Mouse] [Info] Removing mouse input listener
+2025.07.11@18:02:07:834 - [App] [Info] Entering new scene
+2025.07.11@18:02:07:834 - [Keyboard] [Info] Adding keyboard input listener
+2025.07.11@18:02:07:835 - [Mouse] [Info] Adding mouse input listener
+2025.07.11@18:02:07:835 - [Scene] [Info] Entering test scene 1
+2025.07.11@18:02:08:296 - [Scene] [Info] Mouse scrool wheel moved -1.0
+2025.07.11@18:02:08:400 - [Scene] [Info] Mouse scrool wheel moved -1.0
+2025.07.11@18:02:08:512 - [Scene] [Info] Mouse scrool wheel moved -1.0
+2025.07.11@18:02:08:639 - [Scene] [Info] Mouse scrool wheel moved -1.0
+2025.07.11@18:02:08:776 - [Scene] [Info] Mouse scrool wheel moved -1.0
+2025.07.11@18:02:08:928 - [Scene] [Info] Mouse scrool wheel moved -1.0
+2025.07.11@18:02:09:232 - [Scene] [Info] Mouse scrool wheel moved 1.0
+2025.07.11@18:02:09:328 - [Scene] [Info] Mouse scrool wheel moved 1.0
+2025.07.11@18:02:09:408 - [Scene] [Info] Mouse scrool wheel moved 1.0
+2025.07.11@18:02:09:536 - [Scene] [Info] Mouse scrool wheel moved 1.0
+2025.07.11@18:02:09:624 - [Scene] [Info] Mouse scrool wheel moved 1.0
+2025.07.11@18:02:12:644 - [Window] [Info] Setting window to fullscreen mode
+2025.07.11@18:02:12:644 - [Window] [Info] Setting window dimensions <1920.0,1080.0>
+2025.07.11@18:02:13:286 - [Window] [Info] Setting window to windowed mode
+2025.07.11@18:02:13:287 - [Window] [Info] Setting window dimensions <800.0,600.0>
+2025.07.11@18:02:14:532 - [App] [Info] Setting new scene
+2025.07.11@18:02:14:532 - [App] [Info] Leaving current scene
+2025.07.11@18:02:14:532 - [Scene] [Info] Leaving test scene 1
+2025.07.11@18:02:14:532 - [Keyboard] [Info] Removing keyboard input listener
+2025.07.11@18:02:14:532 - [Mouse] [Info] Removing mouse input listener
+2025.07.11@18:02:14:532 - [App] [Info] Entering new scene
+2025.07.11@18:02:14:532 - [Keyboard] [Info] Adding keyboard input listener
+2025.07.11@18:02:14:533 - [Mouse] [Info] Adding mouse input listener
+2025.07.11@18:02:14:533 - [Scene] [Info] Entering test scene 2
+2025.07.11@18:02:15:000 - [Scene] [Info] Mouse cursor moved <737.0,557.0> -> <737.0,557.0>
+2025.07.11@18:02:15:007 - [Scene] [Info] Mouse cursor moved <737.0,557.0> -> <736.0,557.0>
+2025.07.11@18:02:15:016 - [Scene] [Info] Mouse cursor moved <736.0,557.0> -> <732.0,554.0>
+2025.07.11@18:02:15:023 - [Scene] [Info] Mouse cursor moved <732.0,554.0> -> <729.0,552.0>
+2025.07.11@18:02:15:031 - [Scene] [Info] Mouse cursor moved <729.0,552.0> -> <723.0,548.0>
+2025.07.11@18:02:15:047 - [Scene] [Info] Mouse cursor moved <723.0,548.0> -> <719.0,546.0>
+2025.07.11@18:02:15:055 - [Scene] [Info] Mouse cursor moved <719.0,546.0> -> <716.0,544.0>
+2025.07.11@18:02:15:063 - [Scene] [Info] Mouse cursor moved <716.0,544.0> -> <714.0,543.0>
+2025.07.11@18:02:15:071 - [Scene] [Info] Mouse cursor moved <714.0,543.0> -> <713.0,542.0>
+2025.07.11@18:02:15:079 - [Scene] [Info] Mouse cursor moved <713.0,542.0> -> <710.0,541.0>
+2025.07.11@18:02:15:087 - [Scene] [Info] Mouse cursor moved <710.0,541.0> -> <707.0,539.0>
+2025.07.11@18:02:15:095 - [Scene] [Info] Mouse cursor moved <707.0,539.0> -> <706.0,538.0>
+2025.07.11@18:02:15:104 - [Scene] [Info] Mouse cursor moved <706.0,538.0> -> <703.0,536.0>
+2025.07.11@18:02:15:112 - [Scene] [Info] Mouse cursor moved <703.0,536.0> -> <701.0,535.0>
+2025.07.11@18:02:15:119 - [Scene] [Info] Mouse cursor moved <701.0,535.0> -> <699.0,533.0>
+2025.07.11@18:02:15:136 - [Scene] [Info] Mouse cursor moved <699.0,533.0> -> <697.0,532.0>
+2025.07.11@18:02:15:143 - [Scene] [Info] Mouse cursor moved <697.0,532.0> -> <696.0,531.0>
+2025.07.11@18:02:15:151 - [Scene] [Info] Mouse cursor moved <696.0,531.0> -> <695.0,531.0>
+2025.07.11@18:02:15:167 - [Scene] [Info] Mouse cursor moved <695.0,531.0> -> <694.0,531.0>
+2025.07.11@18:02:15:175 - [Scene] [Info] Mouse cursor moved <694.0,531.0> -> <692.0,530.0>
+2025.07.11@18:02:15:192 - [Scene] [Info] Mouse cursor moved <692.0,530.0> -> <691.0,529.0>
+2025.07.11@18:02:15:215 - [Scene] [Info] Mouse cursor moved <691.0,529.0> -> <690.0,528.0>
+2025.07.11@18:02:15:231 - [Scene] [Info] Mouse cursor moved <690.0,528.0> -> <689.0,528.0>
+2025.07.11@18:02:15:239 - [Scene] [Info] Mouse cursor moved <689.0,528.0> -> <688.0,527.0>
+2025.07.11@18:02:15:255 - [Scene] [Info] Mouse cursor moved <688.0,527.0> -> <687.0,526.0>
+2025.07.11@18:02:15:263 - [Scene] [Info] Mouse cursor moved <687.0,526.0> -> <685.0,526.0>
+2025.07.11@18:02:15:271 - [Scene] [Info] Mouse cursor moved <685.0,526.0> -> <684.0,526.0>
+2025.07.11@18:02:15:279 - [Scene] [Info] Mouse cursor moved <684.0,526.0> -> <682.0,524.0>
+2025.07.11@18:02:15:287 - [Scene] [Info] Mouse cursor moved <682.0,524.0> -> <681.0,523.0>
+2025.07.11@18:02:15:295 - [Scene] [Info] Mouse cursor moved <681.0,523.0> -> <680.0,523.0>
+2025.07.11@18:02:15:303 - [Scene] [Info] Mouse cursor moved <680.0,523.0> -> <678.0,522.0>
+2025.07.11@18:02:15:311 - [Scene] [Info] Mouse cursor moved <678.0,522.0> -> <677.0,521.0>
+2025.07.11@18:02:15:319 - [Scene] [Info] Mouse cursor moved <677.0,521.0> -> <673.0,519.0>
+2025.07.11@18:02:15:328 - [Scene] [Info] Mouse cursor moved <673.0,519.0> -> <672.0,518.0>
+2025.07.11@18:02:15:335 - [Scene] [Info] Mouse cursor moved <672.0,518.0> -> <669.0,517.0>
+2025.07.11@18:02:15:343 - [Scene] [Info] Mouse cursor moved <669.0,517.0> -> <667.0,516.0>
+2025.07.11@18:02:15:351 - [Scene] [Info] Mouse cursor moved <667.0,516.0> -> <662.0,514.0>
+2025.07.11@18:02:15:359 - [Scene] [Info] Mouse cursor moved <662.0,514.0> -> <661.0,513.0>
+2025.07.11@18:02:15:367 - [Scene] [Info] Mouse cursor moved <661.0,513.0> -> <656.0,511.0>
+2025.07.11@18:02:15:375 - [Scene] [Info] Mouse cursor moved <656.0,511.0> -> <654.0,509.0>
+2025.07.11@18:02:15:383 - [Scene] [Info] Mouse cursor moved <654.0,509.0> -> <652.0,508.0>
+2025.07.11@18:02:15:391 - [Scene] [Info] Mouse cursor moved <652.0,508.0> -> <648.0,506.0>
+2025.07.11@18:02:15:399 - [Scene] [Info] Mouse cursor moved <648.0,506.0> -> <646.0,505.0>
+2025.07.11@18:02:15:407 - [Scene] [Info] Mouse cursor moved <646.0,505.0> -> <643.0,503.0>
+2025.07.11@18:02:15:415 - [Scene] [Info] Mouse cursor moved <643.0,503.0> -> <639.0,502.0>
+2025.07.11@18:02:15:423 - [Scene] [Info] Mouse cursor moved <639.0,502.0> -> <637.0,501.0>
+2025.07.11@18:02:15:431 - [Scene] [Info] Mouse cursor moved <637.0,501.0> -> <632.0,498.0>
+2025.07.11@18:02:15:439 - [Scene] [Info] Mouse cursor moved <632.0,498.0> -> <629.0,497.0>
+2025.07.11@18:02:15:447 - [Scene] [Info] Mouse cursor moved <629.0,497.0> -> <626.0,496.0>
+2025.07.11@18:02:15:455 - [Scene] [Info] Mouse cursor moved <626.0,496.0> -> <620.0,492.0>
+2025.07.11@18:02:15:463 - [Scene] [Info] Mouse cursor moved <620.0,492.0> -> <617.0,490.0>
+2025.07.11@18:02:15:471 - [Scene] [Info] Mouse cursor moved <617.0,490.0> -> <612.0,488.0>
+2025.07.11@18:02:15:479 - [Scene] [Info] Mouse cursor moved <612.0,488.0> -> <606.0,484.0>
+2025.07.11@18:02:15:487 - [Scene] [Info] Mouse cursor moved <606.0,484.0> -> <602.0,483.0>
+2025.07.11@18:02:15:495 - [Scene] [Info] Mouse cursor moved <602.0,483.0> -> <596.0,479.0>
+2025.07.11@18:02:15:503 - [Scene] [Info] Mouse cursor moved <596.0,479.0> -> <591.0,477.0>
+2025.07.11@18:02:15:511 - [Scene] [Info] Mouse cursor moved <591.0,477.0> -> <585.0,474.0>
+2025.07.11@18:02:15:519 - [Scene] [Info] Mouse cursor moved <585.0,474.0> -> <580.0,472.0>
+2025.07.11@18:02:15:527 - [Scene] [Info] Mouse cursor moved <580.0,472.0> -> <575.0,468.0>
+2025.07.11@18:02:15:536 - [Scene] [Info] Mouse cursor moved <575.0,468.0> -> <572.0,465.0>
+2025.07.11@18:02:15:543 - [Scene] [Info] Mouse cursor moved <572.0,465.0> -> <567.0,461.0>
+2025.07.11@18:02:15:551 - [Scene] [Info] Mouse cursor moved <567.0,461.0> -> <562.0,460.0>
+2025.07.11@18:02:15:559 - [Scene] [Info] Mouse cursor moved <562.0,460.0> -> <557.0,456.0>
+2025.07.11@18:02:15:567 - [Scene] [Info] Mouse cursor moved <557.0,456.0> -> <553.0,454.0>
+2025.07.11@18:02:15:575 - [Scene] [Info] Mouse cursor moved <553.0,454.0> -> <546.0,450.0>
+2025.07.11@18:02:15:583 - [Scene] [Info] Mouse cursor moved <546.0,450.0> -> <545.0,449.0>
+2025.07.11@18:02:15:591 - [Scene] [Info] Mouse cursor moved <545.0,449.0> -> <543.0,447.0>
+2025.07.11@18:02:15:599 - [Scene] [Info] Mouse cursor moved <543.0,447.0> -> <539.0,444.0>
+2025.07.11@18:02:15:607 - [Scene] [Info] Mouse cursor moved <539.0,444.0> -> <537.0,443.0>
+2025.07.11@18:02:15:615 - [Scene] [Info] Mouse cursor moved <537.0,443.0> -> <532.0,442.0>
+2025.07.11@18:02:15:623 - [Scene] [Info] Mouse cursor moved <532.0,442.0> -> <528.0,438.0>
+2025.07.11@18:02:15:631 - [Scene] [Info] Mouse cursor moved <528.0,438.0> -> <523.0,436.0>
+2025.07.11@18:02:15:639 - [Scene] [Info] Mouse cursor moved <523.0,436.0> -> <518.0,432.0>
+2025.07.11@18:02:15:647 - [Scene] [Info] Mouse cursor moved <518.0,432.0> -> <512.0,429.0>
+2025.07.11@18:02:15:655 - [Scene] [Info] Mouse cursor moved <512.0,429.0> -> <505.0,424.0>
+2025.07.11@18:02:15:663 - [Scene] [Info] Mouse cursor moved <505.0,424.0> -> <498.0,421.0>
+2025.07.11@18:02:15:671 - [Scene] [Info] Mouse cursor moved <498.0,421.0> -> <491.0,417.0>
+2025.07.11@18:02:15:679 - [Scene] [Info] Mouse cursor moved <491.0,417.0> -> <488.0,416.0>
+2025.07.11@18:02:15:687 - [Scene] [Info] Mouse cursor moved <488.0,416.0> -> <480.0,412.0>
+2025.07.11@18:02:15:695 - [Scene] [Info] Mouse cursor moved <480.0,412.0> -> <477.0,411.0>
+2025.07.11@18:02:15:703 - [Scene] [Info] Mouse cursor moved <477.0,411.0> -> <472.0,410.0>
+2025.07.11@18:02:15:711 - [Scene] [Info] Mouse cursor moved <472.0,410.0> -> <468.0,408.0>
+2025.07.11@18:02:15:719 - [Scene] [Info] Mouse cursor moved <468.0,408.0> -> <463.0,405.0>
+2025.07.11@18:02:15:727 - [Scene] [Info] Mouse cursor moved <463.0,405.0> -> <457.0,404.0>
+2025.07.11@18:02:15:735 - [Scene] [Info] Mouse cursor moved <457.0,404.0> -> <450.0,400.0>
+2025.07.11@18:02:15:743 - [Scene] [Info] Mouse cursor moved <450.0,400.0> -> <444.0,399.0>
+2025.07.11@18:02:15:751 - [Scene] [Info] Mouse cursor moved <444.0,399.0> -> <438.0,398.0>
+2025.07.11@18:02:15:759 - [Scene] [Info] Mouse cursor moved <438.0,398.0> -> <433.0,395.0>
+2025.07.11@18:02:15:767 - [Scene] [Info] Mouse cursor moved <433.0,395.0> -> <428.0,394.0>
+2025.07.11@18:02:15:775 - [Scene] [Info] Mouse cursor moved <428.0,394.0> -> <425.0,393.0>
+2025.07.11@18:02:15:783 - [Scene] [Info] Mouse cursor moved <425.0,393.0> -> <419.0,392.0>
+2025.07.11@18:02:15:791 - [Scene] [Info] Mouse cursor moved <419.0,392.0> -> <414.0,388.0>
+2025.07.11@18:02:15:799 - [Scene] [Info] Mouse cursor moved <414.0,388.0> -> <408.0,387.0>
+2025.07.11@18:02:15:807 - [Scene] [Info] Mouse cursor moved <408.0,387.0> -> <403.0,386.0>
+2025.07.11@18:02:15:815 - [Scene] [Info] Mouse cursor moved <403.0,386.0> -> <395.0,382.0>
+2025.07.11@18:02:15:823 - [Scene] [Info] Mouse cursor moved <395.0,382.0> -> <387.0,379.0>
+2025.07.11@18:02:15:831 - [Scene] [Info] Mouse cursor moved <387.0,379.0> -> <378.0,374.0>
+2025.07.11@18:02:15:839 - [Scene] [Info] Mouse cursor moved <378.0,374.0> -> <371.0,372.0>
+2025.07.11@18:02:15:847 - [Scene] [Info] Mouse cursor moved <371.0,372.0> -> <363.0,367.0>
+2025.07.11@18:02:15:855 - [Scene] [Info] Mouse cursor moved <363.0,367.0> -> <354.0,365.0>
+2025.07.11@18:02:15:863 - [Scene] [Info] Mouse cursor moved <354.0,365.0> -> <347.0,359.0>
+2025.07.11@18:02:15:871 - [Scene] [Info] Mouse cursor moved <347.0,359.0> -> <336.0,353.0>
+2025.07.11@18:02:15:879 - [Scene] [Info] Mouse cursor moved <336.0,353.0> -> <326.0,346.0>
+2025.07.11@18:02:15:887 - [Scene] [Info] Mouse cursor moved <326.0,346.0> -> <321.0,343.0>
+2025.07.11@18:02:15:895 - [Scene] [Info] Mouse cursor moved <321.0,343.0> -> <310.0,336.0>
+2025.07.11@18:02:15:903 - [Scene] [Info] Mouse cursor moved <310.0,336.0> -> <301.0,330.0>
+2025.07.11@18:02:15:911 - [Scene] [Info] Mouse cursor moved <301.0,330.0> -> <291.0,323.0>
+2025.07.11@18:02:15:919 - [Scene] [Info] Mouse cursor moved <291.0,323.0> -> <280.0,315.0>
+2025.07.11@18:02:15:927 - [Scene] [Info] Mouse cursor moved <280.0,315.0> -> <272.0,310.0>
+2025.07.11@18:02:15:935 - [Scene] [Info] Mouse cursor moved <272.0,310.0> -> <265.0,306.0>
+2025.07.11@18:02:15:944 - [Scene] [Info] Mouse cursor moved <265.0,306.0> -> <259.0,304.0>
+2025.07.11@18:02:15:951 - [Scene] [Info] Mouse cursor moved <259.0,304.0> -> <250.0,298.0>
+2025.07.11@18:02:15:959 - [Scene] [Info] Mouse cursor moved <250.0,298.0> -> <243.0,294.0>
+2025.07.11@18:02:15:967 - [Scene] [Info] Mouse cursor moved <243.0,294.0> -> <234.0,289.0>
+2025.07.11@18:02:15:975 - [Scene] [Info] Mouse cursor moved <234.0,289.0> -> <227.0,285.0>
+2025.07.11@18:02:15:983 - [Scene] [Info] Mouse cursor moved <227.0,285.0> -> <218.0,279.0>
+2025.07.11@18:02:15:991 - [Scene] [Info] Mouse cursor moved <218.0,279.0> -> <213.0,277.0>
+2025.07.11@18:02:15:999 - [Scene] [Info] Mouse cursor moved <213.0,277.0> -> <203.0,271.0>
+2025.07.11@18:02:16:007 - [Scene] [Info] Mouse cursor moved <203.0,271.0> -> <199.0,268.0>
+2025.07.11@18:02:16:015 - [Scene] [Info] Mouse cursor moved <199.0,268.0> -> <194.0,266.0>
+2025.07.11@18:02:16:023 - [Scene] [Info] Mouse cursor moved <194.0,266.0> -> <191.0,264.0>
+2025.07.11@18:02:16:031 - [Scene] [Info] Mouse cursor moved <191.0,264.0> -> <188.0,260.0>
+2025.07.11@18:02:16:039 - [Scene] [Info] Mouse cursor moved <188.0,260.0> -> <183.0,258.0>
+2025.07.11@18:02:16:047 - [Scene] [Info] Mouse cursor moved <183.0,258.0> -> <180.0,257.0>
+2025.07.11@18:02:16:055 - [Scene] [Info] Mouse cursor moved <180.0,257.0> -> <175.0,254.0>
+2025.07.11@18:02:16:063 - [Scene] [Info] Mouse cursor moved <175.0,254.0> -> <167.0,248.0>
+2025.07.11@18:02:16:071 - [Scene] [Info] Mouse cursor moved <167.0,248.0> -> <163.0,247.0>
+2025.07.11@18:02:16:079 - [Scene] [Info] Mouse cursor moved <163.0,247.0> -> <159.0,245.0>
+2025.07.11@18:02:16:087 - [Scene] [Info] Mouse cursor moved <159.0,245.0> -> <154.0,241.0>
+2025.07.11@18:02:16:095 - [Scene] [Info] Mouse cursor moved <154.0,241.0> -> <150.0,239.0>
+2025.07.11@18:02:16:103 - [Scene] [Info] Mouse cursor moved <150.0,239.0> -> <145.0,236.0>
+2025.07.11@18:02:16:111 - [Scene] [Info] Mouse cursor moved <145.0,236.0> -> <142.0,234.0>
+2025.07.11@18:02:16:119 - [Scene] [Info] Mouse cursor moved <142.0,234.0> -> <140.0,233.0>
+2025.07.11@18:02:16:127 - [Scene] [Info] Mouse cursor moved <140.0,233.0> -> <137.0,232.0>
+2025.07.11@18:02:16:135 - [Scene] [Info] Mouse cursor moved <137.0,232.0> -> <134.0,229.0>
+2025.07.11@18:02:16:144 - [Scene] [Info] Mouse cursor moved <134.0,229.0> -> <132.0,225.0>
+2025.07.11@18:02:16:151 - [Scene] [Info] Mouse cursor moved <132.0,225.0> -> <131.0,224.0>
+2025.07.11@18:02:16:159 - [Scene] [Info] Mouse cursor moved <131.0,224.0> -> <128.0,222.0>
+2025.07.11@18:02:16:167 - [Scene] [Info] Mouse cursor moved <128.0,222.0> -> <123.0,220.0>
+2025.07.11@18:02:16:175 - [Scene] [Info] Mouse cursor moved <123.0,220.0> -> <122.0,219.0>
+2025.07.11@18:02:16:183 - [Scene] [Info] Mouse cursor moved <122.0,219.0> -> <118.0,215.0>
+2025.07.11@18:02:16:191 - [Scene] [Info] Mouse cursor moved <118.0,215.0> -> <116.0,212.0>
+2025.07.11@18:02:16:199 - [Scene] [Info] Mouse cursor moved <116.0,212.0> -> <110.0,209.0>
+2025.07.11@18:02:16:207 - [Scene] [Info] Mouse cursor moved <110.0,209.0> -> <106.0,205.0>
+2025.07.11@18:02:16:215 - [Scene] [Info] Mouse cursor moved <106.0,205.0> -> <101.0,202.0>
+2025.07.11@18:02:16:223 - [Scene] [Info] Mouse cursor moved <101.0,202.0> -> <95.0,196.0>
+2025.07.11@18:02:16:231 - [Scene] [Info] Mouse cursor moved <95.0,196.0> -> <92.0,194.0>
+2025.07.11@18:02:16:239 - [Scene] [Info] Mouse cursor moved <92.0,194.0> -> <90.0,193.0>
+2025.07.11@18:02:16:247 - [Scene] [Info] Mouse cursor moved <90.0,193.0> -> <87.0,190.0>
+2025.07.11@18:02:16:255 - [Scene] [Info] Mouse cursor moved <87.0,190.0> -> <85.0,188.0>
+2025.07.11@18:02:16:263 - [Scene] [Info] Mouse cursor moved <85.0,188.0> -> <82.0,186.0>
+2025.07.11@18:02:16:271 - [Scene] [Info] Mouse cursor moved <82.0,186.0> -> <79.0,182.0>
+2025.07.11@18:02:16:279 - [Scene] [Info] Mouse cursor moved <79.0,182.0> -> <75.0,179.0>
+2025.07.11@18:02:16:287 - [Scene] [Info] Mouse cursor moved <75.0,179.0> -> <70.0,175.0>
+2025.07.11@18:02:16:295 - [Scene] [Info] Mouse cursor moved <70.0,175.0> -> <67.0,172.0>
+2025.07.11@18:02:16:303 - [Scene] [Info] Mouse cursor moved <67.0,172.0> -> <60.0,165.0>
+2025.07.11@18:02:16:311 - [Scene] [Info] Mouse cursor moved <60.0,165.0> -> <58.0,160.0>
+2025.07.11@18:02:16:319 - [Scene] [Info] Mouse cursor moved <58.0,160.0> -> <54.0,153.0>
+2025.07.11@18:02:16:327 - [Scene] [Info] Mouse cursor moved <54.0,153.0> -> <51.0,150.0>
+2025.07.11@18:02:16:335 - [Scene] [Info] Mouse cursor moved <51.0,150.0> -> <48.0,144.0>
+2025.07.11@18:02:16:343 - [Scene] [Info] Mouse cursor moved <48.0,144.0> -> <45.0,140.0>
+2025.07.11@18:02:16:351 - [Scene] [Info] Mouse cursor moved <45.0,140.0> -> <43.0,134.0>
+2025.07.11@18:02:16:359 - [Scene] [Info] Mouse cursor moved <43.0,134.0> -> <39.0,128.0>
+2025.07.11@18:02:16:367 - [Scene] [Info] Mouse cursor moved <39.0,128.0> -> <39.0,125.0>
+2025.07.11@18:02:16:375 - [Scene] [Info] Mouse cursor moved <39.0,125.0> -> <36.0,121.0>
+2025.07.11@18:02:16:383 - [Scene] [Info] Mouse cursor moved <36.0,121.0> -> <35.0,118.0>
+2025.07.11@18:02:16:391 - [Scene] [Info] Mouse cursor moved <35.0,118.0> -> <34.0,113.0>
+2025.07.11@18:02:16:399 - [Scene] [Info] Mouse cursor moved <34.0,113.0> -> <33.0,111.0>
+2025.07.11@18:02:16:407 - [Scene] [Info] Mouse cursor moved <33.0,111.0> -> <30.0,107.0>
+2025.07.11@18:02:16:415 - [Scene] [Info] Mouse cursor moved <30.0,107.0> -> <28.0,102.0>
+2025.07.11@18:02:16:423 - [Scene] [Info] Mouse cursor moved <28.0,102.0> -> <27.0,99.0>
+2025.07.11@18:02:16:431 - [Scene] [Info] Mouse cursor moved <27.0,99.0> -> <25.0,95.0>
+2025.07.11@18:02:16:439 - [Scene] [Info] Mouse cursor moved <25.0,95.0> -> <25.0,93.0>
+2025.07.11@18:02:16:447 - [Scene] [Info] Mouse cursor moved <25.0,93.0> -> <24.0,90.0>
+2025.07.11@18:02:16:455 - [Scene] [Info] Mouse cursor moved <24.0,90.0> -> <24.0,87.0>
+2025.07.11@18:02:16:463 - [Scene] [Info] Mouse cursor moved <24.0,87.0> -> <23.0,85.0>
+2025.07.11@18:02:16:471 - [Scene] [Info] Mouse cursor moved <23.0,85.0> -> <22.0,79.0>
+2025.07.11@18:02:16:479 - [Scene] [Info] Mouse cursor moved <22.0,79.0> -> <22.0,77.0>
+2025.07.11@18:02:16:487 - [Scene] [Info] Mouse cursor moved <22.0,77.0> -> <20.0,75.0>
+2025.07.11@18:02:16:495 - [Scene] [Info] Mouse cursor moved <20.0,75.0> -> <20.0,71.0>
+2025.07.11@18:02:16:503 - [Scene] [Info] Mouse cursor moved <20.0,71.0> -> <19.0,69.0>
+2025.07.11@18:02:16:512 - [Scene] [Info] Mouse cursor moved <19.0,69.0> -> <19.0,67.0>
+2025.07.11@18:02:16:519 - [Scene] [Info] Mouse cursor moved <19.0,67.0> -> <19.0,66.0>
+2025.07.11@18:02:16:527 - [Scene] [Info] Mouse cursor moved <19.0,66.0> -> <19.0,64.0>
+2025.07.11@18:02:16:544 - [Scene] [Info] Mouse cursor moved <19.0,64.0> -> <18.0,61.0>
+2025.07.11@18:02:16:583 - [Scene] [Info] Mouse cursor moved <18.0,61.0> -> <18.0,60.0>
+2025.07.11@18:02:16:648 - [Scene] [Info] Mouse cursor moved <18.0,60.0> -> <18.0,58.0>
+2025.07.11@18:02:16:656 - [Scene] [Info] Mouse cursor moved <18.0,58.0> -> <18.0,57.0>
+2025.07.11@18:02:16:663 - [Scene] [Info] Mouse cursor moved <18.0,57.0> -> <18.0,56.0>
+2025.07.11@18:02:16:672 - [Scene] [Info] Mouse cursor moved <18.0,56.0> -> <18.0,55.0>
+2025.07.11@18:02:16:679 - [Scene] [Info] Mouse cursor moved <18.0,55.0> -> <18.0,52.0>
+2025.07.11@18:02:16:687 - [Scene] [Info] Mouse cursor moved <18.0,52.0> -> <18.0,51.0>
+2025.07.11@18:02:16:695 - [Scene] [Info] Mouse cursor moved <18.0,51.0> -> <18.0,50.0>
+2025.07.11@18:02:16:703 - [Scene] [Info] Mouse cursor moved <18.0,50.0> -> <18.0,47.0>
+2025.07.11@18:02:16:711 - [Scene] [Info] Mouse cursor moved <18.0,47.0> -> <18.0,46.0>
+2025.07.11@18:02:16:719 - [Scene] [Info] Mouse cursor moved <18.0,46.0> -> <20.0,43.0>
+2025.07.11@18:02:16:727 - [Scene] [Info] Mouse cursor moved <20.0,43.0> -> <20.0,42.0>
+2025.07.11@18:02:16:735 - [Scene] [Info] Mouse cursor moved <20.0,42.0> -> <20.0,41.0>
+2025.07.11@18:02:16:743 - [Scene] [Info] Mouse cursor moved <20.0,41.0> -> <20.0,40.0>
+2025.07.11@18:02:16:751 - [Scene] [Info] Mouse cursor moved <20.0,40.0> -> <20.0,38.0>
+2025.07.11@18:02:16:767 - [Scene] [Info] Mouse cursor moved <20.0,38.0> -> <20.0,37.0>
+2025.07.11@18:02:16:775 - [Scene] [Info] Mouse cursor moved <20.0,37.0> -> <20.0,36.0>
+2025.07.11@18:02:16:783 - [Scene] [Info] Mouse cursor moved <20.0,36.0> -> <20.0,35.0>
+2025.07.11@18:02:16:799 - [Scene] [Info] Mouse cursor moved <20.0,35.0> -> <20.0,33.0>
+2025.07.11@18:02:16:815 - [Scene] [Info] Mouse cursor moved <20.0,33.0> -> <20.0,32.0>
+2025.07.11@18:02:16:823 - [Scene] [Info] Mouse cursor moved <20.0,32.0> -> <20.0,30.0>
+2025.07.11@18:02:16:831 - [Scene] [Info] Mouse cursor moved <20.0,30.0> -> <20.0,28.0>
+2025.07.11@18:02:16:839 - [Scene] [Info] Mouse cursor moved <20.0,28.0> -> <20.0,26.0>
+2025.07.11@18:02:16:847 - [Scene] [Info] Mouse cursor moved <20.0,26.0> -> <20.0,25.0>
+2025.07.11@18:02:16:855 - [Scene] [Info] Mouse cursor moved <20.0,25.0> -> <20.0,23.0>
+2025.07.11@18:02:16:863 - [Scene] [Info] Mouse cursor moved <20.0,23.0> -> <20.0,22.0>
+2025.07.11@18:02:16:871 - [Scene] [Info] Mouse cursor moved <20.0,22.0> -> <20.0,21.0>
+2025.07.11@18:02:16:879 - [Scene] [Info] Mouse cursor moved <20.0,21.0> -> <20.0,20.0>
+2025.07.11@18:02:16:887 - [Scene] [Info] Mouse cursor moved <20.0,20.0> -> <20.0,18.0>
+2025.07.11@18:02:16:895 - [Scene] [Info] Mouse cursor moved <20.0,18.0> -> <20.0,17.0>
+2025.07.11@18:02:16:903 - [Scene] [Info] Mouse cursor moved <20.0,17.0> -> <19.0,15.0>
+2025.07.11@18:02:16:911 - [Scene] [Info] Mouse cursor moved <19.0,15.0> -> <18.0,13.0>
+2025.07.11@18:02:16:919 - [Scene] [Info] Mouse cursor moved <18.0,13.0> -> <17.0,12.0>
+2025.07.11@18:02:16:927 - [Scene] [Info] Mouse cursor moved <17.0,12.0> -> <17.0,11.0>
+2025.07.11@18:02:16:935 - [Scene] [Info] Mouse cursor moved <17.0,11.0> -> <16.0,9.0>
+2025.07.11@18:02:16:943 - [Scene] [Info] Mouse cursor moved <16.0,9.0> -> <15.0,8.0>
+2025.07.11@18:02:16:952 - [Scene] [Info] Mouse cursor moved <15.0,8.0> -> <14.0,7.0>
+2025.07.11@18:02:16:959 - [Scene] [Info] Mouse cursor moved <14.0,7.0> -> <14.0,6.0>
+2025.07.11@18:02:16:967 - [Scene] [Info] Mouse cursor moved <14.0,6.0> -> <13.0,5.0>
+2025.07.11@18:02:16:991 - [Scene] [Info] Mouse cursor moved <13.0,5.0> -> <13.0,3.0>
+2025.07.11@18:02:16:999 - [Scene] [Info] Mouse cursor moved <13.0,3.0> -> <12.0,2.0>
+2025.07.11@18:02:17:024 - [Scene] [Info] Mouse cursor moved <12.0,2.0> -> <11.0,1.0>
+2025.07.11@18:02:17:039 - [Scene] [Info] Mouse cursor moved <11.0,1.0> -> <10.0,1.0>
+2025.07.11@18:02:17:496 - [Scene] [Info] Mouse cursor moved <10.0,1.0> -> <8.0,1.0>
+2025.07.11@18:02:17:519 - [Scene] [Info] Mouse cursor moved <8.0,1.0> -> <8.0,2.0>
+2025.07.11@18:02:17:527 - [Scene] [Info] Mouse cursor moved <8.0,2.0> -> <10.0,4.0>
+2025.07.11@18:02:17:535 - [Scene] [Info] Mouse cursor moved <10.0,4.0> -> <12.0,6.0>
+2025.07.11@18:02:17:543 - [Scene] [Info] Mouse cursor moved <12.0,6.0> -> <16.0,8.0>
+2025.07.11@18:02:17:551 - [Scene] [Info] Mouse cursor moved <16.0,8.0> -> <22.0,12.0>
+2025.07.11@18:02:17:559 - [Scene] [Info] Mouse cursor moved <22.0,12.0> -> <28.0,15.0>
+2025.07.11@18:02:17:567 - [Scene] [Info] Mouse cursor moved <28.0,15.0> -> <35.0,20.0>
+2025.07.11@18:02:17:575 - [Scene] [Info] Mouse cursor moved <35.0,20.0> -> <48.0,27.0>
+2025.07.11@18:02:17:583 - [Scene] [Info] Mouse cursor moved <48.0,27.0> -> <62.0,32.0>
+2025.07.11@18:02:17:591 - [Scene] [Info] Mouse cursor moved <62.0,32.0> -> <76.0,39.0>
+2025.07.11@18:02:17:599 - [Scene] [Info] Mouse cursor moved <76.0,39.0> -> <98.0,47.0>
+2025.07.11@18:02:17:607 - [Scene] [Info] Mouse cursor moved <98.0,47.0> -> <120.0,57.0>
+2025.07.11@18:02:17:615 - [Scene] [Info] Mouse cursor moved <120.0,57.0> -> <148.0,69.0>
+2025.07.11@18:02:17:623 - [Scene] [Info] Mouse cursor moved <148.0,69.0> -> <170.0,79.0>
+2025.07.11@18:02:17:631 - [Scene] [Info] Mouse cursor moved <170.0,79.0> -> <200.0,91.0>
+2025.07.11@18:02:17:639 - [Scene] [Info] Mouse cursor moved <200.0,91.0> -> <228.0,101.0>
+2025.07.11@18:02:17:647 - [Scene] [Info] Mouse cursor moved <228.0,101.0> -> <258.0,117.0>
+2025.07.11@18:02:17:655 - [Scene] [Info] Mouse cursor moved <258.0,117.0> -> <282.0,127.0>
+2025.07.11@18:02:17:663 - [Scene] [Info] Mouse cursor moved <282.0,127.0> -> <306.0,141.0>
+2025.07.11@18:02:17:671 - [Scene] [Info] Mouse cursor moved <306.0,141.0> -> <332.0,159.0>
+2025.07.11@18:02:17:679 - [Scene] [Info] Mouse cursor moved <332.0,159.0> -> <360.0,175.0>
+2025.07.11@18:02:17:687 - [Scene] [Info] Mouse cursor moved <360.0,175.0> -> <390.0,191.0>
+2025.07.11@18:02:17:695 - [Scene] [Info] Mouse cursor moved <390.0,191.0> -> <420.0,203.0>
+2025.07.11@18:02:17:703 - [Scene] [Info] Mouse cursor moved <420.0,203.0> -> <446.0,219.0>
+2025.07.11@18:02:17:711 - [Scene] [Info] Mouse cursor moved <446.0,219.0> -> <472.0,235.0>
+2025.07.11@18:02:17:719 - [Scene] [Info] Mouse cursor moved <472.0,235.0> -> <492.0,249.0>
+2025.07.11@18:02:17:727 - [Scene] [Info] Mouse cursor moved <492.0,249.0> -> <514.0,265.0>
+2025.07.11@18:02:17:735 - [Scene] [Info] Mouse cursor moved <514.0,265.0> -> <532.0,279.0>
+2025.07.11@18:02:17:743 - [Scene] [Info] Mouse cursor moved <532.0,279.0> -> <543.0,290.0>
+2025.07.11@18:02:17:751 - [Scene] [Info] Mouse cursor moved <543.0,290.0> -> <556.0,305.0>
+2025.07.11@18:02:17:759 - [Scene] [Info] Mouse cursor moved <556.0,305.0> -> <561.0,314.0>
+2025.07.11@18:02:17:767 - [Scene] [Info] Mouse cursor moved <561.0,314.0> -> <573.0,327.0>
+2025.07.11@18:02:17:775 - [Scene] [Info] Mouse cursor moved <573.0,327.0> -> <581.0,340.0>
+2025.07.11@18:02:17:783 - [Scene] [Info] Mouse cursor moved <581.0,340.0> -> <589.0,350.0>
+2025.07.11@18:02:17:791 - [Scene] [Info] Mouse cursor moved <589.0,350.0> -> <597.0,360.0>
+2025.07.11@18:02:17:799 - [Scene] [Info] Mouse cursor moved <597.0,360.0> -> <604.0,371.0>
+2025.07.11@18:02:17:807 - [Scene] [Info] Mouse cursor moved <604.0,371.0> -> <612.0,381.0>
+2025.07.11@18:02:17:815 - [Scene] [Info] Mouse cursor moved <612.0,381.0> -> <617.0,393.0>
+2025.07.11@18:02:17:823 - [Scene] [Info] Mouse cursor moved <617.0,393.0> -> <620.0,404.0>
+2025.07.11@18:02:17:831 - [Scene] [Info] Mouse cursor moved <620.0,404.0> -> <625.0,415.0>
+2025.07.11@18:02:17:839 - [Scene] [Info] Mouse cursor moved <625.0,415.0> -> <631.0,428.0>
+2025.07.11@18:02:17:847 - [Scene] [Info] Mouse cursor moved <631.0,428.0> -> <640.0,439.0>
+2025.07.11@18:02:17:855 - [Scene] [Info] Mouse cursor moved <640.0,439.0> -> <645.0,450.0>
+2025.07.11@18:02:17:863 - [Scene] [Info] Mouse cursor moved <645.0,450.0> -> <651.0,458.0>
+2025.07.11@18:02:17:871 - [Scene] [Info] Mouse cursor moved <651.0,458.0> -> <659.0,469.0>
+2025.07.11@18:02:17:879 - [Scene] [Info] Mouse cursor moved <659.0,469.0> -> <667.0,477.0>
+2025.07.11@18:02:17:887 - [Scene] [Info] Mouse cursor moved <667.0,477.0> -> <675.0,488.0>
+2025.07.11@18:02:17:895 - [Scene] [Info] Mouse cursor moved <675.0,488.0> -> <686.0,499.0>
+2025.07.11@18:02:17:903 - [Scene] [Info] Mouse cursor moved <686.0,499.0> -> <699.0,512.0>
+2025.07.11@18:02:17:912 - [Scene] [Info] Mouse cursor moved <699.0,512.0> -> <707.0,520.0>
+2025.07.11@18:02:17:920 - [Scene] [Info] Mouse cursor moved <707.0,520.0> -> <711.0,524.0>
+2025.07.11@18:02:17:927 - [Scene] [Info] Mouse cursor moved <711.0,524.0> -> <716.0,529.0>
+2025.07.11@18:02:17:935 - [Scene] [Info] Mouse cursor moved <716.0,529.0> -> <721.0,532.0>
+2025.07.11@18:02:17:943 - [Scene] [Info] Mouse cursor moved <721.0,532.0> -> <723.0,534.0>
+2025.07.11@18:02:17:951 - [Scene] [Info] Mouse cursor moved <723.0,534.0> -> <726.0,536.0>
+2025.07.11@18:02:17:959 - [Scene] [Info] Mouse cursor moved <726.0,536.0> -> <732.0,538.0>
+2025.07.11@18:02:17:967 - [Scene] [Info] Mouse cursor moved <732.0,538.0> -> <734.0,541.0>
+2025.07.11@18:02:17:975 - [Scene] [Info] Mouse cursor moved <734.0,541.0> -> <736.0,542.0>
+2025.07.11@18:02:17:983 - [Scene] [Info] Mouse cursor moved <736.0,542.0> -> <739.0,543.0>
+2025.07.11@18:02:17:991 - [Scene] [Info] Mouse cursor moved <739.0,543.0> -> <741.0,545.0>
+2025.07.11@18:02:17:999 - [Scene] [Info] Mouse cursor moved <741.0,545.0> -> <743.0,547.0>
+2025.07.11@18:02:18:007 - [Scene] [Info] Mouse cursor moved <743.0,547.0> -> <748.0,549.0>
+2025.07.11@18:02:18:015 - [Scene] [Info] Mouse cursor moved <748.0,549.0> -> <751.0,551.0>
+2025.07.11@18:02:18:023 - [Scene] [Info] Mouse cursor moved <751.0,551.0> -> <754.0,554.0>
+2025.07.11@18:02:18:031 - [Scene] [Info] Mouse cursor moved <754.0,554.0> -> <758.0,558.0>
+2025.07.11@18:02:18:039 - [Scene] [Info] Mouse cursor moved <758.0,558.0> -> <761.0,561.0>
+2025.07.11@18:02:18:047 - [Scene] [Info] Mouse cursor moved <761.0,561.0> -> <765.0,565.0>
+2025.07.11@18:02:18:055 - [Scene] [Info] Mouse cursor moved <765.0,565.0> -> <767.0,567.0>
+2025.07.11@18:02:18:063 - [Scene] [Info] Mouse cursor moved <767.0,567.0> -> <770.0,571.0>
+2025.07.11@18:02:18:071 - [Scene] [Info] Mouse cursor moved <770.0,571.0> -> <771.0,572.0>
+2025.07.11@18:02:18:079 - [Scene] [Info] Mouse cursor moved <771.0,572.0> -> <773.0,574.0>
+2025.07.11@18:02:18:087 - [Scene] [Info] Mouse cursor moved <773.0,574.0> -> <775.0,576.0>
+2025.07.11@18:02:18:095 - [Scene] [Info] Mouse cursor moved <775.0,576.0> -> <777.0,578.0>
+2025.07.11@18:02:18:111 - [Scene] [Info] Mouse cursor moved <777.0,578.0> -> <780.0,582.0>
+2025.07.11@18:02:18:127 - [Scene] [Info] Mouse cursor moved <780.0,582.0> -> <781.0,585.0>
+2025.07.11@18:02:18:135 - [Scene] [Info] Mouse cursor moved <781.0,585.0> -> <783.0,588.0>
+2025.07.11@18:02:18:143 - [Scene] [Info] Mouse cursor moved <783.0,588.0> -> <785.0,591.0>
+2025.07.11@18:02:18:151 - [Scene] [Info] Mouse cursor moved <785.0,591.0> -> <786.0,592.0>
+2025.07.11@18:02:18:160 - [Scene] [Info] Mouse cursor moved <786.0,592.0> -> <789.0,595.0>
+2025.07.11@18:02:18:167 - [Scene] [Info] Mouse cursor moved <789.0,595.0> -> <790.0,597.0>
+2025.07.11@18:02:18:175 - [Scene] [Info] Mouse cursor moved <790.0,597.0> -> <791.0,598.0>
+2025.07.11@18:02:19:217 - [Window] [Info] Window requested to close
+2025.07.11@18:02:19:218 - [App] [Info] Finished main loop
+2025.07.11@18:02:19:218 - [App] [Info] Destroying Asclepias Framework application
+2025.07.11@18:02:19:218 - [App] [Info] Clearing current scene
+2025.07.11@18:02:19:218 - [App] [Info] Setting new scene
+2025.07.11@18:02:19:218 - [App] [Info] Leaving current scene
+2025.07.11@18:02:19:218 - [Scene] [Info] Leaving test scene 2
+2025.07.11@18:02:19:218 - [Keyboard] [Info] Removing keyboard input listener
+2025.07.11@18:02:19:219 - [Mouse] [Info] Removing mouse input listener
+2025.07.11@18:02:19:219 - [App] [Warning] No new scene passed to app
+2025.07.11@18:02:19:219 - [App] [Info] Destroying all previous scenes
+2025.07.11@18:02:19:219 - [Scene] [Info] Destroying test scene 1
+2025.07.11@18:02:19:219 - [Scene] [Info] Destroying test scene 2
+2025.07.11@18:02:19:219 - [App] [Info] Destroying mouse input management system
+2025.07.11@18:02:19:219 - [Mouse] [Info] Destroying mouse input manager
+2025.07.11@18:02:19:219 - [App] [Info] Destroying keyboard input management system
+2025.07.11@18:02:19:219 - [Keyboard] [Info] Destroying keyboard input manager
+2025.07.11@18:02:19:219 - [App] [Info] Destroying window management system
+2025.07.11@18:02:19:219 - [Window] [Info] Freeing window memory
+2025.07.11@18:02:19:222 - [App] [Info] Destroying logging system

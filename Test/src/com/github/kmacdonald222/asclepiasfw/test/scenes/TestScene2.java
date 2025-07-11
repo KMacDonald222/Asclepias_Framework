@@ -2,7 +2,9 @@ package com.github.kmacdonald222.asclepiasfw.test.scenes;
 
 import com.github.kmacdonald222.asclepiasfw.app.App;
 import com.github.kmacdonald222.asclepiasfw.app.AppScene;
+import com.github.kmacdonald222.asclepiasfw.data.Vec2D;
 import com.github.kmacdonald222.asclepiasfw.input.KeyboardKey;
+import com.github.kmacdonald222.asclepiasfw.input.MouseButton;
 import com.github.kmacdonald222.asclepiasfw.logging.LogPriority;
 import com.github.kmacdonald222.asclepiasfw.logging.LogSource;
 
@@ -29,6 +31,7 @@ public class TestScene2 extends AppScene {
 						"test scene 1");
 			}
 		}
+		
 		return true;
 	}
 	@Override
@@ -43,19 +46,25 @@ public class TestScene2 extends AppScene {
 		return true;
 	}
 	@Override
-	public void keyboardKeyPressed(KeyboardKey key) {
-		App.Log.write(LogSource.Scene, LogPriority.Info, "Keyboard key ", key,
-				" pressed");
+	public void mouseButtonPressed(MouseButton button) {
+		App.Log.write(LogSource.Scene, LogPriority.Info, "Mouse button ",
+				button.getButtonCode(), " pressed");
 	}
 	@Override
-	public void keyboardKeyReleased(KeyboardKey key) {
-		App.Log.write(LogSource.Scene, LogPriority.Info, "Keyboard key ", key,
-				" released");
+	public void mouseButtonReleased(MouseButton button) {
+		App.Log.write(LogSource.Scene, LogPriority.Info, "Mouse button ",
+				button.getButtonCode(), " released");
 	}
 	@Override
-	public void characterTyped(char character) {
-		App.Log.write(LogSource.Scene, LogPriority.Info, "Character '",
-				character, "'");
+	public void mouseScrollWheelMoved(double scrollDistance) {
+		App.Log.write(LogSource.Scene, LogPriority.Info, "Mouse scroll wheel ",
+				"moved ", scrollDistance);
+	}
+	@Override
+	public void mouseCursorMoved(Vec2D cursorPosition,
+			Vec2D previousCursorPosition) {
+		App.Log.write(LogSource.Scene, LogPriority.Info, "Mouse cursor moved ",
+				previousCursorPosition, " -> ", cursorPosition);
 	}
 	
 }
