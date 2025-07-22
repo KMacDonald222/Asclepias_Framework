@@ -70,14 +70,14 @@ public class InputManager {
 		App.Log.write(LogSource.Input, LogPriority.Info, "Destroying keyboard ",
 				"input management system");
 		if (!keyboard.destroy()) {
-			App.Log.write(LogSource.Input, LogPriority.Error, "Failed to ",
+			App.Log.write(LogSource.Input, LogPriority.Warning, "Failed to ",
 					"destroy keyboard input management system");
 			success = false;
 		}
 		App.Log.write(LogSource.Input, LogPriority.Info, "Destroying mouse ",
 				"input management system");
 		if (!mouse.destroy()) {
-			App.Log.write(LogSource.Input, LogPriority.Error, "Failed to ",
+			App.Log.write(LogSource.Input, LogPriority.Warning, "Failed to ",
 					"destroy mouse input management system");
 			success = false;
 		}
