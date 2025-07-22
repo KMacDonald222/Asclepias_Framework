@@ -22,6 +22,12 @@ public class LogSource {
 	public static LogSource Keyboard = new LogSource("Keyboard");
 	// Mouse input management system source log flag
 	public static LogSource Mouse = new LogSource("Mouse");
+	// General input management system source log flag
+	public static LogSource Input = new LogSource("Input");
+	// Sound effect management system source log flag
+	public static LogSource SoundEffects = new LogSource("Sound Effects");
+	// General audio management system source log flag
+	public static LogSource Audio = new LogSource("Audio");
 	
 	// The name of this source flag
 	private String name = "";

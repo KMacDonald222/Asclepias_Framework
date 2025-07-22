@@ -10,9 +10,9 @@ package com.github.kmacdonald222.asclepiasfw.app;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.github.kmacdonald222.asclepiasfw.audio.SoundEffectsManager;
 import com.github.kmacdonald222.asclepiasfw.graphics.WindowManager;
-import com.github.kmacdonald222.asclepiasfw.input.KeyboardManager;
-import com.github.kmacdonald222.asclepiasfw.input.MouseManager;
+import com.github.kmacdonald222.asclepiasfw.input.InputManager;
 import com.github.kmacdonald222.asclepiasfw.logging.LogManager;
 import com.github.kmacdonald222.asclepiasfw.logging.LogSource;
 import com.github.kmacdonald222.asclepiasfw.logging.LogPriority;
@@ -24,10 +24,10 @@ public class App {
 	public static LogManager Log = null;
 	// Instance of the window management system
 	public static WindowManager Window = null;
-	// Instance of the keyboard input management system
-	public static KeyboardManager Keyboard = null;
-	// Instance of the mouse input management system
-	public static MouseManager Mouse = null;
+	// Instance of the user input management system
+	public static InputManager Input = null;
+	// Instance of the sound effects management system
+	public static SoundEffectsManager SoundEffects = null;
 	// The current scene of the application
 	private static AppScene CurrentScene = null;
 	// List of all previous scenes in the application
@@ -61,22 +61,22 @@ public class App {
 		}
 		Log.write(LogSource.App, LogPriority.Info, "Initialized window ",
 				"management system");
-		Keyboard = new KeyboardManager();
-		if (!Keyboard.initialize()) {
+		Input = new InputManager();
+		if (!Input.initialize()) {
 			Log.write(LogSource.App, LogPriority.Error, "Failed to initialize ",
-					"keyboard input management system");
+					"user input management system");
 			return false;
 		}
-		Log.write(LogSource.App, LogPriority.Info, "Initialized keyboard ",
-				"input management system");
-		Mouse = new MouseManager();
-		if (!Mouse.initialize()) {
-			Log.write(LogSource.App, LogPriority.Error, "Failed to initialize ",
-					"mouse input management system");
-			return false;
-		}
-		Log.write(LogSource.App, LogPriority.Info, "Initialized mouse input ",
+		Log.write(LogSource.App, LogPriority.Info, "Initialized user input ",
 				"management system");
+		SoundEffects = new SoundEffectsManager();
+		if (!SoundEffects.initialize(config.soundEffects.volume)) {
+			Log.write(LogSource.App, LogPriority.Error, "Failed to initialize ",
+					"sound effects management system");
+			return false;
+		}
+		Log.write(LogSource.SoundEffects, LogPriority.Info, "Initialize sound ",
+				"effects management system");
 		Log.write(LogSource.App, LogPriority.Info, "Setting initial scene");
 		Scenes = new ArrayList<AppScene>();
 		if (!SetCurrentScene(config.initialScene)) {
@@ -105,8 +105,8 @@ public class App {
 						"requested to stop main loop");
 				break;
 			}
-			Keyboard.update();
-			Mouse.update();
+			Input.update();
+			SoundEffects.update();
 			try {
 				Thread.sleep(1);
 			} catch (InterruptedException e) {
@@ -135,22 +135,22 @@ public class App {
 		}
 		Scenes.clear();
 		Scenes = null;
-		Log.write(LogSource.App, LogPriority.Info, "Destroying mouse ",
-				"input management system");
-		if (!Mouse.destroy()) {
-			Log.write(LogSource.App, LogPriority.Info, "Failed to destroy ",
-					"mouse input management system");
+		Log.write(LogSource.App, LogPriority.Info, "Destroying sound effects ",
+				"management system");
+		if (!SoundEffects.destroy()) {
+			Log.write(LogSource.App, LogPriority.Warning, "Failed to destroy ",
+					"sound effects management system");
 			success = false;
 		}
-		Mouse = null;
-		Log.write(LogSource.App, LogPriority.Info, "Destroying keyboard ",
-				"input management system");
-		if (!Keyboard.destroy()) {
-			Log.write(LogSource.App, LogPriority.Error, "Failed to destroy ",
-					"keyboard input management system");
+		SoundEffects = null;
+		Log.write(LogSource.App, LogPriority.Info, "Destroying user input ",
+				"management system");
+		if (!Input.destroy()) {
+			Log.write(LogSource.App, LogPriority.Warning, "Failed to destroy ",
+					"user input management system");
 			success = false;
 		}
-		Keyboard = null;
+		Input = null;
 		Log.write(LogSource.App, LogPriority.Info, "Destroying window ",
 				"management system");
 		if (!Window.destroy()) {
@@ -185,11 +185,11 @@ public class App {
 		if (CurrentScene != null) {
 			Log.write(LogSource.App, LogPriority.Info, "Leaving current scene");
 			CurrentScene.leave(nextScene);
-			if (!Keyboard.removeListener(CurrentScene)) {
+			if (!Input.keyboard.removeListener(CurrentScene)) {
 				Log.write(LogSource.App, LogPriority.Warning, "Failed to ",
 						"remove current scene from keyboard input listeners");
 			}
-			if (!Mouse.removeListener(CurrentScene)) {
+			if (!Input.mouse.removeListener(CurrentScene)) {
 				Log.write(LogSource.App, LogPriority.Warning, "Failed to ",
 						"remove current scene from mouse input listeners");
 			}
@@ -211,11 +211,11 @@ public class App {
 			}
 		}
 		Log.write(LogSource.App, LogPriority.Info, "Entering new scene");
-		if (!Keyboard.addListener(nextScene)) {
+		if (!Input.keyboard.addListener(nextScene)) {
 			Log.write(LogSource.App, LogPriority.Warning, "Failed to add new ",
 					"scene to keyboard input listeners");
 		}
-		if (!Mouse.addListener(nextScene)) {
+		if (!Input.mouse.addListener(nextScene)) {
 			Log.write(LogSource.App, LogPriority.Warning, "Failed to add new ",
 					"scene to mouse input listeners");
 		}

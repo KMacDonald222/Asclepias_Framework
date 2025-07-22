@@ -2,7 +2,6 @@ package com.github.kmacdonald222.asclepiasfw.test.scenes;
 
 import com.github.kmacdonald222.asclepiasfw.app.App;
 import com.github.kmacdonald222.asclepiasfw.app.AppScene;
-import com.github.kmacdonald222.asclepiasfw.data.Vec2D;
 import com.github.kmacdonald222.asclepiasfw.input.KeyboardKey;
 import com.github.kmacdonald222.asclepiasfw.input.MouseButton;
 import com.github.kmacdonald222.asclepiasfw.logging.LogPriority;
@@ -25,33 +24,44 @@ public class TestScene1 extends AppScene {
 	}
 	@Override
 	public boolean processInput() {
-		if (App.Keyboard.isKeyPressed(KeyboardKey.TWO)) {
+		if (App.Input.keyboard.isKeyPressed(KeyboardKey.TWO)) {
 			if (!App.SetCurrentScene(Test.Scene2)) {
 				App.Log.write(LogSource.Scene, LogPriority.Info, "Changing to ",
 						"test scene 2");
 			}
 		}
-		if (App.Mouse.isButtonPressed(MouseButton.LEFT)) {
-			App.Log.write(LogSource.Scene, LogPriority.Info, "Left mouse ",
-					"button pressed");
+		if (App.Input.mouse.isButtonPressed(MouseButton.LEFT)) {
+			App.Log.write(LogSource.Scene, LogPriority.Info, "Playing sound ",
+					"effect 1");
+			if (!App.SoundEffects.playEffect("Assets/audio/effect_1.wav")) {
+				App.Log.write(LogSource.Scene, LogPriority.Warning, "Failed ",
+						"to play sound effect 1");
+			}
 		}
-		if (App.Mouse.isButtonReleased(MouseButton.RIGHT)) {
-			App.Log.write(LogSource.Scene, LogPriority.Info, "Right mouse ",
-					"button released");
+		if (App.Input.mouse.isButtonPressed(MouseButton.MIDDLE)) {
+			App.Log.write(LogSource.Scene, LogPriority.Info, "Playing sound ",
+					"effect 2");
+			if (!App.SoundEffects.playEffect("Assets/audio/effect_2.wav")) {
+				App.Log.write(LogSource.Scene, LogPriority.Warning, "Failed ",
+						"to play sound effect 2");
+			}
 		}
-		if (App.Mouse.isScrollWheelMoved()) {
-			App.Log.write(LogSource.Scene, LogPriority.Info, "Mouse scrool ",
-					"wheel moved ", App.Mouse.getScrollDistance());
+		if (App.Input.mouse.isButtonPressed(MouseButton.RIGHT)) {
+			App.Log.write(LogSource.Scene, LogPriority.Info, "Playing sound ",
+					"effect 3");
+			if (!App.SoundEffects.playEffect("Assets/audio/effect_3.wav")) {
+				App.Log.write(LogSource.Scene, LogPriority.Warning, "Failed ",
+						"to play sound effect 3");
+			}
 		}
-		if (App.Mouse.isCursorMoved()
-				&& App.Keyboard.isKeyDown(KeyboardKey.M)) {
-			Vec2D cpos = App.Mouse.getCursorPosition();
-			Vec2D ppos = App.Mouse.getPreviousCursorPosition();
-			App.Log.write(LogSource.Scene, LogPriority.Info, "Mouse cursor ",
-					"moved ", ppos, " -> ", cpos);
-		}
-		if (App.Keyboard.isKeyPressed(KeyboardKey.F)) {
-			App.Window.setFullscreen(!App.Window.isFullscreen());
+		if (App.Input.keyboard.isKeyPressed(KeyboardKey.UP)) {
+			App.SoundEffects.setVolume(App.SoundEffects.getVolume() + 0.1d);
+			App.Log.write(LogSource.Scene, LogPriority.Info, "Set volume ",
+					App.SoundEffects.getVolume());
+		} else if (App.Input.keyboard.isKeyPressed(KeyboardKey.DOWN)) {
+			App.SoundEffects.setVolume(App.SoundEffects.getVolume() - 0.1d);
+			App.Log.write(LogSource.Scene, LogPriority.Info, "Set volume ",
+					App.SoundEffects.getVolume());
 		}
 		return true;
 	}

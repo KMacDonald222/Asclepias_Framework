@@ -40,11 +40,20 @@ public class AppConfig {
 		public int monitorIndex = 0;
 		
 	}
+	// Sound effects management system configuration structure
+	public class SoundEffects {
+		
+		// The initial volume for all sound effects
+		public double volume = 1.0d;
+		
+	}
 	
 	// Instance of the logging system configuration structure
 	public Log log = new Log();
 	// Instance of the window management system configuration structure
 	public Window window = new Window();
+	// Instance of the sound effects management system configuration structure
+	public SoundEffects soundEffects = new SoundEffects();
 	// The initial scene for the application
 	public AppScene initialScene = null;
 	
