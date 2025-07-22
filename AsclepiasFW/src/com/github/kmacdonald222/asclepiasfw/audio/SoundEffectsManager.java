@@ -45,7 +45,13 @@ public class SoundEffectsManager {
 			return false;
 		}
 		effects = new HashMap<String, List<Clip>>();
-		setVolume(volume);
+		if (!setVolume(volume)) {
+			App.Log.write(LogSource.SoundEffects, LogPriority.Error, "Failed ",
+					"to set initial volume");
+			return false;
+		}
+		App.Log.write(LogSource.SoundEffects, LogPriority.Info, "Initialized ",
+				"sound effects management system");
 		initialized = true;
 		return initialized;
 	}
@@ -71,7 +77,7 @@ public class SoundEffectsManager {
 	 * @param String fileName - The file name of the sound effect to play
 	 * @return boolean - Whether the sound effect was played
 	 */
-	public boolean playEffect(String fileName) {
+	public boolean play(String fileName) {
 		AudioData data = AudioLoader.LoadAudioData(fileName);
 		if (data == null) {
 			App.Log.write(LogSource.SoundEffects, LogPriority.Warning,
@@ -118,6 +124,8 @@ public class SoundEffectsManager {
 			return false;
 		}
 		boolean success = true;
+		App.Log.write(LogSource.SoundEffects, LogPriority.Info, "Destroying ",
+				"sound effects management system");
 		effects.clear();
 		effects = null;
 		volume = 0.0d;

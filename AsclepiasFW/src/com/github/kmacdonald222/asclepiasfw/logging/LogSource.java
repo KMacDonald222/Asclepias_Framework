@@ -26,6 +26,8 @@ public class LogSource {
 	public static LogSource Input = new LogSource("Input");
 	// Sound effect management system source log flag
 	public static LogSource SoundEffects = new LogSource("Sound Effects");
+	// Music management system source log flag
+	public static LogSource Music = new LogSource("Music");
 	// General audio management system source log flag
 	public static LogSource Audio = new LogSource("Audio");
 	

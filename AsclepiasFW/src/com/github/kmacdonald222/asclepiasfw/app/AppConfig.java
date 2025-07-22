@@ -47,6 +47,13 @@ public class AppConfig {
 		public double volume = 1.0d;
 		
 	}
+	// Music management system configuration structure
+	public class Music {
+		
+		// The initial volume for music
+		public double volume = 1.0d;
+		
+	}
 	
 	// Instance of the logging system configuration structure
 	public Log log = new Log();
@@ -54,6 +61,8 @@ public class AppConfig {
 	public Window window = new Window();
 	// Instance of the sound effects management system configuration structure
 	public SoundEffects soundEffects = new SoundEffects();
+	// Instance of the music management system configuration structure
+	public Music music = new Music();
 	// The initial scene for the application
 	public AppScene initialScene = null;
 	

@@ -10,6 +10,7 @@ package com.github.kmacdonald222.asclepiasfw.app;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.github.kmacdonald222.asclepiasfw.audio.MusicManager;
 import com.github.kmacdonald222.asclepiasfw.audio.SoundEffectsManager;
 import com.github.kmacdonald222.asclepiasfw.graphics.WindowManager;
 import com.github.kmacdonald222.asclepiasfw.input.InputManager;
@@ -28,6 +29,8 @@ public class App {
 	public static InputManager Input = null;
 	// Instance of the sound effects management system
 	public static SoundEffectsManager SoundEffects = null;
+	// Instance of the music management system
+	public static MusicManager Music = null;
 	// The current scene of the application
 	private static AppScene CurrentScene = null;
 	// List of all previous scenes in the application
@@ -75,8 +78,16 @@ public class App {
 					"sound effects management system");
 			return false;
 		}
-		Log.write(LogSource.SoundEffects, LogPriority.Info, "Initialize sound ",
-				"effects management system");
+		Log.write(LogSource.App, LogPriority.Info, "Initialize sound effects ",
+				"management system");
+		Music = new MusicManager();
+		if (!Music.initialize(config.music.volume)) { 
+			Log.write(LogSource.App, LogPriority.Error, "Failed to initialize ",
+					"music management system");
+			return false;
+		}
+		Log.write(LogSource.App, LogPriority.Info, "Initialized music ",
+				"management system");
 		Log.write(LogSource.App, LogPriority.Info, "Setting initial scene");
 		Scenes = new ArrayList<AppScene>();
 		if (!SetCurrentScene(config.initialScene)) {
@@ -135,6 +146,14 @@ public class App {
 		}
 		Scenes.clear();
 		Scenes = null;
+		Log.write(LogSource.App, LogPriority.Info, "Destroying music ",
+				"management system");
+		if (!Music.destroy()) {
+			Log.write(LogSource.App, LogPriority.Warning, "Failed to destroy ",
+					"music management system");
+			success = false;
+		}
+		Music = null;
 		Log.write(LogSource.App, LogPriority.Info, "Destroying sound effects ",
 				"management system");
 		if (!SoundEffects.destroy()) {
