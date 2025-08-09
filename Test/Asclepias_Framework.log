@@ -1,106 +1,67 @@
-2025.07.22@12:27:42:288 - [App] [Info] Initialized logging system
-2025.07.22@12:27:42:442 - [Window] [Info] Opened new window
-2025.07.22@12:27:42:442 - [Window] [Info] Setting window title "Asclepias Framework"
-2025.07.22@12:27:42:445 - [Window] [Info] Setting window dimensions <800.0,600.0>
-2025.07.22@12:27:42:450 - [Window] [Info] Setting monitor index 0
-2025.07.22@12:27:42:450 - [Window] [Info] Set initial window attributes
-2025.07.22@12:27:42:451 - [App] [Info] Initialized window management system
-2025.07.22@12:27:42:452 - [Keyboard] [Info] Initializing keyboard input manager
-2025.07.22@12:27:42:452 - [Input] [Info] Initialized keyboard input management system
-2025.07.22@12:27:42:453 - [Mouse] [Info] Initializing mouse input manager
-2025.07.22@12:27:42:453 - [Input] [Info] Initialized mouse input management system
-2025.07.22@12:27:42:453 - [App] [Info] Initialized user input management system
-2025.07.22@12:27:42:455 - [Sound Effects] [Info] Initialized sound effects management system
-2025.07.22@12:27:42:455 - [Audio] [Info] Initialized sound effect management system
-2025.07.22@12:27:42:456 - [Music] [Info] Stopping current music track
-2025.07.22@12:27:42:456 - [Music] [Warning] No music track is present
-2025.07.22@12:27:42:456 - [Music] [Info] Initialized music management system
-2025.07.22@12:27:42:456 - [Audio] [Info] Initialized music management system
-2025.07.22@12:27:42:456 - [App] [Info] Initialized audio management systems
-2025.07.22@12:27:42:457 - [App] [Info] Setting initial scene
-2025.07.22@12:27:42:457 - [App] [Info] Setting new scene
-2025.07.22@12:27:42:457 - [App] [Info] Initializing new scene
-2025.07.22@12:27:42:457 - [Scene] [Info] Initializing test scene 1
-2025.07.22@12:27:42:457 - [App] [Info] Entering new scene
-2025.07.22@12:27:42:457 - [Keyboard] [Info] Adding keyboard input listener
-2025.07.22@12:27:42:457 - [Mouse] [Info] Adding mouse input listener
-2025.07.22@12:27:42:457 - [Scene] [Info] Entering test scene 1
-2025.07.22@12:27:42:457 - [App] [Info] Initialized Asclepias Framework application
-2025.07.22@12:27:42:457 - [App] [Info] Running main loop
-2025.07.22@12:27:43:400 - [Scene] [Info] Playing music track 1
-2025.07.22@12:27:43:400 - [Music] [Info] Setting new music track "Assets/audio/music_1.wav"
-2025.07.22@12:27:43:400 - [Music] [Info] Playing music track "Assets/audio/music_1.wav"
-2025.07.22@12:27:43:400 - [Audio] [Info] Loading audio data from "Assets/audio/music_1.wav"
-2025.07.22@12:27:46:368 - [Scene] [Info] Pausing current music track
-2025.07.22@12:27:46:368 - [Music] [Info] Pausing current music track
-2025.07.22@12:27:47:374 - [Scene] [Info] Playing current music track
-2025.07.22@12:27:47:374 - [Music] [Info] Playing music track "Assets/audio/music_1.wav"
-2025.07.22@12:27:48:846 - [Scene] [Info] Setting volume 1.0
-2025.07.22@12:27:49:015 - [Scene] [Info] Setting volume 0.9
-2025.07.22@12:27:49:178 - [Scene] [Info] Setting volume 0.8
-2025.07.22@12:27:49:335 - [Scene] [Info] Setting volume 0.7000000000000001
-2025.07.22@12:27:49:475 - [Scene] [Info] Setting volume 0.6000000000000001
-2025.07.22@12:27:50:187 - [Scene] [Info] Setting volume 0.5000000000000001
-2025.07.22@12:27:50:336 - [Scene] [Info] Setting volume 0.40000000000000013
-2025.07.22@12:27:51:790 - [Scene] [Info] Playing music track 2
-2025.07.22@12:27:51:790 - [Music] [Info] Setting new music track "Assets/audio/music_2.wav"
-2025.07.22@12:27:51:791 - [Music] [Info] Playing music track "Assets/audio/music_2.wav"
-2025.07.22@12:27:51:792 - [Audio] [Info] Loading audio data from "Assets/audio/music_2.wav"
-2025.07.22@12:27:53:936 - [Scene] [Info] Setting volume 0.30000000000000016
-2025.07.22@12:27:54:111 - [Scene] [Info] Setting volume 0.40000000000000013
-2025.07.22@12:27:54:838 - [Scene] [Info] Setting volume 0.5000000000000001
-2025.07.22@12:27:55:039 - [Scene] [Info] Setting volume 0.6000000000000001
-2025.07.22@12:27:57:281 - [Scene] [Info] Stopping current music track
-2025.07.22@12:27:57:281 - [Music] [Info] Stopping current music track
-2025.07.22@12:27:58:336 - [Scene] [Info] Playing music track 2
-2025.07.22@12:27:58:337 - [Music] [Info] Setting new music track "Assets/audio/music_2.wav"
-2025.07.22@12:27:58:337 - [Music] [Info] Playing music track "Assets/audio/music_2.wav"
-2025.07.22@12:27:59:696 - [Scene] [Info] Pausing current music track
-2025.07.22@12:27:59:696 - [Music] [Info] Pausing current music track
-2025.07.22@12:28:00:345 - [Scene] [Info] Playing current music track
-2025.07.22@12:28:00:345 - [Music] [Info] Playing music track "Assets/audio/music_2.wav"
-2025.07.22@12:28:01:123 - [Scene] [Info] Playing music track 1
-2025.07.22@12:28:01:123 - [Music] [Info] Setting new music track "Assets/audio/music_1.wav"
-2025.07.22@12:28:01:124 - [Music] [Info] Playing music track "Assets/audio/music_1.wav"
-2025.07.22@12:28:02:792 - [Scene] [Info] Stopping current music track
-2025.07.22@12:28:02:793 - [Music] [Info] Stopping current music track
-2025.07.22@12:28:03:369 - [Scene] [Info] Playing music track 1
-2025.07.22@12:28:03:369 - [Music] [Info] Setting new music track "Assets/audio/music_1.wav"
-2025.07.22@12:28:03:369 - [Music] [Info] Playing music track "Assets/audio/music_1.wav"
-2025.07.22@12:28:04:564 - [Scene] [Info] Playing music track 1
-2025.07.22@12:28:04:564 - [Music] [Info] Setting new music track "Assets/audio/music_1.wav"
-2025.07.22@12:28:04:564 - [Music] [Info] Playing music track "Assets/audio/music_1.wav"
-2025.07.22@12:28:06:893 - [Scene] [Info] Pausing current music track
-2025.07.22@12:28:06:893 - [Music] [Info] Pausing current music track
-2025.07.22@12:28:07:840 - [Scene] [Info] Playing current music track
-2025.07.22@12:28:07:840 - [Music] [Info] Playing music track "Assets/audio/music_1.wav"
-2025.07.22@12:28:09:722 - [Scene] [Info] Setting volume 0.7000000000000001
-2025.07.22@12:28:09:866 - [Scene] [Info] Setting volume 0.6000000000000001
-2025.07.22@12:28:10:012 - [Scene] [Info] Setting volume 0.5000000000000001
-2025.07.22@12:28:10:161 - [Scene] [Info] Setting volume 0.40000000000000013
-2025.07.22@12:28:11:652 - [Window] [Info] Window requested to close
-2025.07.22@12:28:11:653 - [App] [Info] Finished main loop
-2025.07.22@12:28:11:654 - [App] [Info] Destroying Asclepias Framework application
-2025.07.22@12:28:11:654 - [App] [Info] Clearing current scene
-2025.07.22@12:28:11:654 - [App] [Info] Setting new scene
-2025.07.22@12:28:11:655 - [App] [Info] Leaving current scene
-2025.07.22@12:28:11:655 - [Scene] [Info] Leaving test scene 1
-2025.07.22@12:28:11:655 - [Keyboard] [Info] Removing keyboard input listener
-2025.07.22@12:28:11:655 - [Mouse] [Info] Removing mouse input listener
-2025.07.22@12:28:11:656 - [App] [Warning] No new scene passed to app
-2025.07.22@12:28:11:656 - [App] [Info] Destroying all previous scenes
-2025.07.22@12:28:11:656 - [Scene] [Info] Destroying test scene 1
-2025.07.22@12:28:11:656 - [App] [Info] Destroying audio management systems
-2025.07.22@12:28:11:656 - [Audio] [Info] Destroying sound effect management system
-2025.07.22@12:28:11:657 - [Sound Effects] [Info] Destroying sound effects management system
-2025.07.22@12:28:11:657 - [Audio] [Info] Destroying music management system
-2025.07.22@12:28:11:657 - [Music] [Info] Destroying music management system
-2025.07.22@12:28:11:657 - [Music] [Info] Stopping current music track
-2025.07.22@12:28:11:659 - [App] [Info] Destroying user input management system
-2025.07.22@12:28:11:659 - [Input] [Info] Destroying keyboard input management system
-2025.07.22@12:28:11:660 - [Keyboard] [Info] Destroying keyboard input manager
-2025.07.22@12:28:11:660 - [Input] [Info] Destroying mouse input management system
-2025.07.22@12:28:11:660 - [Mouse] [Info] Destroying mouse input manager
-2025.07.22@12:28:11:660 - [App] [Info] Destroying window management system
-2025.07.22@12:28:11:661 - [Window] [Info] Freeing window memory
-2025.07.22@12:28:11:664 - [App] [Info] Destroying logging system
+2025.08.09@10:48:43:716 - [App] [Info] Initialized logging system
+2025.08.09@10:48:43:914 - [Window] [Info] Opened new window
+2025.08.09@10:48:43:914 - [Window] [Info] Setting window title "Asclepias Framework"
+2025.08.09@10:48:43:923 - [Window] [Info] Setting window dimensions <800.0,600.0>
+2025.08.09@10:48:43:928 - [Window] [Info] Setting monitor index 0
+2025.08.09@10:48:43:929 - [Window] [Info] Set initial window attributes
+2025.08.09@10:48:43:929 - [App] [Info] Initialized window management system
+2025.08.09@10:48:43:929 - [Input] [Info] Initializing keyboard input management system
+2025.08.09@10:48:43:930 - [Keyboard] [Info] Attaching as key listener to window handle
+2025.08.09@10:48:43:931 - [Keyboard] [Info] Initializing keyboard state memory
+2025.08.09@10:48:43:931 - [Keyboard] [Info] Initializing keyboard input listeners set
+2025.08.09@10:48:43:931 - [Input] [Info] Initializing mouse input management system
+2025.08.09@10:48:43:933 - [Mouse] [Info] Attaching as mouse listener to window handle
+2025.08.09@10:48:43:933 - [Mouse] [Info] Initializing mouse state memory
+2025.08.09@10:48:43:934 - [Mouse] [Info] Initializing mouse input listeners set
+2025.08.09@10:48:43:934 - [App] [Info] Initialized user input management systems
+2025.08.09@10:48:43:935 - [Audio] [Info] Initializing sound effect management system
+2025.08.09@10:48:43:936 - [Sound Effects] [Info] Initializing sound effects cache memory
+2025.08.09@10:48:43:936 - [Sound Effects] [Info] Setting initial volume 100%
+2025.08.09@10:48:43:937 - [Audio] [Info] Initializing music management system
+2025.08.09@10:48:43:938 - [Music] [Info] Initializing music track memory
+2025.08.09@10:48:43:938 - [Music] [Info] Setting initial volume 100%
+2025.08.09@10:48:43:938 - [App] [Info] Initialized audio management systems
+2025.08.09@10:48:43:938 - [App] [Info] Setting initial scene
+2025.08.09@10:48:43:939 - [App] [Info] Setting new scene
+2025.08.09@10:48:43:939 - [App] [Info] Initializing new scene
+2025.08.09@10:48:43:939 - [Scene] [Info] Initializing test scene 1
+2025.08.09@10:48:43:939 - [App] [Info] Entering new scene
+2025.08.09@10:48:43:939 - [Keyboard] [Info] Adding keyboard input listener
+2025.08.09@10:48:43:939 - [Mouse] [Info] Adding mouse input listener
+2025.08.09@10:48:43:939 - [Scene] [Info] Entering test scene 1
+2025.08.09@10:48:43:939 - [App] [Info] Initialized Asclepias Framework application
+2025.08.09@10:48:43:939 - [App] [Info] Running main loop
+2025.08.09@10:48:46:101 - [Window] [Info] Window requested to close
+2025.08.09@10:48:46:102 - [App] [Info] Finished main loop
+2025.08.09@10:48:46:102 - [App] [Info] Destroying Asclepias Framework application
+2025.08.09@10:48:46:102 - [App] [Info] Clearing current scene
+2025.08.09@10:48:46:102 - [App] [Info] Setting new scene
+2025.08.09@10:48:46:102 - [App] [Info] Leaving current scene
+2025.08.09@10:48:46:102 - [Scene] [Info] Leaving test scene 1
+2025.08.09@10:48:46:102 - [Keyboard] [Info] Removing keyboard input listener
+2025.08.09@10:48:46:102 - [Mouse] [Info] Removing mouse input listener
+2025.08.09@10:48:46:102 - [App] [Warning] No new scene passed to app
+2025.08.09@10:48:46:103 - [App] [Info] Destroying all previous scenes
+2025.08.09@10:48:46:103 - [Scene] [Info] Destroying test scene 1
+2025.08.09@10:48:46:103 - [App] [Info] Destroying audio management systems
+2025.08.09@10:48:46:103 - [Audio] [Info] Destroying sound effect management system
+2025.08.09@10:48:46:103 - [Sound Effects] [Info] Freeing sound effects cache
+2025.08.09@10:48:46:103 - [Sound Effects] [Info] Clearing sound effects volume
+2025.08.09@10:48:46:103 - [Audio] [Info] Destroying music management system
+2025.08.09@10:48:46:103 - [Music] [Info] Clearing current music track
+2025.08.09@10:48:46:103 - [Music] [Info] Stopping current music track
+2025.08.09@10:48:46:103 - [Music] [Warning] No music track is present
+2025.08.09@10:48:46:104 - [Music] [Info] Clearing music track volume
+2025.08.09@10:48:46:104 - [App] [Info] Destroying user input management system
+2025.08.09@10:48:46:104 - [Input] [Info] Destroying keyboard input management system
+2025.08.09@10:48:46:104 - [Keyboard] [Info] Detaching from window handle as key input listener
+2025.08.09@10:48:46:104 - [Keyboard] [Info] Freeing keyboard state information
+2025.08.09@10:48:46:104 - [Keyboard] [Info] Clearing keyboard input listeners
+2025.08.09@10:48:46:104 - [Input] [Info] Destroying mouse input management system
+2025.08.09@10:48:46:104 - [Mouse] [Info] Detaching from window handle as mouse input listener
+2025.08.09@10:48:46:104 - [Mouse] [Info] Clearing mouse state information
+2025.08.09@10:48:46:104 - [Mouse] [Info] Clearing mouse input listeners
+2025.08.09@10:48:46:105 - [App] [Info] Destroying window management system
+2025.08.09@10:48:46:105 - [Window] [Info] Disposing of window handle
+2025.08.09@10:48:46:107 - [Window] [Info] Freeing window state memory
+2025.08.09@10:48:46:107 - [App] [Info] Destroying logging system

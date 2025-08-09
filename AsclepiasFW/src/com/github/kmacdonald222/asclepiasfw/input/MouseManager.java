@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.github.kmacdonald222.asclepiasfw.app.App;
-import com.github.kmacdonald222.asclepiasfw.data.Vec2D;
+import com.github.kmacdonald222.asclepiasfw.data.Vector2D;
 import com.github.kmacdonald222.asclepiasfw.logging.LogPriority;
 import com.github.kmacdonald222.asclepiasfw.logging.LogSource;
 
@@ -57,10 +57,10 @@ public class MouseManager implements java.awt.event.MouseListener,
 	// The distance the mouse scroll wheel moved before the last logic update
 	private double previousScrollDistance = 0.0d;
 	// The current position of the mouse cursor on the application's window
-	private Vec2D cursorPosition = null;
+	private Vector2D cursorPosition = null;
 	// The position of the mouse cursor on the application's window before the
 	// last logic update
-	private Vec2D previousCursorPosition = null;
+	private Vector2D previousCursorPosition = null;
 	// The set of classes subscribed to mouse input event callbacks
 	private List<MouseListener> listeners = null;
 	
@@ -74,18 +74,22 @@ public class MouseManager implements java.awt.event.MouseListener,
 		if (initialized) {
 			return false;
 		}
-		App.Log.write(LogSource.Mouse, LogPriority.Info, "Initializing mouse ",
-				"input manager");
+		App.Log.write(LogSource.Mouse, LogPriority.Info, "Attaching as mouse ",
+				"listener to window handle");
 		App.Window.getWindowHandle().getContentPane().addMouseListener(this);
 		App.Window.getWindowHandle().getContentPane()
 				.addMouseWheelListener(this);
 		App.Window.getWindowHandle().getContentPane()
 				.addMouseMotionListener(this);
+		App.Log.write(LogSource.Mouse, LogPriority.Info, "Initializing mouse ",
+				"state memory");
 		buttonStates = new HashMap<Integer, ButtonState>();
 		scrollDistance = 0.0d;
 		previousScrollDistance = 0.0d;
-		cursorPosition = new Vec2D();
-		previousCursorPosition = new Vec2D();
+		cursorPosition = new Vector2D();
+		previousCursorPosition = new Vector2D();
+		App.Log.write(LogSource.Mouse, LogPriority.Info, "Initializing mouse ",
+				"input listeners set");
 		listeners = new ArrayList<MouseListener>();
 		initialized = true;
 		return initialized;
@@ -191,7 +195,7 @@ public class MouseManager implements java.awt.event.MouseListener,
 	 */
 	@Override
 	public void mouseMoved(MouseEvent event) {
-		Vec2D cursorPosition = new Vec2D(event.getX(),
+		Vector2D cursorPosition = new Vector2D(event.getX(),
 				App.Window.getDimensions().y - event.getY());
 		this.cursorPosition = cursorPosition;
 		for (MouseListener listener : listeners) {
@@ -208,20 +212,24 @@ public class MouseManager implements java.awt.event.MouseListener,
 		if (!initialized) {
 			return false;
 		}
-		App.Log.write(LogSource.Mouse, LogPriority.Info, "Destroying mouse ",
-				"input manager");
 		boolean success = true;
+		App.Log.write(LogSource.Mouse, LogPriority.Info, "Detaching from ",
+				"window handle as mouse input listener");
 		App.Window.getWindowHandle().getContentPane().removeMouseListener(this);
 		App.Window.getWindowHandle().getContentPane()
 				.removeMouseWheelListener(this);
 		App.Window.getWindowHandle().getContentPane()
 				.removeMouseMotionListener(this);
+		App.Log.write(LogSource.Mouse, LogPriority.Info, "Clearing mouse ",
+				"state information");
 		buttonStates.clear();
 		buttonStates = null;
 		scrollDistance = 0.0d;
 		previousScrollDistance = 0.0d;
 		cursorPosition = null;
 		previousCursorPosition = null;
+		App.Log.write(LogSource.Mouse, LogPriority.Info, "Clearing mouse ",
+				"input listeners");
 		listeners.clear();
 		listeners = null;
 		initialized = false;
@@ -301,7 +309,7 @@ public class MouseManager implements java.awt.event.MouseListener,
 	 * Get the current position of the mouse cursor on the application's window
 	 * @return Vec2D - The current position of the mouse cursor
 	 */
-	public Vec2D getCursorPosition() {
+	public Vector2D getCursorPosition() {
 		return cursorPosition;
 	}
 	/*
@@ -309,7 +317,7 @@ public class MouseManager implements java.awt.event.MouseListener,
 	 * last logic update
 	 * @return Vec2D - The previous position of the mouse cursor
 	 */
-	public Vec2D getPreviousCursorPosition() {
+	public Vector2D getPreviousCursorPosition() {
 		return previousCursorPosition;
 	}
 	/*

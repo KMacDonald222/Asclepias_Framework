@@ -64,11 +64,11 @@ public class App {
 		Input = new InputManager();
 		if (!Input.initialize()) {
 			Log.write(LogSource.App, LogPriority.Error, "Failed to initialize ",
-					"user input management system");
+					"user input management systems");
 			return false;
 		}
 		Log.write(LogSource.App, LogPriority.Info, "Initialized user input ",
-				"management system");
+				"management systems");
 		Audio = new AudioManager();
 		if (!Audio.initialize(config.audio.soundEffects.volume,
 				config.audio.music.volume)) {

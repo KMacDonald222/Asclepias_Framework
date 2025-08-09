@@ -32,6 +32,7 @@ public class MusicManager {
 	private long position = 0L;
 	// Whether the current music track is paused
 	private boolean paused = false;
+	// The current volume of the current music track
 	private double volume = 0.0d;
 	
 	/*
@@ -45,10 +46,19 @@ public class MusicManager {
 		if (initialized) {
 			return false;
 		}
-		stop();
-		this.volume = volume;
-		App.Log.write(LogSource.Music, LogPriority.Info, "Initialized music ",
-				"management system");
+		App.Log.write(LogSource.Music, LogPriority.Info, "Initializing music ",
+				"track memory");
+		fileName = "";
+		music = null;
+		position = 0L;
+		paused = false;
+		App.Log.write(LogSource.Music, LogPriority.Info, "Setting initial ",
+				"volume ", (int)(volume * 100.0d), "%");
+		if (!setVolume(volume)) {
+			App.Log.write(LogSource.Music, LogPriority.Error, "Failed to set ",
+					"initial volume");
+			return false;
+		}
 		initialized = true;
 		return initialized;
 	}
@@ -164,9 +174,11 @@ public class MusicManager {
 			return false;
 		}
 		boolean success = true;
-		App.Log.write(LogSource.Music, LogPriority.Info, "Destroying music ",
-				"management system");
+		App.Log.write(LogSource.Music, LogPriority.Info, "Clearing current ",
+				"music track");
 		stop();
+		App.Log.write(LogSource.Music, LogPriority.Info, "Clearing music ",
+				"track volume");
 		volume = 0.0d;
 		initialized = false;
 		return success;
@@ -206,7 +218,7 @@ public class MusicManager {
 		}
 		this.volume = volume;
 		if (music == null) {
-			return false;
+			return true;
 		}
 		FloatControl gainControl = null;
 		try {

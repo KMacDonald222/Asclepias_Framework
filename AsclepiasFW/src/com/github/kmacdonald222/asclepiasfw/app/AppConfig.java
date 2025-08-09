@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.github.kmacdonald222.asclepiasfw.data.Vec2D;
+import com.github.kmacdonald222.asclepiasfw.data.Vector2D;
 
 // Wrapper class for all application configuration structures
 public class AppConfig {
@@ -33,7 +33,7 @@ public class AppConfig {
 		// The initial title for the window
 		public String title = "Asclepias Framework";
 		// The initial dimensions for the window
-		public Vec2D dimensions = new Vec2D(800.0d, 600.0d);
+		public Vector2D dimensions = new Vector2D(800.0d, 600.0d);
 		// Whether the window should initially appear in fullscreen mode
 		public boolean fullscreen = false;
 		// The index of the monitor the window should initially appear on

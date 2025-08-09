@@ -31,22 +31,22 @@ public class InputManager {
 		if (initialized) {
 			return false;
 		}
+		App.Log.write(LogSource.Input, LogPriority.Info, "Initializing ",
+				"keyboard input management system");
 		keyboard = new KeyboardManager();
 		if (!keyboard.initialize()) {
 			App.Log.write(LogSource.Input, LogPriority.Error, "Failed to ",
 					"initialize keyboard input management system");
 			return false;
 		}
-		App.Log.write(LogSource.Input, LogPriority.Info, "Initialized ",
-				"keyboard input management system");
+		App.Log.write(LogSource.Input, LogPriority.Info, "Initializing ",
+				"mouse input management system");
 		mouse = new MouseManager();
 		if (!mouse.initialize()) {
 			App.Log.write(LogSource.Input, LogPriority.Error, "Failed to ",
 					"initialize mouse input management system");
 			return false;
 		}
-		App.Log.write(LogSource.Input, LogPriority.Info, "Initialized ",
-				"mouse input management system");
 		initialized = true;
 		return initialized;
 	}

@@ -30,6 +30,12 @@ public class LogSource {
 	public static LogSource Music = new LogSource("Music");
 	// General audio management system source log flag
 	public static LogSource Audio = new LogSource("Audio");
+	// Network client source log flag
+	public static LogSource NetClient = new LogSource("Network Client");
+	// Network server source log flag
+	public static LogSource NetServer = new LogSource("Network Server");
+	// Network connection source log flag
+	public static LogSource NetConnection = new LogSource("Network Connection");
 	
 	// The name of this source flag
 	private String name = "";

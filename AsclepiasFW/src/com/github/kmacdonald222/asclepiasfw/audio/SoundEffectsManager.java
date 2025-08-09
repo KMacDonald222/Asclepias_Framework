@@ -44,14 +44,16 @@ public class SoundEffectsManager {
 		if (initialized) {
 			return false;
 		}
+		App.Log.write(LogSource.SoundEffects, LogPriority.Info, "Initializing ",
+				"sound effects cache memory");
 		effects = new HashMap<String, List<Clip>>();
+		App.Log.write(LogSource.SoundEffects, LogPriority.Info, "Setting ",
+				"initial volume ", (int)(volume * 100.0d), "%");
 		if (!setVolume(volume)) {
 			App.Log.write(LogSource.SoundEffects, LogPriority.Error, "Failed ",
 					"to set initial volume");
 			return false;
 		}
-		App.Log.write(LogSource.SoundEffects, LogPriority.Info, "Initialized ",
-				"sound effects management system");
 		initialized = true;
 		return initialized;
 	}
@@ -124,10 +126,12 @@ public class SoundEffectsManager {
 			return false;
 		}
 		boolean success = true;
-		App.Log.write(LogSource.SoundEffects, LogPriority.Info, "Destroying ",
-				"sound effects management system");
+		App.Log.write(LogSource.SoundEffects, LogPriority.Info, "Freeing ",
+				"sound effects cache");
 		effects.clear();
 		effects = null;
+		App.Log.write(LogSource.SoundEffects, LogPriority.Info, "Clearing ",
+				"sound effects volume");
 		volume = 0.0d;
 		initialized = false;
 		return success;

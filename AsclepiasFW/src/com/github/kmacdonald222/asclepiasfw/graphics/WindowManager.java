@@ -18,7 +18,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import com.github.kmacdonald222.asclepiasfw.app.App;
-import com.github.kmacdonald222.asclepiasfw.data.Vec2D;
+import com.github.kmacdonald222.asclepiasfw.data.Vector2D;
 import com.github.kmacdonald222.asclepiasfw.logging.LogPriority;
 import com.github.kmacdonald222.asclepiasfw.logging.LogSource;
 
@@ -37,9 +37,9 @@ public class WindowManager {
 	// The current title of the window
 	private String title = "";
 	// The current dimensions of the window
-	private Vec2D dimensions = null;
+	private Vector2D dimensions = null;
 	// The dimensions of the window for the next time it is set to windowed mode
-	private Vec2D windowedDimensions = null;
+	private Vector2D windowedDimensions = null;
 	// Whether the window currently appears in fullscreen mode
 	private boolean fullscreen = false;
 	// The index of the monitor the window currently appears on
@@ -55,7 +55,7 @@ public class WindowManager {
 	 * initially appear on
 	 * @return boolean - Whether the window was successfully opened
 	 */
-	public boolean initialize(String title, Vec2D dimensions,
+	public boolean initialize(String title, Vector2D dimensions,
 			boolean fullscreen, int monitorIndex) {
 		if (initialized) {
 			return false;
@@ -98,11 +98,13 @@ public class WindowManager {
 			return false;
 		}
 		boolean success = true;
-		App.Log.write(LogSource.Window, LogPriority.Info, "Freeing window ",
-				"memory");
+		App.Log.write(LogSource.Window, LogPriority.Info, "Disposing of ",
+				"window handle");
 		contentPanel = null;
 		windowHandle.dispose();
 		windowHandle = null;
+		App.Log.write(LogSource.Window, LogPriority.Info, "Freeing window ",
+				"state memory");
 		windowClosing = false;
 		title = "";
 		dimensions = null;
@@ -116,8 +118,8 @@ public class WindowManager {
 	 * Center the window on its monitor
 	 */
 	private void center() {
-		Vec2D mp = getMonitorPosition();
-		Vec2D md = getMonitorDimensions();
+		Vector2D mp = getMonitorPosition();
+		Vector2D md = getMonitorDimensions();
 		windowHandle.setLocation(
 				(int)(mp.x + ((md.x - dimensions.x) / 2.0d)),
 				(int)(mp.y + ((md.y - dimensions.y) / 2.0d)));
@@ -158,14 +160,14 @@ public class WindowManager {
 	 * Get the current dimensions of the window
 	 * @return Vec2D - The current dimensions of the window
 	 */
-	public Vec2D getDimensions() {
+	public Vector2D getDimensions() {
 		return dimensions;
 	}
 	/*
 	 * Set the dimensions of the window if in windowed mode
 	 * @param Vec2D dimensions - The new dimensions for the window
 	 */
-	public void setDimensions(Vec2D dimensions) {
+	public void setDimensions(Vector2D dimensions) {
 		App.Log.write(LogSource.Window, LogPriority.Info, "Setting window ",
 				"dimensions ", dimensions);
 		if (fullscreen) {
@@ -250,57 +252,57 @@ public class WindowManager {
 	 * Get the position of the window's current monitor
 	 * @return Vec2D - The position of the window's current monitor
 	 */
-	public Vec2D getMonitorPosition() {
+	public Vector2D getMonitorPosition() {
 		GraphicsEnvironment environment
 				= GraphicsEnvironment.getLocalGraphicsEnvironment();
 		GraphicsDevice[] monitors = environment.getScreenDevices();
 		Rectangle bounds
 				= monitors[monitorIndex].getDefaultConfiguration().getBounds();
-		return new Vec2D(bounds.x, bounds.y);
+		return new Vector2D(bounds.x, bounds.y);
 	}
 	/*
 	 * Get the position of an available monitor
 	 * @param int monitorIndex - The index of the monitor to test
 	 * @return Vec2D - The position of the monitor
 	 */
-	public Vec2D getMonitorPosition(int monitorIndex) {
+	public Vector2D getMonitorPosition(int monitorIndex) {
 		if (monitorIndex < 0 || monitorIndex >= getMonitorCount()) {
-			return new Vec2D();
+			return new Vector2D();
 		}
 		GraphicsEnvironment environment
 				= GraphicsEnvironment.getLocalGraphicsEnvironment();
 		GraphicsDevice[] monitors = environment.getScreenDevices();
 		Rectangle bounds
 				= monitors[monitorIndex].getDefaultConfiguration().getBounds();
-		return new Vec2D(bounds.x, bounds.y);
+		return new Vector2D(bounds.x, bounds.y);
 	}
 	/*
 	 * Get the dimensions of the window's current monitor
 	 * @return Vec2D - The dimensions of the window's current monitor
 	 */
-	public Vec2D getMonitorDimensions() {
+	public Vector2D getMonitorDimensions() {
 		GraphicsEnvironment environment
 				= GraphicsEnvironment.getLocalGraphicsEnvironment();
 		GraphicsDevice[] monitors = environment.getScreenDevices();
 		Rectangle bounds
 				= monitors[monitorIndex].getDefaultConfiguration().getBounds();
-		return new Vec2D(bounds.width, bounds.height);
+		return new Vector2D(bounds.width, bounds.height);
 	}
 	/*
 	 * Get the dimensions of an available monitor
 	 * @param int monitorIndex - The index of the monitor to test
 	 * @return vec2D - The dimensions of the monitor
 	 */
-	public Vec2D getMonitorDimensions(int monitorIndex) {
+	public Vector2D getMonitorDimensions(int monitorIndex) {
 		if (monitorIndex < 0 || monitorIndex >= getMonitorCount()) {
-			return new Vec2D();
+			return new Vector2D();
 		}
 		GraphicsEnvironment environment
 				= GraphicsEnvironment.getLocalGraphicsEnvironment();
 		GraphicsDevice[] monitors = environment.getScreenDevices();
 		Rectangle bounds
 				= monitors[monitorIndex].getDefaultConfiguration().getBounds();
-		return new Vec2D(bounds.width, bounds.height);
+		return new Vector2D(bounds.width, bounds.height);
 	}
 	/*
 	 * Get the index of the window's current monitor

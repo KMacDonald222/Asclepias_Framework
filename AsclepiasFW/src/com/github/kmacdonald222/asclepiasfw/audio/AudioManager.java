@@ -30,22 +30,22 @@ public class AudioManager {
 		if (initialized) {
 			return false;
 		}
+		App.Log.write(LogSource.Audio, LogPriority.Info, "Initializing sound ",
+				"effect management system");
 		soundEffects = new SoundEffectsManager();
 		if (!soundEffects.initialize(soundEffectsVolume)) {
 			App.Log.write(LogSource.Audio, LogPriority.Error, "Failed to ",
 					"initialize sound effect management system");
 			return false;
 		}
-		App.Log.write(LogSource.Audio, LogPriority.Info, "Initialized sound ",
-				"effect management system");
+		App.Log.write(LogSource.Audio, LogPriority.Info, "Initializing music ",
+				"management system");
 		music = new MusicManager();
 		if (!music.initialize(musicVolume)) {
 			App.Log.write(LogSource.Audio, LogPriority.Error, "Failed to ",
 					"initialize music management system");
 			return false;
 		}
-		App.Log.write(LogSource.Audio, LogPriority.Info, "Initialized music ",
-				"management system");
 		initialized = true;
 		return initialized;
 	}

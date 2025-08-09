@@ -7,7 +7,7 @@
 
 package com.github.kmacdonald222.asclepiasfw.input;
 
-import com.github.kmacdonald222.asclepiasfw.data.Vec2D;
+import com.github.kmacdonald222.asclepiasfw.data.Vector2D;
 
 // Abstract interface for mouse input event callbacks
 public interface MouseListener {
@@ -36,8 +36,8 @@ public interface MouseListener {
 	 * @param Vec2D previousCursorPosition - The previous position of the mouse
 	 * cursor
 	 */
-	public default void mouseCursorMoved(Vec2D cursorPosition,
-			Vec2D previousCursorPosition) {
+	public default void mouseCursorMoved(Vector2D cursorPosition,
+			Vector2D previousCursorPosition) {
 	}
 	
 }

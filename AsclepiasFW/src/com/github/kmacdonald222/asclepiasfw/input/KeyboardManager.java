@@ -61,10 +61,14 @@ public class KeyboardManager implements KeyListener {
 		if (initialized) {
 			return false;
 		}
-		App.Log.write(LogSource.Keyboard, LogPriority.Info, "Initializing ",
-				"keyboard input manager");
+		App.Log.write(LogSource.Keyboard, LogPriority.Info, "Attaching as ",
+				"key listener to window handle");
 		App.Window.getWindowHandle().addKeyListener(this);
+		App.Log.write(LogSource.Keyboard, LogPriority.Info, "Initializing ",
+				"keyboard state memory");
 		keyStates = new HashMap<Integer, KeyState>();
+		App.Log.write(LogSource.Keyboard, LogPriority.Info, "Initializing ",
+				"keyboard input listeners set");
 		listeners = new ArrayList<KeyboardListener>();
 		initialized = true;
 		return initialized;
@@ -139,12 +143,16 @@ public class KeyboardManager implements KeyListener {
 		if (!initialized) {
 			return false;
 		}
-		App.Log.write(LogSource.Keyboard, LogPriority.Info, "Destroying ",
-				"keyboard input manager");
 		boolean success = true;
+		App.Log.write(LogSource.Keyboard, LogPriority.Info, "Detaching from ",
+				"window handle as key input listener");
 		App.Window.getWindowHandle().removeKeyListener(this);
+		App.Log.write(LogSource.Keyboard, LogPriority.Info, "Freeing keyboard ",
+				"state information");
 		keyStates.clear();
 		keyStates = null;
+		App.Log.write(LogSource.Keyboard, LogPriority.Info, "Clearing ",
+				"keyboard input listeners");
 		listeners.clear();
 		listeners = null;
 		initialized = false;
