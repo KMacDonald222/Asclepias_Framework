@@ -11,6 +11,7 @@ package com.github.kmacdonald222.asclepiasfw.input;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.Map;
+import java.util.concurrent.LinkedBlockingQueue;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -46,6 +47,8 @@ public class KeyboardManager implements KeyListener {
 
 	// Whether the keyboard input management system has been initialized
 	private boolean initialized = false;
+	// Thread-safe queue of keyboard events
+	private LinkedBlockingQueue<KeyEvent> keyEvents = null;
 	// The set of key states mapped to their codes
 	private Map<Integer, KeyState> keyStates = null;
 	// The set of classes subscribed to keyboard input event callbacks
@@ -66,6 +69,7 @@ public class KeyboardManager implements KeyListener {
 		App.Window.getWindowHandle().addKeyListener(this);
 		App.Log.write(LogSource.Keyboard, LogPriority.Info, "Initializing ",
 				"keyboard state memory");
+		keyEvents = new LinkedBlockingQueue<KeyEvent>();
 		keyStates = new HashMap<Integer, KeyState>();
 		App.Log.write(LogSource.Keyboard, LogPriority.Info, "Initializing ",
 				"keyboard input listeners set");
@@ -80,6 +84,20 @@ public class KeyboardManager implements KeyListener {
 		for (Map.Entry<Integer, KeyState> keyState : keyStates.entrySet()) {
 			keyState.getValue().previousState = keyState.getValue().state;
 		}
+		KeyEvent event = null;
+		while ((event = keyEvents.poll()) != null) {
+			switch (event.getID()) {
+			case KeyEvent.KEY_PRESSED:
+				pressKey(event);
+				break;
+			case KeyEvent.KEY_RELEASED:
+				releaseKey(event);
+				break;
+			case KeyEvent.KEY_TYPED:
+				typeCharacter(event);
+				break;
+			}
+		}
 	}
 	/*
 	 * Asynchronous callback for key press events on the keyboard
@@ -87,6 +105,18 @@ public class KeyboardManager implements KeyListener {
 	 */
 	@Override
 	public void keyPressed(KeyEvent event) {
+		try {
+			keyEvents.put(event);
+		} catch (InterruptedException e) {
+			App.Log.write(LogSource.Keyboard, LogPriority.Warning, "Key press ",
+					"event interrupted");
+		}
+	}
+	/*
+	 * Update a key's state to pressed and notify input listeners
+	 * @param KeyEvent event - The event data passed by the application's window
+	 */
+	private void pressKey(KeyEvent event) {
 		KeyboardKey key = KeyboardKey.fromKeyCode(event.getKeyCode());
 		if (key == KeyboardKey.UNKNOWN) {
 			return;
@@ -108,6 +138,18 @@ public class KeyboardManager implements KeyListener {
 	 */
 	@Override
 	public void keyReleased(KeyEvent event) {
+		try {
+			keyEvents.put(event);
+		} catch (InterruptedException e) {
+			App.Log.write(LogSource.Keyboard, LogPriority.Warning, "Key ",
+					"release event interrupted");
+		}
+	}
+	/*
+	 * Update a key's state to released and notify input listeners
+	 * @param KeyEvent event - The event data passed by the application's window
+	 */
+	public void releaseKey(KeyEvent event) {
 		KeyboardKey key = KeyboardKey.fromKeyCode(event.getKeyCode());
 		if (key == KeyboardKey.UNKNOWN) {
 			return;
@@ -129,6 +171,18 @@ public class KeyboardManager implements KeyListener {
 	 */
 	@Override
 	public void keyTyped(KeyEvent event) {
+		try {
+			keyEvents.put(event);
+		} catch (InterruptedException e) {
+			App.Log.write(LogSource.Keyboard, LogPriority.Warning, "Character ",
+					"typing event interrupted");
+		}
+	}
+	/*
+	 * Notify input listeners of a character typed
+	 * @param KeyEvent event - The event data passed by the application's window
+	 */
+	private void typeCharacter(KeyEvent event) {
 		for (KeyboardListener listener : listeners) {
 			listener.characterTyped(event.getKeyChar());
 		}
@@ -149,6 +203,8 @@ public class KeyboardManager implements KeyListener {
 		App.Window.getWindowHandle().removeKeyListener(this);
 		App.Log.write(LogSource.Keyboard, LogPriority.Info, "Freeing keyboard ",
 				"state information");
+		keyEvents.clear();
+		keyEvents = null;
 		keyStates.clear();
 		keyStates = null;
 		App.Log.write(LogSource.Keyboard, LogPriority.Info, "Clearing ",

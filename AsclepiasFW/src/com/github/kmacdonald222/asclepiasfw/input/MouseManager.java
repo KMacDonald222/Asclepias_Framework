@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.LinkedBlockingQueue;
 
 import com.github.kmacdonald222.asclepiasfw.app.App;
 import com.github.kmacdonald222.asclepiasfw.data.Vector2D;
@@ -50,6 +51,8 @@ public class MouseManager implements java.awt.event.MouseListener,
 	
 	// Whether the mouse input management system has been initialized
 	private boolean initialized = false;
+	// Thread-safe queue of mouse events
+	private LinkedBlockingQueue<MouseEvent> mouseEvents = null;
 	// The set of button states mapped to their codes
 	private Map<Integer, ButtonState> buttonStates = null;
 	// The distance the mouse scroll wheel has moved this logic update
@@ -83,6 +86,7 @@ public class MouseManager implements java.awt.event.MouseListener,
 				.addMouseMotionListener(this);
 		App.Log.write(LogSource.Mouse, LogPriority.Info, "Initializing mouse ",
 				"state memory");
+		mouseEvents = new LinkedBlockingQueue<MouseEvent>();
 		buttonStates = new HashMap<Integer, ButtonState>();
 		scrollDistance = 0.0d;
 		previousScrollDistance = 0.0d;
@@ -106,6 +110,24 @@ public class MouseManager implements java.awt.event.MouseListener,
 		previousScrollDistance = scrollDistance;
 		scrollDistance = 0.0d;
 		previousCursorPosition = cursorPosition;
+		MouseEvent event = null;
+		while ((event = mouseEvents.poll()) != null) {
+			switch (event.getID()) {
+			case MouseEvent.MOUSE_PRESSED:
+				pressMouse(event);
+				break;
+			case MouseEvent.MOUSE_RELEASED:
+				releaseMouse(event);
+				break;
+			case MouseEvent.MOUSE_WHEEL:
+				moveMouseWheel((MouseWheelEvent)event);
+				break;
+			case MouseEvent.MOUSE_MOVED:
+			case MouseEvent.MOUSE_DRAGGED:
+				moveMouse(event);
+				break;
+			}
+		}
 	}
 	/*
 	 * A button has been clicked on the mouse (unused method)
@@ -120,6 +142,18 @@ public class MouseManager implements java.awt.event.MouseListener,
 	 */
 	@Override
 	public void mousePressed(MouseEvent event) {
+		try {
+			mouseEvents.put(event);
+		} catch (InterruptedException e) {
+			App.Log.write(LogSource.Mouse, LogPriority.Warning, "Mouse button ",
+					"press event interrupted");
+		}
+	}
+	/*
+	 * Update the state of a mouse button to pressed
+	 * @param MouseEvent event - The event data
+	 */
+	private void pressMouse(MouseEvent event) {
 		MouseButton button = MouseButton.fromButtonCode(event.getButton());
 		if (button == MouseButton.UNKNOWN) {
 			return;
@@ -141,6 +175,18 @@ public class MouseManager implements java.awt.event.MouseListener,
 	 */
 	@Override
 	public void mouseReleased(MouseEvent event) {
+		try {
+			mouseEvents.put(event);
+		} catch (InterruptedException e) {
+			App.Log.write(LogSource.Mouse, LogPriority.Warning, "Mouse button ",
+					"release event interrupted");
+		}
+	}
+	/*
+	 * Update the state of a mouse button to released
+	 * @param MouseEvent event - The event data
+	 */
+	private void releaseMouse(MouseEvent event) {
 		MouseButton button = MouseButton.fromButtonCode(event.getButton());
 		if (button == MouseButton.UNKNOWN) { 
 			return;
@@ -162,6 +208,12 @@ public class MouseManager implements java.awt.event.MouseListener,
 	 */
 	@Override
 	public void mouseDragged(MouseEvent event) {
+		try {
+			mouseEvents.put(event);
+		} catch (InterruptedException e) {
+			App.Log.write(LogSource.Mouse, LogPriority.Warning, "Mouse ",
+					"cursor movement event interrupted");
+		}
 	}
 	/*
 	 * The mouse cursor has entered the application's window
@@ -183,10 +235,23 @@ public class MouseManager implements java.awt.event.MouseListener,
 	 */
 	@Override
 	public void mouseWheelMoved(MouseWheelEvent event) {
+		try {
+			mouseEvents.put(event);
+		} catch (InterruptedException e) {
+			App.Log.write(LogSource.Mouse, LogPriority.Warning, "Mouse scroll ",
+					"wheel movement event interrupted");
+		}
+	}
+	/*
+	 * Update the movement distance of the mouse's scroll wheel
+	 * @param MouseWheelEvent event - The event data
+	 */
+	private void moveMouseWheel(MouseWheelEvent event) {
 		double scrollDistance = -event.getPreciseWheelRotation();
 		this.scrollDistance = scrollDistance;
 		for (MouseListener listener : listeners) {
-			listener.mouseScrollWheelMoved(scrollDistance);
+			listener.mouseScrollWheelMoved(scrollDistance,
+					previousScrollDistance);
 		}
 	}
 	/*
@@ -195,6 +260,18 @@ public class MouseManager implements java.awt.event.MouseListener,
 	 */
 	@Override
 	public void mouseMoved(MouseEvent event) {
+		try {
+			mouseEvents.put(event);
+		} catch (InterruptedException e) {
+			App.Log.write(LogSource.Mouse, LogPriority.Warning, "Mouse ",
+					"movement event interrupted");
+		}
+	}
+	/*
+	 * Update the position of the mouse cursor
+	 * @param MouseEvent event - The event data
+	 */
+	private void moveMouse(MouseEvent event) {
 		Vector2D cursorPosition = new Vector2D(event.getX(),
 				App.Window.getDimensions().y - event.getY());
 		this.cursorPosition = cursorPosition;
@@ -222,6 +299,8 @@ public class MouseManager implements java.awt.event.MouseListener,
 				.removeMouseMotionListener(this);
 		App.Log.write(LogSource.Mouse, LogPriority.Info, "Clearing mouse ",
 				"state information");
+		mouseEvents.clear();
+		mouseEvents = null;
 		buttonStates.clear();
 		buttonStates = null;
 		scrollDistance = 0.0d;

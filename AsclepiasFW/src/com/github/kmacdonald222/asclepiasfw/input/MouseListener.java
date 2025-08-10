@@ -27,8 +27,11 @@ public interface MouseListener {
 	/*
 	 * The scroll wheel has been moved on the mouse
 	 * @param double scrollDistance - The distance the scroll wheel moved
+	 * @param double previousScrollDistance - The distance the scroll wheel
+	 * moved in the last logic update
 	 */
-	public default void mouseScrollWheelMoved(double scrollDistance) {
+	public default void mouseScrollWheelMoved(double scrollDistance,
+			double previousScrollDistance) {
 	}
 	/*
 	 * The mouse cursor has moved on the application's window

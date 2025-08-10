@@ -15,6 +15,7 @@ import com.github.kmacdonald222.asclepiasfw.graphics.WindowManager;
 import com.github.kmacdonald222.asclepiasfw.input.InputManager;
 import com.github.kmacdonald222.asclepiasfw.logging.LogManager;
 import com.github.kmacdonald222.asclepiasfw.logging.LogSource;
+import com.github.kmacdonald222.asclepiasfw.networking.NetClient;
 import com.github.kmacdonald222.asclepiasfw.logging.LogPriority;
 
 // The main application class of the Asclepias Framework
@@ -28,6 +29,8 @@ public class App {
 	public static InputManager Input = null;
 	// Instance of the audio management systems
 	public static AudioManager Audio = null;
+	// Instance of the client side of the networking system
+	public static NetClient Network = null;
 	// The current scene of the application
 	private static AppScene CurrentScene = null;
 	// List of all previous scenes in the application
@@ -78,6 +81,14 @@ public class App {
 		}
 		Log.write(LogSource.App, LogPriority.Info, "Initialized audio ",
 				"management systems");
+		Network = new NetClient();
+		if (!Network.initialize()) {
+			Log.write(LogSource.App, LogPriority.Error, "Failed to initialize ",
+					"network client");
+			return false;
+		}
+		Log.write(LogSource.App, LogPriority.Info, "Initialized network ",
+				"client");
 		Log.write(LogSource.App, LogPriority.Info, "Setting initial scene");
 		Scenes = new ArrayList<AppScene>();
 		if (!SetCurrentScene(config.initialScene)) {
@@ -108,6 +119,7 @@ public class App {
 			}
 			Input.update();
 			Audio.update();
+			Network.update();
 			try {
 				Thread.sleep(1);
 			} catch (InterruptedException e) {
@@ -136,6 +148,13 @@ public class App {
 		}
 		Scenes.clear();
 		Scenes = null;
+		Log.write(LogSource.App, LogPriority.Info, "Destroying network client");
+		if (!Network.destroy()) {
+			Log.write(LogSource.App, LogPriority.Warning, "Failed to destroy ",
+					"network client");
+			success = false;
+		}
+		Network = null;
 		Log.write(LogSource.App, LogPriority.Info, "Destroying audio ",
 				"management systems");
 		if (!Audio.destroy()) {

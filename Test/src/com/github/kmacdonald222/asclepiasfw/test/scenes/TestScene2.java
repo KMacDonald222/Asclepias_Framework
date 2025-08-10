@@ -2,7 +2,9 @@ package com.github.kmacdonald222.asclepiasfw.test.scenes;
 
 import com.github.kmacdonald222.asclepiasfw.app.App;
 import com.github.kmacdonald222.asclepiasfw.app.AppScene;
+import com.github.kmacdonald222.asclepiasfw.data.Vector2D;
 import com.github.kmacdonald222.asclepiasfw.input.KeyboardKey;
+import com.github.kmacdonald222.asclepiasfw.input.MouseButton;
 import com.github.kmacdonald222.asclepiasfw.logging.LogPriority;
 import com.github.kmacdonald222.asclepiasfw.logging.LogSource;
 
@@ -41,6 +43,43 @@ public class TestScene2 extends AppScene {
 		App.Log.write(LogSource.Scene, LogPriority.Info, "Destroying test ",
 				"scene 2");
 		return true;
+	}
+	@Override
+	public void keyboardKeyPressed(KeyboardKey key) {
+		App.Log.write(LogSource.Scene, LogPriority.Info, "Keyboard key ", key,
+				" pressed");
+	}
+	@Override
+	public void keyboardKeyReleased(KeyboardKey key) {
+		App.Log.write(LogSource.Scene, LogPriority.Info, "Keyboard key ", key,
+				" released");
+	}
+	@Override
+	public void characterTyped(char character) {
+		App.Log.write(LogSource.Scene, LogPriority.Info, "Character ",
+				character, " typed");
+	}
+	@Override
+	public void mouseButtonPressed(MouseButton button) {
+		App.Log.write(LogSource.Scene, LogPriority.Info, "Mouse button ",
+				button, " pressed");
+	}
+	@Override
+	public void mouseButtonReleased(MouseButton button) {
+		App.Log.write(LogSource.Scene, LogPriority.Info, "Mouse button ",
+				button, " released");
+	}
+	@Override
+	public void mouseScrollWheelMoved(double scrollDistance,
+			double previousScrollDistance) {
+		App.Log.write(LogSource.Scene, LogPriority.Info, "Mouse scroll wheel ",
+				"moved ", previousScrollDistance, " -> ", scrollDistance);
+	}
+	@Override
+	public void mouseCursorMoved(Vector2D cursorPosition,
+			Vector2D previousCursorPosition) {
+		App.Log.write(LogSource.Scene, LogPriority.Info, "Mouse cursor moved ",
+				previousCursorPosition, " -> ", cursorPosition);
 	}
 	
 }
