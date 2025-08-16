@@ -8,17 +8,9 @@
 
 package com.github.kmacdonald222.asclepiasfw.networking;
 
-import java.util.List;
-
-import com.github.kmacdonald222.asclepiasfw.app.App;
-import com.github.kmacdonald222.asclepiasfw.logging.LogPriority;
-import com.github.kmacdonald222.asclepiasfw.logging.LogSource;
-
 public class NetClient {
 
 	private boolean initialized = false;
-	private List<NetListener> listeners = null;
-	private NetConnection connection = null;
 	
 	public boolean initialize() {
 		if (initialized) {
@@ -27,18 +19,6 @@ public class NetClient {
 		
 		initialized = true;
 		return initialized;
-	}
-	public boolean connect(String hostName, int port, int timeout) {
-		return false;
-	}
-	public void update() {
-		
-	}
-	public boolean send(NetMessage message) {
-		return false;
-	}
-	public boolean disconnect() {
-		return false;
 	}
 	public boolean destroy() {
 		if (!initialized) {
@@ -49,27 +29,5 @@ public class NetClient {
 		initialized = false;
 		return success;
 	}
-	
-	public List<NetListener> getListeners() {
-		return listeners;
-	}
-	public boolean addListener(NetListener listener) {
-		if (listeners.contains(listener)) {
-			return false;
-		}
-		App.Log.write(LogSource.NetClient, LogPriority.Info, "Adding network ",
-				"listener");
-		listeners.add(listener);
-		return true;
-	}
-	public boolean removeListener(NetListener listener) {
-		if (!listeners.contains(listener)) {
-			return false;
-		}
-		App.Log.write(LogSource.NetClient, LogPriority.Info, "Removing ",
-				"network listener");
-		listeners.remove(listener);
-		return true;
-	}
-	
+
 }

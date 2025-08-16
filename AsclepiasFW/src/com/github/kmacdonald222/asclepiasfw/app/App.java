@@ -119,7 +119,6 @@ public class App {
 			}
 			Input.update();
 			Audio.update();
-			Network.update();
 			try {
 				Thread.sleep(1);
 			} catch (InterruptedException e) {
