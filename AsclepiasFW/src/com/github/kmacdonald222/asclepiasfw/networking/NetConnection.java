@@ -12,7 +12,7 @@ public class NetConnection {
 	
 	private boolean initialized = false;
 	
-	public boolean initialize(NetListener listener) {
+	public boolean initialize() {
 		if (initialized) {
 			return false;
 		}

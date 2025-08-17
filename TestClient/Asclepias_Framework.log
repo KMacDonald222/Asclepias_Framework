@@ -1,69 +1,69 @@
-2025.08.16@19:39:21:667 - [App] [Info] Initialized logging system
-2025.08.16@19:39:21:946 - [Window] [Info] Opened new window
-2025.08.16@19:39:21:946 - [Window] [Info] Setting window title "Asclepias Framework"
-2025.08.16@19:39:21:949 - [Window] [Info] Setting window dimensions <800.0,600.0>
-2025.08.16@19:39:21:969 - [Window] [Info] Setting monitor index 0
-2025.08.16@19:39:21:970 - [Window] [Info] Set initial window attributes
-2025.08.16@19:39:21:971 - [App] [Info] Initialized window management system
-2025.08.16@19:39:21:972 - [Input] [Info] Initializing keyboard input management system
-2025.08.16@19:39:21:973 - [Keyboard] [Info] Attaching as key listener to window handle
-2025.08.16@19:39:21:973 - [Keyboard] [Info] Initializing keyboard state memory
-2025.08.16@19:39:21:975 - [Keyboard] [Info] Initializing keyboard input listeners set
-2025.08.16@19:39:21:975 - [Input] [Info] Initializing mouse input management system
-2025.08.16@19:39:21:976 - [Mouse] [Info] Attaching as mouse listener to window handle
-2025.08.16@19:39:21:977 - [Mouse] [Info] Initializing mouse state memory
-2025.08.16@19:39:21:977 - [Mouse] [Info] Initializing mouse input listeners set
-2025.08.16@19:39:21:978 - [App] [Info] Initialized user input management systems
-2025.08.16@19:39:21:979 - [Audio] [Info] Initializing sound effect management system
-2025.08.16@19:39:21:981 - [Sound Effects] [Info] Initializing sound effects cache memory
-2025.08.16@19:39:21:981 - [Sound Effects] [Info] Setting initial volume 100%
-2025.08.16@19:39:21:981 - [Audio] [Info] Initializing music management system
-2025.08.16@19:39:21:982 - [Music] [Info] Initializing music track memory
-2025.08.16@19:39:21:982 - [Music] [Info] Setting initial volume 100%
-2025.08.16@19:39:21:983 - [App] [Info] Initialized audio management systems
-2025.08.16@19:39:21:983 - [App] [Info] Initialized network client
-2025.08.16@19:39:21:983 - [App] [Info] Setting initial scene
-2025.08.16@19:39:21:984 - [App] [Info] Setting new scene
-2025.08.16@19:39:21:984 - [App] [Info] Initializing new scene
-2025.08.16@19:39:21:984 - [Scene] [Info] Initializing test scene 1
-2025.08.16@19:39:21:984 - [App] [Info] Entering new scene
-2025.08.16@19:39:21:984 - [Keyboard] [Info] Adding keyboard input listener
-2025.08.16@19:39:21:985 - [Mouse] [Info] Adding mouse input listener
-2025.08.16@19:39:21:985 - [Scene] [Info] Entering test scene 1
-2025.08.16@19:39:21:985 - [App] [Info] Initialized Asclepias Framework application
-2025.08.16@19:39:21:985 - [App] [Info] Running main loop
-2025.08.16@19:39:26:432 - [Window] [Info] Window requested to close
-2025.08.16@19:39:26:433 - [App] [Info] Finished main loop
-2025.08.16@19:39:26:433 - [App] [Info] Destroying Asclepias Framework application
-2025.08.16@19:39:26:434 - [App] [Info] Clearing current scene
-2025.08.16@19:39:26:434 - [App] [Info] Setting new scene
-2025.08.16@19:39:26:434 - [App] [Info] Leaving current scene
-2025.08.16@19:39:26:434 - [Scene] [Info] Leaving test scene 1
-2025.08.16@19:39:26:434 - [Keyboard] [Info] Removing keyboard input listener
-2025.08.16@19:39:26:435 - [Mouse] [Info] Removing mouse input listener
-2025.08.16@19:39:26:435 - [App] [Warning] No new scene passed to app
-2025.08.16@19:39:26:435 - [App] [Info] Destroying all previous scenes
-2025.08.16@19:39:26:435 - [Scene] [Info] Destroying test scene 1
-2025.08.16@19:39:26:435 - [App] [Info] Destroying network client
-2025.08.16@19:39:26:435 - [App] [Info] Destroying audio management systems
-2025.08.16@19:39:26:436 - [Audio] [Info] Destroying sound effect management system
-2025.08.16@19:39:26:436 - [Sound Effects] [Info] Freeing sound effects cache
-2025.08.16@19:39:26:436 - [Sound Effects] [Info] Clearing sound effects volume
-2025.08.16@19:39:26:436 - [Audio] [Info] Destroying music management system
-2025.08.16@19:39:26:436 - [Music] [Info] Clearing current music track
-2025.08.16@19:39:26:436 - [Music] [Info] Stopping current music track
-2025.08.16@19:39:26:437 - [Music] [Warning] No music track is present
-2025.08.16@19:39:26:437 - [Music] [Info] Clearing music track volume
-2025.08.16@19:39:26:437 - [App] [Info] Destroying user input management system
-2025.08.16@19:39:26:437 - [Input] [Info] Destroying keyboard input management system
-2025.08.16@19:39:26:437 - [Keyboard] [Info] Detaching from window handle as key input listener
-2025.08.16@19:39:26:437 - [Keyboard] [Info] Freeing keyboard state information
-2025.08.16@19:39:26:438 - [Keyboard] [Info] Clearing keyboard input listeners
-2025.08.16@19:39:26:438 - [Input] [Info] Destroying mouse input management system
-2025.08.16@19:39:26:438 - [Mouse] [Info] Detaching from window handle as mouse input listener
-2025.08.16@19:39:26:438 - [Mouse] [Info] Clearing mouse state information
-2025.08.16@19:39:26:438 - [Mouse] [Info] Clearing mouse input listeners
-2025.08.16@19:39:26:439 - [App] [Info] Destroying window management system
-2025.08.16@19:39:26:439 - [Window] [Info] Disposing of window handle
-2025.08.16@19:39:26:442 - [Window] [Info] Freeing window state memory
-2025.08.16@19:39:26:442 - [App] [Info] Destroying logging system
+2025.08.17@18:11:48:842 - [App] [Info] Initialized logging system
+2025.08.17@18:11:48:988 - [Window] [Info] Opened new window
+2025.08.17@18:11:48:988 - [Window] [Info] Setting window title "Asclepias Framework"
+2025.08.17@18:11:48:990 - [Window] [Info] Setting window dimensions <800.0,600.0>
+2025.08.17@18:11:48:995 - [Window] [Info] Setting monitor index 0
+2025.08.17@18:11:48:995 - [Window] [Info] Set initial window attributes
+2025.08.17@18:11:48:995 - [App] [Info] Initialized window management system
+2025.08.17@18:11:48:996 - [Input] [Info] Initializing keyboard input management system
+2025.08.17@18:11:48:997 - [Keyboard] [Info] Attaching as key listener to window handle
+2025.08.17@18:11:48:997 - [Keyboard] [Info] Initializing keyboard state memory
+2025.08.17@18:11:48:997 - [Keyboard] [Info] Initializing keyboard input listeners set
+2025.08.17@18:11:48:997 - [Input] [Info] Initializing mouse input management system
+2025.08.17@18:11:48:998 - [Mouse] [Info] Attaching as mouse listener to window handle
+2025.08.17@18:11:48:998 - [Mouse] [Info] Initializing mouse state memory
+2025.08.17@18:11:48:999 - [Mouse] [Info] Initializing mouse input listeners set
+2025.08.17@18:11:48:999 - [App] [Info] Initialized user input management systems
+2025.08.17@18:11:48:999 - [Audio] [Info] Initializing sound effect management system
+2025.08.17@18:11:49:000 - [Sound Effects] [Info] Initializing sound effects cache memory
+2025.08.17@18:11:49:000 - [Sound Effects] [Info] Setting initial volume 100%
+2025.08.17@18:11:49:000 - [Audio] [Info] Initializing music management system
+2025.08.17@18:11:49:001 - [Music] [Info] Initializing music track memory
+2025.08.17@18:11:49:001 - [Music] [Info] Setting initial volume 100%
+2025.08.17@18:11:49:001 - [App] [Info] Initialized audio management systems
+2025.08.17@18:11:49:002 - [App] [Info] Initialized network client
+2025.08.17@18:11:49:002 - [App] [Info] Setting initial scene
+2025.08.17@18:11:49:002 - [App] [Info] Setting new scene
+2025.08.17@18:11:49:002 - [App] [Info] Initializing new scene
+2025.08.17@18:11:49:002 - [Scene] [Info] Initializing test scene 1
+2025.08.17@18:11:49:002 - [App] [Info] Entering new scene
+2025.08.17@18:11:49:002 - [Keyboard] [Info] Adding keyboard input listener
+2025.08.17@18:11:49:002 - [Mouse] [Info] Adding mouse input listener
+2025.08.17@18:11:49:002 - [Scene] [Info] Entering test scene 1
+2025.08.17@18:11:49:003 - [App] [Info] Initialized Asclepias Framework application
+2025.08.17@18:11:49:003 - [App] [Info] Running main loop
+2025.08.17@18:11:50:884 - [Window] [Info] Window requested to close
+2025.08.17@18:11:50:885 - [App] [Info] Finished main loop
+2025.08.17@18:11:50:885 - [App] [Info] Destroying Asclepias Framework application
+2025.08.17@18:11:50:885 - [App] [Info] Clearing current scene
+2025.08.17@18:11:50:885 - [App] [Info] Setting new scene
+2025.08.17@18:11:50:885 - [App] [Info] Leaving current scene
+2025.08.17@18:11:50:885 - [Scene] [Info] Leaving test scene 1
+2025.08.17@18:11:50:886 - [Keyboard] [Info] Removing keyboard input listener
+2025.08.17@18:11:50:886 - [Mouse] [Info] Removing mouse input listener
+2025.08.17@18:11:50:886 - [App] [Warning] No new scene passed to app
+2025.08.17@18:11:50:886 - [App] [Info] Destroying all previous scenes
+2025.08.17@18:11:50:886 - [Scene] [Info] Destroying test scene 1
+2025.08.17@18:11:50:886 - [App] [Info] Destroying network client
+2025.08.17@18:11:50:886 - [App] [Info] Destroying audio management systems
+2025.08.17@18:11:50:887 - [Audio] [Info] Destroying sound effect management system
+2025.08.17@18:11:50:887 - [Sound Effects] [Info] Freeing sound effects cache
+2025.08.17@18:11:50:887 - [Sound Effects] [Info] Clearing sound effects volume
+2025.08.17@18:11:50:887 - [Audio] [Info] Destroying music management system
+2025.08.17@18:11:50:887 - [Music] [Info] Clearing current music track
+2025.08.17@18:11:50:887 - [Music] [Info] Stopping current music track
+2025.08.17@18:11:50:887 - [Music] [Warning] No music track is present
+2025.08.17@18:11:50:887 - [Music] [Info] Clearing music track volume
+2025.08.17@18:11:50:887 - [App] [Info] Destroying user input management system
+2025.08.17@18:11:50:888 - [Input] [Info] Destroying keyboard input management system
+2025.08.17@18:11:50:888 - [Keyboard] [Info] Detaching from window handle as key input listener
+2025.08.17@18:11:50:888 - [Keyboard] [Info] Freeing keyboard state information
+2025.08.17@18:11:50:888 - [Keyboard] [Info] Clearing keyboard input listeners
+2025.08.17@18:11:50:888 - [Input] [Info] Destroying mouse input management system
+2025.08.17@18:11:50:888 - [Mouse] [Info] Detaching from window handle as mouse input listener
+2025.08.17@18:11:50:888 - [Mouse] [Info] Clearing mouse state information
+2025.08.17@18:11:50:888 - [Mouse] [Info] Clearing mouse input listeners
+2025.08.17@18:11:50:889 - [App] [Info] Destroying window management system
+2025.08.17@18:11:50:889 - [Window] [Info] Disposing of window handle
+2025.08.17@18:11:50:890 - [Window] [Info] Freeing window state memory
+2025.08.17@18:11:50:891 - [App] [Info] Destroying logging system

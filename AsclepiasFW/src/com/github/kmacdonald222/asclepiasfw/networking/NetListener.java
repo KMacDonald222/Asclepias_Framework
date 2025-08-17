@@ -11,7 +11,7 @@ package com.github.kmacdonald222.asclepiasfw.networking;
 public interface NetListener {
 
 	/*
-	 * The network connection has successfully connected to a remote network
+	 * A network connection has successfully connected to a remote network
 	 * connection
 	 * @param int ID - The identifier of the newly connected network connection
 	 * @return boolean - Whether the connection should be accepted
@@ -20,15 +20,14 @@ public interface NetListener {
 		return true;
 	}
 	/*
-	 * The network connection has received a new message from the remote
+	 * A network connection has received a new message from the remote
 	 * connection
-	 * @param int ID - The identifier of the receiving network connection
 	 * @param NetMessage message - The message received
 	 */
-	public default void netMessageReceived(int ID, NetMessage message) {
+	public default void netMessageReceived(NetMessage message) {
 	}
 	/*
-	 * The network connection has been disconnected from a remote network
+	 * A network connection has been disconnected from a remote network
 	 * connection
 	 * @param int ID - The identifier of the disconnected network connection
 	 */

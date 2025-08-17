@@ -8,7 +8,7 @@
 
 package com.github.kmacdonald222.asclepiasfw.networking;
 
-public class NetClient {
+public class NetClient implements NetListener {
 
 	private boolean initialized = false;
 	
