@@ -2,8 +2,8 @@
  * File:		NetMessage.java
  * Author:		Keegan MacDonald (KMacDonald222)
  * Created:		2025.08.07
- * Purpose:		Defines an abstract message to be sent via network connections
- * 				with type and unique IDs
+ * Purpose:		Defines an abstract message class to be sent and received via
+ * 				network connections with type and unique identifiers
  */
 
 package com.github.kmacdonald222.asclepiasfw.networking;
@@ -13,8 +13,9 @@ import java.io.Serializable;
 // Abstract message to be sent via network connections
 public class NetMessage implements Serializable {
 	
-	// Base serial version identifier to be modified by inheriting classes
+	// Serial version identifier
 	private static final long serialVersionUID = 1L;
+	
 	// Type identifier for this message
 	protected int typeID = 0;
 	// Unique identifier for this message
@@ -30,16 +31,6 @@ public class NetMessage implements Serializable {
 	public NetMessage(int typeID, int messageID) {
 		this.typeID = typeID;
 		this.messageID = messageID;
-	}
-	/*
-	 * Convert this network message to a string containing its type and unique
-	 * identifiers
-	 * @param String - This network message's string
-	 */
-	@Override
-	public String toString() {
-		return "NetMessage(" + Integer.toString(typeID) + ","
-				+ Integer.toString(messageID) + ")";
 	}
 	
 	/*
@@ -69,6 +60,17 @@ public class NetMessage implements Serializable {
 	 */
 	public void setReceiverID(int receiverID) {
 		this.receiverID = receiverID;
+	}
+	/*
+	 * Convert this network message to a string containing its type and unique
+	 * identifiers
+	 * @param String - This network message's string
+	 */
+	@Override
+	public String toString() {
+		return "NetMessage(typeID=" + Integer.toString(typeID) + ",messageID="
+				+ Integer.toString(messageID) + ",receiverID="
+				+ Integer.toString(receiverID);
 	}
 
 }

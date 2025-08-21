@@ -82,7 +82,7 @@ public class App {
 		Log.write(LogSource.App, LogPriority.Info, "Initialized audio ",
 				"management systems");
 		Network = new NetClient();
-		if (!Network.initialize()) {
+		if (!Network.initialize(config.network.maxMessagesPerUpdate)) {
 			Log.write(LogSource.App, LogPriority.Error, "Failed to initialize ",
 					"network client");
 			return false;
@@ -119,6 +119,7 @@ public class App {
 			}
 			Input.update();
 			Audio.update();
+			Network.update();
 			try {
 				Thread.sleep(1);
 			} catch (InterruptedException e) {
@@ -212,6 +213,10 @@ public class App {
 				Log.write(LogSource.App, LogPriority.Warning, "Failed to ",
 						"remove current scene from mouse input listeners");
 			}
+			if (!Network.removeListener(CurrentScene)) {
+				Log.write(LogSource.App, LogPriority.Warning, "Failed to ",
+						"remove current scene from network listeners");
+			}
 		}
 		if (nextScene == null) {
 			Log.write(LogSource.App, LogPriority.Warning, "No new scene ",
@@ -237,6 +242,10 @@ public class App {
 		if (!Input.mouse.addListener(nextScene)) {
 			Log.write(LogSource.App, LogPriority.Warning, "Failed to add new ",
 					"scene to mouse input listeners");
+		}
+		if (!Network.addListener(nextScene)) {
+			Log.write(LogSource.App, LogPriority.Warning, "Failed to add new ",
+					"scene to network listeners");
 		}
 		nextScene.enter(CurrentScene);
 		CurrentScene = nextScene;

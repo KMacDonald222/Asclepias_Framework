@@ -32,10 +32,12 @@ public class LogSource {
 	public static LogSource Audio = new LogSource("Audio");
 	// Network client source log flag
 	public static LogSource NetClient = new LogSource("Network Client");
-	// Network server source log flag
-	public static LogSource NetServer = new LogSource("Network Server");
 	// Network connection source log flag
 	public static LogSource NetConnection = new LogSource("Network Connection");
+	// Network server source log flag
+	public static LogSource NetServer = new LogSource("Network Server");
+	// Network server listener source log flag
+	public static LogSource NetListener = new LogSource("Network Listener");
 	
 	// The name of this source flag
 	private String name = "";

@@ -10,9 +10,11 @@ package com.github.kmacdonald222.asclepiasfw.app;
 
 import com.github.kmacdonald222.asclepiasfw.input.KeyboardListener;
 import com.github.kmacdonald222.asclepiasfw.input.MouseListener;
+import com.github.kmacdonald222.asclepiasfw.networking.NetListener;
 
 //An abstract scene for the Asclepias Framework application
-public abstract class AppScene implements KeyboardListener, MouseListener {
+public abstract class AppScene implements KeyboardListener, MouseListener,
+		NetListener {
 	
 	// Whether this scene has been initialized
 	private boolean initialized = false;

@@ -66,15 +66,30 @@ public class AppConfig {
 		
 	}
 	
+	// Network client configuration structure
+	public class Network {
+		
+		// The maximum number of network messages to process per logic update
+		public int maxMessagesPerUpdate = -1;
+		
+	}
+	
 	// Instance of the logging system configuration structure
 	public Log log = new Log();
 	// Instance of the window management system configuration structure
 	public Window window = new Window();
 	// Instance of the audio management system configuration structures
 	public Audio audio = new Audio();
+	// Instance of the network client configuration structure
+	public Network network = new Network();
 	// The initial scene for the application
 	public AppScene initialScene = null;
 	
+	/*
+	 * Construct a default application configuration structure
+	 */
+	public AppConfig() {
+	}
 	/*
 	 * Construct a default application configuration structure with an initial
 	 * scene

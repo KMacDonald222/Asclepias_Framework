@@ -1,0 +1,201 @@
+2025.08.21@16:20:02:714 - [Network Listener] [Info] Initialized logging system
+2025.08.21@16:20:02:719 - [Network Server] [Info] Set logging system
+2025.08.21@16:20:02:719 - [Network Server] [Info] Set network listener
+2025.08.21@16:20:02:724 - [Network Server] [Info] Bound acceptor socket to port 2773
+2025.08.21@16:20:02:724 - [Network Server] [Info] Initialized clients queue
+2025.08.21@16:20:02:725 - [Network Server] [Info] Started acceptor
+2025.08.21@16:20:02:725 - [Network Server] [Info] Accepting clients
+2025.08.21@16:20:02:725 - [Network Listener] [Info] Started server
+2025.08.21@16:20:02:725 - [Network Listener] [Info] Started update loop
+2025.08.21@16:20:33:805 - [Network Server] [Info] Received new client connection at 127.0.0.1
+2025.08.21@16:20:33:806 - [Network Connection] [Info] Set logging system
+2025.08.21@16:20:33:806 - [Network Connection] [Info] Set network connection listener
+2025.08.21@16:20:33:806 - [Network Connection] [Info] Initialized event queues
+2025.08.21@16:20:33:806 - [Network Connection] [Info] Initiating connection to client 0 at 127.0.0.1
+2025.08.21@16:20:33:818 - [Network Connection] [Info] Opened input and output streams
+2025.08.21@16:20:33:819 - [Network Listener] [Info] Connected client with ID 0
+2025.08.21@16:20:33:820 - [Network Connection] [Info] Starting message input thread
+2025.08.21@16:20:36:365 - [Network Listener] [Info] Received: PositionMessage(messageID=0,x=45.0,y=61.0)
+2025.08.21@16:20:39:904 - [Network Server] [Info] Received new client connection at 127.0.0.1
+2025.08.21@16:20:39:904 - [Network Connection] [Info] Set logging system
+2025.08.21@16:20:39:904 - [Network Connection] [Info] Set network connection listener
+2025.08.21@16:20:39:904 - [Network Connection] [Info] Initialized event queues
+2025.08.21@16:20:39:904 - [Network Connection] [Info] Initiating connection to client 1 at 127.0.0.1
+2025.08.21@16:20:39:905 - [Network Connection] [Info] Opened input and output streams
+2025.08.21@16:20:39:905 - [Network Listener] [Info] Connected client with ID 1
+2025.08.21@16:20:39:905 - [Network Connection] [Info] Starting message input thread
+2025.08.21@16:20:43:403 - [Network Server] [Info] Received new client connection at 127.0.0.1
+2025.08.21@16:20:43:403 - [Network Connection] [Info] Set logging system
+2025.08.21@16:20:43:404 - [Network Connection] [Info] Set network connection listener
+2025.08.21@16:20:43:404 - [Network Connection] [Info] Initialized event queues
+2025.08.21@16:20:43:404 - [Network Connection] [Info] Initiating connection to client 2 at 127.0.0.1
+2025.08.21@16:20:43:404 - [Network Connection] [Info] Opened input and output streams
+2025.08.21@16:20:43:404 - [Network Listener] [Info] Connected client with ID 2
+2025.08.21@16:20:43:405 - [Network Connection] [Info] Starting message input thread
+2025.08.21@16:20:50:444 - [Network Server] [Info] Received new client connection at 127.0.0.1
+2025.08.21@16:20:50:445 - [Network Server] [Warning] Rejected new client connection, not enough space
+2025.08.21@16:20:54:744 - [Network Listener] [Info] Received: PositionMessage(messageID=0,x=58.0,y=54.0)
+2025.08.21@16:20:55:558 - [Network Listener] [Info] Received: PositionMessage(messageID=1,x=58.0,y=54.0)
+2025.08.21@16:20:57:872 - [Network Listener] [Info] Received: PositionMessage(messageID=0,x=46.0,y=36.0)
+2025.08.21@16:20:58:694 - [Network Listener] [Info] Received: PositionMessage(messageID=1,x=46.0,y=36.0)
+2025.08.21@16:21:00:375 - [Network Listener] [Info] Received: PositionMessage(messageID=1,x=72.0,y=44.0)
+2025.08.21@16:21:01:206 - [Network Listener] [Info] Received: PositionMessage(messageID=2,x=72.0,y=44.0)
+2025.08.21@16:21:02:758 - [Network Listener] [Info] Received: PositionMessage(messageID=2,x=52.0,y=55.0)
+2025.08.21@16:21:04:141 - [Network Connection] [Warning] Failed to read new message from host
+2025.08.21@16:21:04:141 - [Network Connection] [Info] Finished message input thread
+2025.08.21@16:21:04:141 - [Network Connection] [Info] Disconnecting network connection 2
+2025.08.21@16:21:04:142 - [Network Connection] [Info] Destroyed output stream
+2025.08.21@16:21:04:142 - [Network Connection] [Info] Destroyed message output thread and cleared message queue
+2025.08.21@16:21:04:142 - [Network Connection] [Info] Destroyed input stream
+2025.08.21@16:21:04:142 - [Network Connection] [Info] Destroyed message input thread and cleared message queue
+2025.08.21@16:21:04:142 - [Network Connection] [Info] Destroyed socket
+2025.08.21@16:21:04:142 - [Network Connection] [Info] Destroyed connection thread and cleared connection state
+2025.08.21@16:21:04:142 - [Network Listener] [Info] Disconnected client with ID 2
+2025.08.21@16:21:06:024 - [Network Server] [Info] Received new client connection at 127.0.0.1
+2025.08.21@16:21:06:024 - [Network Connection] [Info] Set logging system
+2025.08.21@16:21:06:024 - [Network Connection] [Info] Set network connection listener
+2025.08.21@16:21:06:024 - [Network Connection] [Info] Initialized event queues
+2025.08.21@16:21:06:024 - [Network Connection] [Info] Initiating connection to client 3 at 127.0.0.1
+2025.08.21@16:21:06:024 - [Network Connection] [Info] Opened input and output streams
+2025.08.21@16:21:06:025 - [Network Listener] [Info] Connected client with ID 3
+2025.08.21@16:21:06:025 - [Network Connection] [Info] Starting message input thread
+2025.08.21@16:21:06:964 - [Network Listener] [Info] Received: PositionMessage(messageID=0,x=49.0,y=67.0)
+2025.08.21@16:21:07:262 - [Network Listener] [Info] Received: PositionMessage(messageID=1,x=49.0,y=67.0)
+2025.08.21@16:21:07:574 - [Network Listener] [Info] Received: PositionMessage(messageID=2,x=49.0,y=67.0)
+2025.08.21@16:21:09:681 - [Network Server] [Info] Received new client connection at 127.0.0.1
+2025.08.21@16:21:09:682 - [Network Server] [Warning] Rejected new client connection, not enough space
+2025.08.21@16:21:11:334 - [Network Listener] [Info] Received: PositionMessage(messageID=2,x=50.0,y=22.0)
+2025.08.21@16:21:12:283 - [Network Connection] [Warning] Failed to read new message from host
+2025.08.21@16:21:12:283 - [Network Connection] [Info] Finished message input thread
+2025.08.21@16:21:12:283 - [Network Connection] [Info] Disconnecting network connection 1
+2025.08.21@16:21:12:284 - [Network Connection] [Info] Destroyed output stream
+2025.08.21@16:21:12:284 - [Network Connection] [Info] Destroyed message output thread and cleared message queue
+2025.08.21@16:21:12:284 - [Network Connection] [Info] Destroyed input stream
+2025.08.21@16:21:12:284 - [Network Connection] [Info] Destroyed message input thread and cleared message queue
+2025.08.21@16:21:12:284 - [Network Connection] [Info] Destroyed socket
+2025.08.21@16:21:12:284 - [Network Connection] [Info] Destroyed connection thread and cleared connection state
+2025.08.21@16:21:12:284 - [Network Listener] [Info] Disconnected client with ID 1
+2025.08.21@16:21:14:371 - [Network Server] [Info] Received new client connection at 127.0.0.1
+2025.08.21@16:21:14:372 - [Network Connection] [Info] Set logging system
+2025.08.21@16:21:14:372 - [Network Connection] [Info] Set network connection listener
+2025.08.21@16:21:14:372 - [Network Connection] [Info] Initialized event queues
+2025.08.21@16:21:14:372 - [Network Connection] [Info] Initiating connection to client 4 at 127.0.0.1
+2025.08.21@16:21:14:372 - [Network Connection] [Info] Opened input and output streams
+2025.08.21@16:21:14:372 - [Network Listener] [Info] Connected client with ID 4
+2025.08.21@16:21:14:372 - [Network Connection] [Info] Starting message input thread
+2025.08.21@16:21:14:752 - [Network Listener] [Info] Received: PositionMessage(messageID=3,x=32.0,y=56.0)
+2025.08.21@16:21:14:901 - [Network Listener] [Info] Received: PositionMessage(messageID=4,x=32.0,y=56.0)
+2025.08.21@16:21:15:078 - [Network Listener] [Info] Received: PositionMessage(messageID=5,x=32.0,y=56.0)
+2025.08.21@16:21:16:278 - [Network Listener] [Info] Received: PositionMessage(messageID=3,x=49.0,y=52.0)
+2025.08.21@16:21:16:534 - [Network Listener] [Info] Received: PositionMessage(messageID=4,x=49.0,y=52.0)
+2025.08.21@16:21:18:422 - [Network Connection] [Warning] Failed to read new message from host
+2025.08.21@16:21:18:422 - [Network Connection] [Info] Finished message input thread
+2025.08.21@16:21:18:422 - [Network Connection] [Info] Disconnecting network connection 0
+2025.08.21@16:21:18:422 - [Network Connection] [Info] Destroyed output stream
+2025.08.21@16:21:18:423 - [Network Connection] [Info] Destroyed message output thread and cleared message queue
+2025.08.21@16:21:18:423 - [Network Connection] [Info] Destroyed input stream
+2025.08.21@16:21:18:423 - [Network Connection] [Info] Destroyed message input thread and cleared message queue
+2025.08.21@16:21:18:423 - [Network Connection] [Info] Destroyed socket
+2025.08.21@16:21:18:423 - [Network Connection] [Info] Destroyed connection thread and cleared connection state
+2025.08.21@16:21:18:423 - [Network Listener] [Info] Disconnected client with ID 0
+2025.08.21@16:21:20:526 - [Network Server] [Info] Received new client connection at 127.0.0.1
+2025.08.21@16:21:20:526 - [Network Connection] [Info] Set logging system
+2025.08.21@16:21:20:526 - [Network Connection] [Info] Set network connection listener
+2025.08.21@16:21:20:527 - [Network Connection] [Info] Initialized event queues
+2025.08.21@16:21:20:527 - [Network Connection] [Info] Initiating connection to client 5 at 127.0.0.1
+2025.08.21@16:21:20:527 - [Network Connection] [Info] Opened input and output streams
+2025.08.21@16:21:20:527 - [Network Listener] [Info] Connected client with ID 5
+2025.08.21@16:21:20:527 - [Network Connection] [Info] Starting message input thread
+2025.08.21@16:21:21:236 - [Network Listener] [Info] Received: PositionMessage(messageID=3,x=32.0,y=65.0)
+2025.08.21@16:21:21:359 - [Network Listener] [Info] Received: PositionMessage(messageID=4,x=32.0,y=65.0)
+2025.08.21@16:21:21:534 - [Network Listener] [Info] Received: PositionMessage(messageID=5,x=32.0,y=65.0)
+2025.08.21@16:21:22:566 - [Network Connection] [Warning] Failed to read new message from host
+2025.08.21@16:21:22:566 - [Network Connection] [Info] Finished message input thread
+2025.08.21@16:21:22:567 - [Network Connection] [Info] Disconnecting network connection 5
+2025.08.21@16:21:22:567 - [Network Connection] [Info] Destroyed output stream
+2025.08.21@16:21:22:567 - [Network Connection] [Info] Destroyed message output thread and cleared message queue
+2025.08.21@16:21:22:567 - [Network Connection] [Info] Destroyed input stream
+2025.08.21@16:21:22:567 - [Network Connection] [Info] Destroyed message input thread and cleared message queue
+2025.08.21@16:21:22:567 - [Network Connection] [Info] Destroyed socket
+2025.08.21@16:21:22:567 - [Network Connection] [Info] Destroyed connection thread and cleared connection state
+2025.08.21@16:21:22:567 - [Network Listener] [Info] Disconnected client with ID 5
+2025.08.21@16:21:23:695 - [Network Listener] [Info] Received: PositionMessage(messageID=6,x=22.0,y=33.0)
+2025.08.21@16:21:24:554 - [Network Connection] [Warning] Failed to read new message from host
+2025.08.21@16:21:24:554 - [Network Connection] [Info] Finished message input thread
+2025.08.21@16:21:24:554 - [Network Connection] [Info] Disconnecting network connection 4
+2025.08.21@16:21:24:554 - [Network Connection] [Info] Destroyed output stream
+2025.08.21@16:21:24:554 - [Network Connection] [Info] Destroyed message output thread and cleared message queue
+2025.08.21@16:21:24:554 - [Network Connection] [Info] Destroyed input stream
+2025.08.21@16:21:24:554 - [Network Connection] [Info] Destroyed message input thread and cleared message queue
+2025.08.21@16:21:24:554 - [Network Connection] [Info] Destroyed socket
+2025.08.21@16:21:24:555 - [Network Connection] [Info] Destroyed connection thread and cleared connection state
+2025.08.21@16:21:24:555 - [Network Listener] [Info] Disconnected client with ID 4
+2025.08.21@16:21:24:555 - [Network Server] [Info] Received new client connection at 127.0.0.1
+2025.08.21@16:21:24:555 - [Network Connection] [Info] Set logging system
+2025.08.21@16:21:24:555 - [Network Connection] [Info] Set network connection listener
+2025.08.21@16:21:24:555 - [Network Connection] [Info] Initialized event queues
+2025.08.21@16:21:24:555 - [Network Connection] [Info] Initiating connection to client 6 at 127.0.0.1
+2025.08.21@16:21:24:555 - [Network Connection] [Info] Opened input and output streams
+2025.08.21@16:21:24:555 - [Network Listener] [Info] Connected client with ID 6
+2025.08.21@16:21:24:555 - [Network Connection] [Info] Starting message input thread
+2025.08.21@16:21:25:192 - [Network Listener] [Info] Received: PositionMessage(messageID=7,x=22.0,y=33.0)
+2025.08.21@16:21:25:359 - [Network Listener] [Info] Received: PositionMessage(messageID=8,x=22.0,y=33.0)
+2025.08.21@16:21:25:655 - [Network Listener] [Info] Received: PositionMessage(messageID=9,x=22.0,y=33.0)
+2025.08.21@16:21:26:742 - [Network Listener] [Info] Received: PositionMessage(messageID=10,x=46.0,y=53.0)
+2025.08.21@16:21:26:942 - [Network Listener] [Info] Received: PositionMessage(messageID=11,x=46.0,y=53.0)
+2025.08.21@16:21:27:158 - [Network Listener] [Info] Received: PositionMessage(messageID=12,x=46.0,y=53.0)
+2025.08.21@16:21:27:954 - [Network Connection] [Warning] Failed to read new message from host
+2025.08.21@16:21:27:954 - [Network Connection] [Info] Finished message input thread
+2025.08.21@16:21:27:954 - [Network Connection] [Info] Disconnecting network connection 6
+2025.08.21@16:21:27:954 - [Network Connection] [Info] Destroyed output stream
+2025.08.21@16:21:27:954 - [Network Connection] [Info] Destroyed message output thread and cleared message queue
+2025.08.21@16:21:27:954 - [Network Connection] [Info] Destroyed input stream
+2025.08.21@16:21:27:954 - [Network Connection] [Info] Destroyed message input thread and cleared message queue
+2025.08.21@16:21:27:954 - [Network Connection] [Info] Destroyed socket
+2025.08.21@16:21:27:955 - [Network Connection] [Info] Destroyed connection thread and cleared connection state
+2025.08.21@16:21:27:955 - [Network Listener] [Info] Disconnected client with ID 6
+2025.08.21@16:21:27:955 - [Network Server] [Info] Received new client connection at 127.0.0.1
+2025.08.21@16:21:27:955 - [Network Connection] [Info] Set logging system
+2025.08.21@16:21:27:955 - [Network Connection] [Info] Set network connection listener
+2025.08.21@16:21:27:955 - [Network Connection] [Info] Initialized event queues
+2025.08.21@16:21:27:955 - [Network Connection] [Info] Initiating connection to client 7 at 127.0.0.1
+2025.08.21@16:21:27:955 - [Network Connection] [Info] Opened input and output streams
+2025.08.21@16:21:27:955 - [Network Listener] [Info] Connected client with ID 7
+2025.08.21@16:21:27:955 - [Network Connection] [Info] Starting message input thread
+2025.08.21@16:21:28:768 - [Network Listener] [Info] Received: PositionMessage(messageID=13,x=46.0,y=53.0)
+2025.08.21@16:21:29:006 - [Network Listener] [Info] Received: PositionMessage(messageID=14,x=46.0,y=53.0)
+2025.08.21@16:21:29:542 - [Network Listener] [Info] Received: PositionMessage(messageID=15,x=46.0,y=53.0)
+2025.08.21@16:21:29:887 - [Network Listener] [Info] Received: PositionMessage(messageID=16,x=46.0,y=53.0)
+2025.08.21@16:21:31:574 - [Network Connection] [Warning] Failed to read new message from host
+2025.08.21@16:21:31:574 - [Network Connection] [Info] Finished message input thread
+2025.08.21@16:21:31:574 - [Network Connection] [Info] Disconnecting network connection 7
+2025.08.21@16:21:31:574 - [Network Connection] [Info] Destroyed output stream
+2025.08.21@16:21:31:574 - [Network Connection] [Info] Destroyed message output thread and cleared message queue
+2025.08.21@16:21:31:574 - [Network Connection] [Info] Destroyed input stream
+2025.08.21@16:21:31:574 - [Network Connection] [Info] Destroyed message input thread and cleared message queue
+2025.08.21@16:21:31:574 - [Network Connection] [Info] Destroyed socket
+2025.08.21@16:21:31:575 - [Network Connection] [Info] Destroyed connection thread and cleared connection state
+2025.08.21@16:21:31:575 - [Network Listener] [Info] Disconnected client with ID 7
+2025.08.21@16:21:32:654 - [Network Listener] [Info] Received: PositionMessage(messageID=5,x=72.0,y=64.0)
+2025.08.21@16:21:32:998 - [Network Listener] [Info] Received: PositionMessage(messageID=6,x=72.0,y=64.0)
+2025.08.21@16:21:33:175 - [Network Listener] [Info] Received: PositionMessage(messageID=7,x=72.0,y=64.0)
+2025.08.21@16:21:33:326 - [Network Listener] [Info] Received: PositionMessage(messageID=8,x=72.0,y=64.0)
+2025.08.21@16:21:34:517 - [Network Connection] [Warning] Failed to read new message from host
+2025.08.21@16:21:34:517 - [Network Connection] [Info] Finished message input thread
+2025.08.21@16:21:34:517 - [Network Connection] [Info] Disconnecting network connection 3
+2025.08.21@16:21:34:517 - [Network Connection] [Info] Destroyed output stream
+2025.08.21@16:21:34:517 - [Network Connection] [Info] Destroyed message output thread and cleared message queue
+2025.08.21@16:21:34:518 - [Network Connection] [Info] Destroyed input stream
+2025.08.21@16:21:34:518 - [Network Connection] [Info] Destroyed message input thread and cleared message queue
+2025.08.21@16:21:34:518 - [Network Connection] [Info] Destroyed socket
+2025.08.21@16:21:34:518 - [Network Connection] [Info] Destroyed connection thread and cleared connection state
+2025.08.21@16:21:34:518 - [Network Listener] [Info] Disconnected client with ID 3
+2025.08.21@16:21:48:164 - [Network Listener] [Info] Stopping update thread
+2025.08.21@16:21:48:164 - [Network Listener] [Info] Destroying server
+2025.08.21@16:21:48:164 - [Network Server] [Info] Stopping client accepting thread
+2025.08.21@16:21:48:164 - [Network Server] [Warning] Failed to read new client connection
+2025.08.21@16:21:48:164 - [Network Server] [Info] Stopped accepting clients
+2025.08.21@16:21:48:165 - [Network Server] [Info] Disconnecting all clients
+2025.08.21@16:21:48:165 - [Network Server] [Info] Clearing network listener
+2025.08.21@16:21:48:165 - [Network Server] [Info] Clearing logging system
+2025.08.21@16:21:48:165 - [Network Listener] [Info] Destroying logging system

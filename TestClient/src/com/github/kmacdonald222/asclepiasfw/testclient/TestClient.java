@@ -2,6 +2,7 @@ package com.github.kmacdonald222.asclepiasfw.testclient;
 
 import com.github.kmacdonald222.asclepiasfw.app.App;
 import com.github.kmacdonald222.asclepiasfw.app.AppConfig;
+import com.github.kmacdonald222.asclepiasfw.data.Vector2D;
 import com.github.kmacdonald222.asclepiasfw.testclient.scenes.TestClientScene1;
 import com.github.kmacdonald222.asclepiasfw.testclient.scenes.TestClientScene2;
 
@@ -14,6 +15,7 @@ public class TestClient {
 		Scene1 = new TestClientScene1();
 		Scene2 = new TestClientScene2();
 		AppConfig config = new AppConfig(Scene1);
+		config.window.dimensions = new Vector2D(100.0d, 100.0d);
 		if (!App.Initialize(config)) {
 			System.exit(1);
 		}
