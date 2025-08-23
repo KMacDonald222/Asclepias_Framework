@@ -34,20 +34,20 @@ public class NetConnection {
 	// Thread for awaiting connections to remote server as client connection
 	private Thread connectThread = null;
 	// Whether the connection thread is currently running
-	private boolean connecting = false;
+	private volatile boolean connecting = false;
 	// Java network socket handle
 	private Socket socket = null;
 	// The address of the remote end of this network connection's socket
 	// (empty when disconnected)
-	private String address = "";
+	private volatile String address = "";
 	// The port of the remote end of this network connection's socket (0 when
 	// disconnected)
-	private int port = 0;
+	private volatile int port = 0;
 	// The timeout for the socket when attempting connection to a remote server
 	// (0 when disconnected)
-	private int timeout = 0;
+	private volatile int timeout = 0;
 	// Whether this network connection is currently connected to a remote host
-	private boolean connected = false;
+	private volatile boolean connected = false;
 	// Thread-safe queue of network connection events for callback functions
 	private LinkedBlockingQueue<Boolean> connectEvents = null;
 	// Input stream for reading messages from remote host
@@ -64,7 +64,7 @@ public class NetConnection {
 	// Thread-safe queue of outgoing messages
 	private LinkedBlockingQueue<NetMessage> messagesOut = null;
 	// Whether the output thread is currently running
-	private boolean writing = false;
+	private volatile boolean writing = false;
 	
 	/*
 	 * Initialize this network connection's memory

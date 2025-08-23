@@ -74,6 +74,16 @@ public class AppConfig {
 		
 	}
 	
+	// Application timing configuration structure
+	public class Timing {
+		
+		// The target number of logic updates to perform per second
+		public int targetUpdatesPerSecond = 60;
+		// The maximum number of logic updates to perform per graphics frame
+		public int maximumUpdatesPerFrame = 8;
+		
+	}
+	
 	// Instance of the logging system configuration structure
 	public Log log = new Log();
 	// Instance of the window management system configuration structure
@@ -82,6 +92,8 @@ public class AppConfig {
 	public Audio audio = new Audio();
 	// Instance of the network client configuration structure
 	public Network network = new Network();
+	// Instance of the application timing configuration structure
+	public Timing timing = new Timing();
 	// The initial scene for the application
 	public AppScene initialScene = null;
 	

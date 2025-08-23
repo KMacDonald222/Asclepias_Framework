@@ -36,12 +36,12 @@ public class NetServer implements NetListener {
 	// Java server socket handle for accepting client connections
 	private ServerSocket acceptor = null;
 	// The next unique identifier to assign to a new client connection
-	private int nextClientID = 0;
+	private volatile int nextClientID = 0;
 	// The set of clients currently connected to this network server
 	private LinkedBlockingQueue<NetConnection> clients = null;
 	// The maximum number of clients for this network server to be connected to
 	// simultaneously
-	private int maximumClientCount = 0;
+	private volatile int maximumClientCount = 0;
 	
 	/*
 	 * Initialize this network server's memory and start accepting new clients
@@ -305,6 +305,13 @@ public class NetServer implements NetListener {
 	 */
 	public boolean isAccepting() {
 		return accepting;
+	}
+	/*
+	 * Get the next unque identifier to be assigned to a client connection
+	 * @return int - The next unique identifier for a client connection
+	 */
+	public int getNextClientID() {
+		return nextClientID;
 	}
 	/*
 	 * Get the number of clients currently connected to this network server

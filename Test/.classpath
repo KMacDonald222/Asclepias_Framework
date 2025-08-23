@@ -6,6 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="/home/hp17cp/Documents/Projects/Programming/Asclepias_Framework/AsclepiasFW/bin/AsclepiasFW.jar"/>
+	<classpathentry kind="lib" path="../AsclepiasFW/bin/AsclepiasFW.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

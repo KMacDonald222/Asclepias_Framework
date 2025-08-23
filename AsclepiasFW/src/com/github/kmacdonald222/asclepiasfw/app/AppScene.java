@@ -57,6 +57,12 @@ public abstract class AppScene implements KeyboardListener, MouseListener,
 	 */
 	public abstract boolean processInput();
 	/*
+	 * Update this application's timed logic
+	 * @param double delta - The target number of logic updates elapsed since
+	 * the last timed update
+	 */
+	public abstract void timedUpdate(double delta);
+	/*
 	 * Leave this scene for another in the application
 	 * @param AppScene nextScene - The next scene for the application
 	 */

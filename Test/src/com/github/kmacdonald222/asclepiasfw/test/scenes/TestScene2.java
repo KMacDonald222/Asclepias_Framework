@@ -1,13 +1,13 @@
-package com.github.kmacdonald222.asclepiasfw.testclient.scenes;
+package com.github.kmacdonald222.asclepiasfw.test.scenes;
 
 import com.github.kmacdonald222.asclepiasfw.app.App;
 import com.github.kmacdonald222.asclepiasfw.app.AppScene;
 import com.github.kmacdonald222.asclepiasfw.input.KeyboardKey;
 import com.github.kmacdonald222.asclepiasfw.logging.LogPriority;
 import com.github.kmacdonald222.asclepiasfw.logging.LogSource;
-import com.github.kmacdonald222.asclepiasfw.testclient.TestClient;
+import com.github.kmacdonald222.asclepiasfw.test.Test;
 
-public class TestClientScene2 extends AppScene {
+public class TestScene2 extends AppScene {
 
 	@Override
 	public boolean initialize() {
@@ -23,12 +23,16 @@ public class TestClientScene2 extends AppScene {
 	@Override
 	public boolean processInput() {
 		if (App.Input.keyboard.isKeyPressed(KeyboardKey.ONE)) {
-			if (!App.SetCurrentScene(TestClient.Scene1)) {
+			if (!App.SetCurrentScene(Test.Scene1)) {
 				App.Log.write(LogSource.Scene, LogPriority.Info, "Changing to ",
 						"test scene 1");
 			}
 		}
 		return true;
+	}
+	@Override
+	public void timedUpdate(double delta) {
+		
 	}
 	@Override
 	public void leave(AppScene nextScene) {

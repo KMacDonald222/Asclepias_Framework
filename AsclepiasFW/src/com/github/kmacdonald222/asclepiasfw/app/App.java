@@ -31,6 +31,11 @@ public class App {
 	public static AudioManager Audio = null;
 	// Instance of the client side of the networking system
 	public static NetClient Network = null;
+	
+	// The target number of logic updates to perform per second
+	private static int TargetUpdatesPerSecond = 0;
+	// The maximum number of logic updates to perform per graphics frame
+	private static int MaximumUpdatesPerFrame = 0;
 	// The current scene of the application
 	private static AppScene CurrentScene = null;
 	// List of all previous scenes in the application
@@ -89,13 +94,17 @@ public class App {
 		}
 		Log.write(LogSource.App, LogPriority.Info, "Initialized network ",
 				"client");
-		Log.write(LogSource.App, LogPriority.Info, "Setting initial scene");
+		TargetUpdatesPerSecond = config.timing.targetUpdatesPerSecond;
+		MaximumUpdatesPerFrame = config.timing.maximumUpdatesPerFrame;
+		Log.write(LogSource.App, LogPriority.Info, "Initialized timing ",
+				"parameters");
 		Scenes = new ArrayList<AppScene>();
 		if (!SetCurrentScene(config.initialScene)) {
 			Log.write(LogSource.App, LogPriority.Error, "Failed to set ",
 					"initial scene");
 			return false;
 		}
+		Log.write(LogSource.App, LogPriority.Info, "Set initial scene");
 		Log.write(LogSource.App, LogPriority.Info, "Initialized Asclepias ",
 				"Framework application");
 		Initialized = true;
@@ -105,10 +114,12 @@ public class App {
 	 * Run the application's main loop
 	 */
 	public static void Run() {
-		Log.write(LogSource.App, LogPriority.Info, "Running main loop");
+		Log.write(LogSource.App, LogPriority.Info, "Running main application ",
+				"loop");
+		long startTime = System.currentTimeMillis();
 		while (!Window.isWindowClosing()) {
 			if (CurrentScene == null) {
-				Log.write(LogSource.App, LogPriority.Error,	"No current scene ",
+				Log.write(LogSource.App, LogPriority.Error, "No current scene ",
 						"available");
 				break;
 			}
@@ -120,13 +131,30 @@ public class App {
 			Input.update();
 			Audio.update();
 			Network.update();
+			long endTime = System.currentTimeMillis();
+			double elapsed = (double)(endTime - startTime);
+			startTime = endTime;
+			double framesPerMillisecond = (double)TargetUpdatesPerSecond
+					/ 1000.0d;
+			double delta = ((double)elapsed) * framesPerMillisecond;
+			int updates = 0;
+			while (delta > 1.0d && updates < MaximumUpdatesPerFrame - 1) {
+				CurrentScene.timedUpdate(1.0d);
+				delta -= 1.0d;
+				updates++;
+			}
+			CurrentScene.timedUpdate(delta);
+			long remainingMilliseconds = Math.max((long)((1.0d - delta)
+					/ framesPerMillisecond), 0);
 			try {
-				Thread.sleep(1);
+				Thread.sleep(remainingMilliseconds);
 			} catch (InterruptedException e) {
-				e.printStackTrace();
+				Log.write(LogSource.App, LogPriority.Warning, "Main ",
+						"application loop interrupted while sleeping");
 			}
 		}
-		Log.write(LogSource.App, LogPriority.Info, "Finished main loop");
+		Log.write(LogSource.App, LogPriority.Info, "Finished main application ",
+				"loop");
 	}
 	/*
 	 * Free the application's memory
@@ -148,6 +176,9 @@ public class App {
 		}
 		Scenes.clear();
 		Scenes = null;
+		Log.write(LogSource.App, LogPriority.Info, "Freeing timing parameters");
+		TargetUpdatesPerSecond = 0;
+		MaximumUpdatesPerFrame = 0;
 		Log.write(LogSource.App, LogPriority.Info, "Destroying network client");
 		if (!Network.destroy()) {
 			Log.write(LogSource.App, LogPriority.Warning, "Failed to destroy ",
@@ -188,6 +219,37 @@ public class App {
 		return success;
 	}
 	
+	/*
+	 * Get the current target number of logic updates per second
+	 * @return int - The current target number of logic updates per second
+	 */
+	public static int GetTargetUpdatesPerSecond() {
+		return TargetUpdatesPerSecond;
+	}
+	/*
+	 * Set the target number of logic updates per second
+	 * @param int targetUpdatesPerSecond - The new target number of logic
+	 * updates per second
+	 */
+	public static void SetTargetUpdatesPerSecond(int targetUpdatesPerSecond) {
+		TargetUpdatesPerSecond = targetUpdatesPerSecond;
+	}
+	/*
+	 * Get the current maximum number of logic updates per graphics frame
+	 * @return int - The current maximum number of logic updates per graphics
+	 * frame
+	 */
+	public static int GetMaximumUpdatesPerFrame() {
+		return MaximumUpdatesPerFrame;
+	}
+	/*
+	 * Set the maximum number of logic updates per graphics frame
+	 * @param int maximumUpdatesPerFrame - The new maximum number of logic
+	 * updates per graphics frame
+	 */
+	public static void SetMaximumUpdatesPerFrame(int maximumUpdatesPerFrame) {
+		MaximumUpdatesPerFrame = maximumUpdatesPerFrame;
+	}
 	/*
 	 * Get the current scene in the application
 	 * @return AppScene - The application's current scene
